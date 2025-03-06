@@ -72,6 +72,20 @@
 <ul class="current">
 <li class="toctree-l2 current"><a class="reference internal current" href="#">Problem 1</a>
 <ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="#problem-1">Problem 1</a>
+<ul>
+<li class="toctree-l4"><a class="reference internal" href="#motivation">Motivation:</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#task">Task:</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#deliverables">Deliverables:</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#hints-and-resources">Hints and Resources:</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#deliverables_1">Deliverables:</a>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -171,7 +185,64 @@
 </div>
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
-<h1 id="problem-1">Problem 1</h1>
+<h2 id="electromangetism">Electromangetism</h2>
+<h3 id="problem-1">Problem 1</h3>
+<p><span style="font-size: 1.2em; font-weight: bold;"><strong>Simulating the effects of the Lorentz Force</strong></span></p>
+<h4 id="motivation">Motivation:</h4>
+<p>The Lorentz force, expressed as <span class="arithmatex">\(\mathbf{F} = q\mathbf{E} + q\mathbf{v} \times \mathbf{B}\)</span>, governs the motion of charged particles in electric and magnetic fields. It is foundational in fields like plasma physics, particle accelerators, and astrophysics. By focusing on simulations, we can explore the practical applications and visualize the complex trajectories that arise due to this force.</p>
+<h4 id="task">Task:</h4>
+<p>1 <strong>Exploration of Applications:</strong></p>
+<ul>
+<li>Identify systems where the Lorentz force plays a key role (e.g., particle accelerators, mass spectrometers, plasma confinement).</li>
+<li>Discuss the relevance of electric (<span class="arithmatex">\(\mathbf{E}\)</span>) and magnetic (<span class="arithmatex">\(\mathbf{B}\)</span>) fields in controlling the motion of charged particles.</li>
+</ul>
+<p>2 <strong>Simulating Particle Motion:</strong></p>
+<ul>
+<li>Implement a simulation to compute and visualize the trajectory of a charged particle under:<ul>
+<li>A uniform magnetic field.</li>
+<li>Combined uniform electric and magnetic fields.</li>
+<li>Crossed electric and magnetic fields.</li>
+</ul>
+</li>
+<li>Simulate the particle’s circular, helical, or drift motion based on initial conditions and field configurations.</li>
+</ul>
+<p>3 <strong>Parameter Exploration:</strong></p>
+<ul>
+<li>Allow variations in:<ul>
+<li>Field strengths (<span class="arithmatex">\(E\)</span>, <span class="arithmatex">\(B\)</span>).</li>
+<li>Initial particle velocity (<span class="arithmatex">\(\mathbf{v}\)</span>).</li>
+<li>Charge and mass of the particle (<span class="arithmatex">\(q\)</span>, <span class="arithmatex">\(m\)</span>).</li>
+</ul>
+</li>
+<li>Observe how these parameters influence the trajectory.</li>
+</ul>
+<p>4 <strong>Visualization:</strong></p>
+<ul>
+<li>Create clear, labeled plots showing the particle’s path in 2D and 3D for different scenarios.</li>
+<li>Highlight physical phenomena such as the Larmor radius and drift velocity.</li>
+</ul>
+<hr/>
+<h4 id="deliverables">Deliverables:</h4>
+<ol>
+<li>A Markdown document with Python script or notebook implementing the simulations.</li>
+<li>Visualizations of particle trajectories for the specified field configurations.</li>
+<li>A discussion on how the results relate to practical systems, such as cyclotrons or magnetic traps.</li>
+</ol>
+<hr/>
+<h4 id="hints-and-resources">Hints and Resources:</h4>
+<ul>
+<li>Use numerical methods like the Euler or Runge-Kutta method to solve the equations of motion</li>
+<li>Employ Python libraries such as NumPy for calculations and Matplotlib for visualizations.</li>
+<li>Start with simple cases (e.g., uniform magnetic field) and gradually add complexity (e.g., crossed fields).</li>
+</ul>
+<p>This task focuses on applying the Lorentz force concept through simulations, enabling an intuitive understanding of its effects in real-world scenarios.</p>
+<h4 id="deliverables_1">Deliverables:</h4>
+<ol>
+<li>A Markdown document with Python script or notebook implementing the simulations.</li>
+<li>Visualizations of particle trajectories for the specified field configurations.</li>
+<li>A discussion on how the results relate to practical systems, such as cyclotrons or magnetic traps.</li>
+<li>Suggestions for extending the simulation to more complex scenarios, such as non-uniform fields.</li>
+</ol>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">

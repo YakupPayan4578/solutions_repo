@@ -86,6 +86,20 @@
 </li>
 <li class="toctree-l2 current"><a class="reference internal current" href="#">Problem 2</a>
 <ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="#motivation">Motivation:</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#task">Task</a>
+<ul>
+<li class="toctree-l4"><a class="reference internal" href="#part-1-estimating-pi-using-a-circle">Part 1: Estimating \(\pi\) Using a Circle</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#part-2-estimating-pi-using-buffons-needle">Part 2: Estimating \(\pi\) Using Buffon’s Needle</a>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#deliverables">Deliverables</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#hints-and-resources">Hints and Resources</a>
+</li>
 </ul>
 </li>
 </ul>
@@ -171,7 +185,86 @@
 </div>
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
-<h1 id="problem-2">Problem 2</h1>
+<h3 id="problem-2">Problem 2</h3>
+<p><span style="font-size: 1.2em; font-weight: bold;"><strong>Estimating Pi using Monte Carlo Methods</strong></span></p>
+<h4 id="motivation">Motivation:</h4>
+<p>Monte Carlo simulations are a powerful class of computational techniques that use randomness to solve problems or estimate values. One of the most elegant applications of Monte Carlo methods is estimating the value of <span class="arithmatex">\(\pi\)</span> through geometric probability. By randomly generating points and analyzing their positions relative to a geometric shape, we can approximate <span class="arithmatex">\(\pi\)</span> in an intuitive and visually engaging way.</p>
+<p>This problem connects fundamental concepts of probability, geometry, and numerical computation. It also provides a gateway to understanding how randomness can be harnessed to solve complex problems in physics, finance, and computer science. The Monte Carlo approach to <span class="arithmatex">\(\pi\)</span> estimation highlights the versatility and simplicity of this method while offering practical insights into convergence rates and computational efficiency.</p>
+<hr/>
+<h4 id="task">Task</h4>
+<h5 id="part-1-estimating-pi-using-a-circle">Part 1: Estimating <span class="arithmatex">\(\pi\)</span> Using a Circle</h5>
+<p>1 <strong>Theoretical Foundation:</strong></p>
+<ul>
+<li>Explain how the ratio of points inside a circle to the total number of points in a square can be used to estimate <span class="arithmatex">\(\pi\)</span>.</li>
+<li>Derive the formula <span class="arithmatex">\(\pi \approx 4 \cdot (\text{points inside the circle} / \text{total points})\)</span> for a unit circle.</li>
+</ul>
+<p>2 <strong>Simulation:</strong></p>
+<ul>
+<li>Generate random points in a 2D square bounding a unit circle.</li>
+<li>Count the number of points falling inside the circle.</li>
+<li>Estimate <span class="arithmatex">\(\pi\)</span> based on the ratio of points inside the circle to the total points.</li>
+</ul>
+<p>3 <strong>Visualization:</strong></p>
+<ul>
+<li>Create a plot showing the randomly generated points, distinguishing those inside and outside the circle.</li>
+</ul>
+<p>4 <strong>Analysis:</strong></p>
+<ul>
+<li>Investigate how the accuracy of the estimate improves as the number of points increases.</li>
+<li>Discuss the convergence rate and computational considerations for this method.</li>
+</ul>
+<hr/>
+<h5 id="part-2-estimating-pi-using-buffons-needle">Part 2: Estimating <span class="arithmatex">\(\pi\)</span> Using Buffon’s Needle</h5>
+<p>1 <strong>Theoretical Foundation:</strong></p>
+<ul>
+<li>Describe Buffon’s Needle problem, where <span class="arithmatex">\(\pi\)</span> can be estimated based on the probability of a needle crossing parallel lines on a plane.</li>
+<li>Derive the formula <span class="arithmatex">\(\pi \approx (2 \cdot \text{needle length} \cdot \text{number of throws}) / (\text{distance between lines} \cdot \text{number of crossings})\)</span>.</li>
+</ul>
+<p>2 <strong>Simulation:</strong></p>
+<ul>
+<li>Simulate the random dropping of a needle on a plane with parallel lines.</li>
+<li>Count the number of times the needle crosses a line.</li>
+<li>Estimate <span class="arithmatex">\(\pi\)</span> based on the derived formula.</li>
+</ul>
+<p>3 <strong>Visualization:</strong></p>
+<ul>
+<li>Create a graphical representation of the simulation, showing the needle positions relative to the lines.</li>
+</ul>
+<p>4 <strong>Analysis:</strong></p>
+<ul>
+<li>Explore how the number of needle drops affects the estimate’s accuracy.</li>
+<li>Compare the convergence rate of this method to the circle-based approach.</li>
+</ul>
+<hr/>
+<h4 id="deliverables">Deliverables</h4>
+<p>1 A Markdown document with:</p>
+<ul>
+<li>Clear explanations of the methods and formulas.</li>
+<li>A discussion of theoretical foundations and results.</li>
+</ul>
+<p>2 Python scripts or notebooks implementing the simulations, including:</p>
+<ul>
+<li>Code for the circle-based Monte Carlo method.</li>
+<li>Code for the Buffon’s Needle method.</li>
+</ul>
+<p>3 Graphical outputs:</p>
+<ul>
+<li>Plots showing random points for the circle-based method.</li>
+<li>Visualizations of needle positions for Buffon’s Needle.</li>
+</ul>
+<p>4 Analysis:</p>
+<ul>
+<li>Tables or graphs showing the convergence of estimated <span class="arithmatex">\(\pi\)</span> as a function of the number of iterations for both methods.</li>
+<li>A comparison of the methods in terms of accuracy and computational efficiency.</li>
+</ul>
+<hr/>
+<h4 id="hints-and-resources">Hints and Resources</h4>
+<ul>
+<li>Use Python libraries such as NumPy for random number generation and Matplotlib for visualizations.</li>
+<li>For the circle-based method, ensure the random points are uniformly distributed within the square.</li>
+<li>For Buffon’s Needle, pay attention to geometric constraints, such as the relationship between the needle length and the distance between lines.</li>
+<li>Start with a small number of iterations to validate the implementation, then increase the sample size to observe convergence.</li>
+</ul>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">

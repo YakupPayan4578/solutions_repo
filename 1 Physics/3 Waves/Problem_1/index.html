@@ -66,6 +66,22 @@
 <ul class="current">
 <li class="toctree-l2 current"><a class="reference internal current" href="#">Problem 1</a>
 <ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="#problem-1">Problem 1</a>
+<ul>
+<li class="toctree-l4"><a class="reference internal" href="#motivation">Motivation:</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#task">Task</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#problem-statement">Problem Statement:</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#steps-to-follow">Steps to Follow:</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#considerations">Considerations:</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#deliverables">Deliverables:</a>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -171,7 +187,67 @@
 </div>
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
-<h1 id="problem-1">Problem 1</h1>
+<h2 id="waves">Waves</h2>
+<h3 id="problem-1">Problem 1</h3>
+<p><span style="font-size: 1.2em; font-weight: bold;">Interference Patterns on a water surface</span></p>
+<h4 id="motivation">Motivation:</h4>
+<p>Interference occurs when waves from different sources overlap, creating new patterns. On a water surface, this can be easily observed when ripples from different points meet, forming distinctive interference patterns. These patterns can show us how waves combine in different ways, either reinforcing each other or canceling out.</p>
+<p>Studying these patterns helps us understand wave behavior in a simple, visual way. It also allows us to explore important concepts, like the relationship between wave phase and the effects of multiple sources. This task offers a hands-on approach to learning about wave interactions and their real-world applications, making it an interesting and engaging way to dive into wave physics.</p>
+<h4 id="task">Task</h4>
+<p>A circular wave on the water surface, emanating from a point source located at <span class="arithmatex">\((x_0, y_0)\)</span>, can be described by the Single Disturbance equation:</p>
+<div class="arithmatex">\[
+\eta(x, y, t) = \frac{A}{\sqrt{r}} \cdot \cos\left(kr - \omega t + \phi\right)
+\]</div>
+<p>where:</p>
+<ul>
+<li><span class="arithmatex">\(\eta(x, y, t)\)</span> is the displacement of the water surface at point <span class="arithmatex">\((x, y)\)</span> and time <span class="arithmatex">\(t\)</span>,</li>
+<li><span class="arithmatex">\(A\)</span> is the amplitude of the wave,</li>
+<li><span class="arithmatex">\(k = \frac{2\pi}{\lambda}\)</span> is the wave number, related to the wavelength <span class="arithmatex">\(\lambda\)</span>,</li>
+<li><span class="arithmatex">\(\omega = 2\pi f\)</span> is the angular frequency, related to the frequency <span class="arithmatex">\(f\)</span>,</li>
+<li><span class="arithmatex">\(r = \sqrt{(x - x_0)^2 + (y - y_0)^2}\)</span> is the distance from the source to the point <span class="arithmatex">\((x, y)\)</span>,</li>
+<li><span class="arithmatex">\(\phi\)</span> is the initial phase.</li>
+</ul>
+<h4 id="problem-statement">Problem Statement:</h4>
+<p>Your task is to analyze the interference patterns formed on the water surface due to the superposition of waves emitted from point sources placed at the vertices of a chosen regular polygon.</p>
+<h4 id="steps-to-follow">Steps to Follow:</h4>
+<ol>
+<li>
+<p><strong>Select a Regular Polygon:</strong> Choose a regular polygon (e.g., equilateral triangle, square, regular pentagon).</p>
+</li>
+<li>
+<p><strong>Position the Sources:</strong> Place point wave sources at the vertices of the selected polygon.</p>
+</li>
+<li>
+<p><strong>Wave Equations:</strong> Write the equations describing the waves emitted from each source, considering their respective positions.</p>
+</li>
+<li>
+<p><strong>Superposition of Waves:</strong> Apply the principle of superposition by summing the wave displacements at each point on the water surface:</p>
+</li>
+</ol>
+<p>$$
+   \eta_{\text{sum}}(x, y, t) = \sum_{i=1}^{N} \eta_i(x, y, t)
+   $$</p>
+<p>where <span class="arithmatex">\(N\)</span> is the number of sources (vertices of the polygon).</p>
+<ol>
+<li>
+<p><strong>Analyze Interference Patterns:</strong> Examine the resulting displacement <span class="arithmatex">\(\eta_{\text{sum}}(x, y, t)\)</span> as a function of position <span class="arithmatex">\((x, y)\)</span> and time <span class="arithmatex">\(t\)</span>. Identify regions of constructive interference (wave amplification) and destructive interference (wave cancellation).</p>
+</li>
+<li>
+<p><strong>Visualization:</strong> Present your findings graphically, illustrating the interference patterns for the chosen regular polygon.</p>
+</li>
+</ol>
+<h4 id="considerations">Considerations:</h4>
+<ul>
+<li>Assume all sources emit waves with the same amplitude <span class="arithmatex">\(A\)</span>, wavelength <span class="arithmatex">\(\lambda\)</span>, and frequency <span class="arithmatex">\(f\)</span>.</li>
+<li>The waves are coherent, maintaining a constant phase difference.</li>
+<li>You may use simulation and visualization tools such as Python (with libraries like Matplotlib), or other graphical software to aid in your analysis.</li>
+</ul>
+<h4 id="deliverables">Deliverables:</h4>
+<ol>
+<li>A Markdown document with Python script or notebook implementing the simulations.</li>
+<li>A detailed explanation of the interference patterns observed for the chosen regular polygon with the goal of understanding wave superposition.</li>
+<li>Graphical representations of the water surface showing constructive and destructive interference regions.</li>
+</ol>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
