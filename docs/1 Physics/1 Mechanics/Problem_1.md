@@ -187,11 +187,7 @@ angles = [15, 30, 45, 60, 75]  # Different launch angles
 for angle in angles:
     simulate_projectile(initial_velocity, angle)
 
-# Grafik dosyaya kaydedilecek
-plt.savefig("projectile_motion.png")  # PNG olarak kaydet
-plt.show()  # Ekranda göster
-
-
+plt.show()
 ```
 ## **4.2 Visualizing Range vs. Launch Angle**
 
