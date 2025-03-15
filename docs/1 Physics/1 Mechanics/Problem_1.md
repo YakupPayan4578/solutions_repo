@@ -1,350 +1,227 @@
-# **Problem 1**
+# Problem 1 
 
-# **1. Theoretical Foundation**
+## 1.1 Investigating the Range as a Function of the Angle of Projection;
 
-## **1.1 Deriving the Equations of Motion**
-Projectile motion follows basic physics laws. The two main forces acting on the object are:
+When you throw an object (like a ball) into the air, how far it travels horizontally depends on the angle at which you throw it. This angle is the angle the ball makes with the ground when thrown.
 
-- **Gravity ($g$)**: Pulls the object downward.
-- **Initial Velocity ($v_0$)**: The speed at which the object is launched.
+1. **Low Angles (0-30 degrees):** If you throw the ball at a low angle close to the ground, it won’t travel far before hitting the ground. So, the range will be short.
+   
+2. **Medium Angles (30-60 degrees):** If you throw the ball at a steeper angle (around 45 degrees), it will travel farther. These angles generally give the best range.
 
-We break the motion into **horizontal (x-axis)** and **vertical (y-axis)** components.
+3. **High Angles (60-90 degrees):** If you throw the ball almost straight up, it will stay in the air longer, but won’t travel very far. The range will be short again.
 
-### **Horizontal Motion**
-There is no force in the horizontal direction (ignoring air resistance), so the motion is uniform:
+The formula for the range \( R \) of a projectile is:
 
-$$ x = v_0 \cos(\theta) \cdot t $$
+$$
+R = \frac{{v_0^2 \sin(2\theta)}}{g}
+$$
 
-### **Vertical Motion**
-Gravity affects the vertical motion, so we use the equation:
+Where:
 
-$$ y = v_0 \sin(\theta) \cdot t - \frac{1}{2} g t^2 $$
+- $ R $ is the range (how far the object travels horizontally).
+- $ v_0 $ is the initial velocity (the speed at which the object is thrown).
+- $ \theta $ is the angle of projection (the angle the object is thrown at relative to the ground).
+- $ g $ is the acceleration due to gravity (approximately $ 9.8 \, \text{m/s}^2 $).
 
-## **1.2 Solving the Differential Equation**
-The object's vertical motion follows Newton’s second law:
+In this formula, you can see that the range depends on both the initial speed and the angle. The best range is achieved when the angle is around 45 degrees because $ \sin(90^\circ) = 1 $, giving the maximum possible range.
 
-$$ \frac{d^2y}{dt^2} = -g $$
-
-Integrating once:
-
-$$ \frac{dy}{dt} = v_0 \sin(\theta) - g t $$
-
-Integrating again:
-
-$$ y = v_0 \sin(\theta) \cdot t - \frac{1}{2} g t^2 $$
-
-This gives the **vertical position** at any time $t$.
-
-## **1.3 How Initial Conditions Affect the Motion**
-Different starting conditions lead to different solutions:
-
-- **Higher initial velocity ($v_0$)** → Longer range and higher peak.
-- **Different angles ($\theta$)** → Changes in trajectory.
-- **Stronger gravity ($g$)** → Shorter flight time and lower height.
-
-These factors determine the path and range of the projectile.
-
---------------------
-
-# **2. Range Analysis**
-
-## **2.1 Investigating the Range as a Function of the Launch Angle**
-
-The range of a projectile depends on the launch angle ($\theta$). The optimal angle for maximum range, assuming no air resistance, is $45^\circ$. 
-
-Using the horizontal and vertical motion equations:
-
-### Horizontal Range:
-
-$$ x = v_0 \cos(\theta) \cdot t $$
-
-For the vertical motion, we find the time of flight by setting $y = 0$ (the object returns to the ground):
-
-$$ 0 = v_0 \sin(\theta) \cdot t - \frac{1}{2} g t^2 $$
-
-Solving for $t$ (time of flight):
-
-$$ t = \frac{2 v_0 \sin(\theta)}{g} $$
-
-Now, we can substitute this time into the horizontal motion equation to find the **range** ($R$):
-
-$$ R = v_0 \cos(\theta) \cdot \frac{2 v_0 \sin(\theta)}{g} $$
-
-Simplifying:
-
-$$ R = \frac{v_0^2 \sin(2\theta)}{g} $$
-
-This shows how the range depends on the initial velocity ($v_0$) and the launch angle ($\theta$).
-
-## **2.2 Effect of Initial Velocity and Gravity on the Range**
-
-### **Effect of Initial Velocity ($v_0$):**
-
-- **Higher initial velocity ($v_0$)** results in a **longer range** because the object travels faster.
-- The range is **proportional to the square of $v_0$**: As $v_0$ increases, the range increases by $v_0^2$.
-
-### **Effect of Gravity ($g$):**
-
-- **Stronger gravity ($g$)** results in a **shorter range** because the projectile falls faster.
-- The range is **inversely proportional to $g$**: As gravity increases, the range decreases.
-
-## **2.3 Comparing Analytical and Numerical Solutions**
-
-### **Analytical Solution:**
-
-The equation for range derived above is an **analytical solution**:
-
-$$ R = \frac{v_0^2 \sin(2\theta)}{g} $$
-
-This gives an exact formula for the range based on initial velocity and launch angle.
-
-### **Numerical Solution:**
-
-For more complex scenarios, such as with air resistance or uneven terrain, we use **numerical methods** (e.g., using Python) to simulate the projectile's motion step by step. This gives an approximation of the range.
-
-**Numerical simulations** can help us explore cases where the analytical solution doesn't apply, such as when the trajectory is affected by air resistance or other factors.
-
-------------
-
-# **3. Practical Applications**
-
-## **3.1 Real-World Applications of the Model**
-
-The model of projectile motion is useful in many real-world situations. Here are some examples:
-
-- **Sports**: In sports like soccer, basketball, and golf, players often need to understand how to launch the ball at the right angle to achieve the best range and accuracy. The basic projectile motion equations can be applied to optimize shots and passes.
-  
-- **Engineering**: Engineers use the projectile motion model to design systems such as **catapults**, **missiles**, and **rockets**. Understanding how the range changes with different angles and velocities helps in designing more efficient launch systems.
-  
-- **Astrophysics**: In space exploration, the motion of objects launched from Earth or other planets follows similar principles. For example, calculating the range of a spacecraft or a satellite is essential in planning successful missions.
-
-## **3.2 Incorporating Real-World Factors**
-
-While the basic model assumes ideal conditions, real-world situations often involve additional factors that can affect projectile motion. Some of these factors include:
-
-- **Inclined Surfaces**: When launching a projectile on an inclined surface, the launch angle must be adjusted to account for the slope of the ground. The equations of motion change slightly to include the angle of the surface.
-
-    - For an inclined plane, the motion equations are modified to account for the angle of the incline ($\alpha$). The horizontal and vertical components of the initial velocity change, and we get new equations to describe the motion.
-
-- **Air Resistance (Drag)**: In reality, air resistance slows down the projectile. This can be modeled using a **drag force** ($F_{\text{drag}}$) which is proportional to the square of the velocity:
-
-    $$ F_{\text{drag}} = \frac{1}{2} C_d \rho A v^2 $$
-
-    Where:
-    - $C_d$ is the drag coefficient
-    - $\rho$ is the air density
-    - $A$ is the cross-sectional area of the projectile
-    - $v$ is the velocity of the projectile
-
-    Air resistance affects both the range and the height of the projectile, and this can be included in numerical simulations to get a more accurate result.
-
-## **3.3 Connections to Other Fields**
-
-- **Sports**: Understanding projectile motion helps athletes optimize their performance, whether they are aiming to increase the distance of a throw or perfect a basketball shot.
-  
-- **Engineering**: Engineers apply this knowledge to design projectiles, rockets, and any system involving the launch of an object. The angle, initial speed, and resistance all play a significant role in the system's performance.
-
-- **Astrophysics**: Calculating the trajectory of satellites, spacecraft, and other objects moving in space requires a deep understanding of projectile motion, especially when gravity is variable (for example, when launching from different planets or moons).
+![alt text](image.png)
 
 -----
 
-# **4. Implementation and Simulation**
+## 1.2 Horizontal and Vertical Motion
 
-## **4.1 Developing a Computational Tool or Algorithm**
+### **Horizontal Motion (x-direction)**
 
-To simulate projectile motion, we can use Python to create a simple algorithm. This algorithm will calculate the trajectory of the projectile for various launch angles and initial velocities.
+The horizontal motion occurs at a constant velocity because we are ignoring air resistance. We start with Newton’s second law:
 
-### **Python Code Example:**
+$$
+F_x = ma_x
+$$
 
-```python
-import numpy as np
-import matplotlib.pyplot as plt
+Since there is no force acting on the object in the horizontal direction, the acceleration is zero, \( a_x = 0 \). This means the horizontal velocity is constant. The equation for horizontal motion is:
 
-# Constants
-g = 9.81  # Gravitational acceleration (m/s^2)
+$$
+x(t) = v_{0x} t = v_0 \cos(\theta) t
+$$
 
-# Function to calculate range and plot trajectory
-def simulate_projectile(v0, theta):
-    theta_rad = np.radians(theta)  # Convert angle to radians
-    t_flight = (2 * v0 * np.sin(theta_rad)) / g  # Time of flight
-    t = np.linspace(0, t_flight, num=500)  # Time array
-    
-    # Calculate x and y positions
-    x = v0 * np.cos(theta_rad) * t  # Horizontal distance
-    y = v0 * np.sin(theta_rad) * t - 0.5 * g * t**2  # Vertical distance
+### **Vertical Motion (y-direction)**
 
-    # Plot trajectory
-    plt.plot(x, y, label=f'Angle = {theta}°')
-    plt.xlabel('Distance (m)')
-    plt.ylabel('Height (m)')
-    plt.title('Projectile Motion')
-    plt.legend()
+In the vertical direction, the object is affected by gravity, so it accelerates downward. Newton’s second law:
 
-# Example usage: Simulate projectile for different angles
-initial_velocity = 20  # Initial velocity in m/s
-angles = [15, 30, 45, 60, 75]  # Different launch angles
+$$
+F_y = ma_y = -mg
+$$
 
-for angle in angles:
-    simulate_projectile(initial_velocity, angle)
+Solving this equation gives the vertical velocity as a function of time. The initial vertical velocity is $ v_{0y} = v_0 \sin(\theta) $, so:
 
-plt.show()
-```
+$$
+v_y(t) = v_{0y} - g t = v_0 \sin(\theta) - g t
+$$
 
-![alt text](grafik.png)
+To find the vertical position as a function of time, we integrate the velocity:
 
-## **4.2 Visualizing Range vs. Launch Angle**
+$$
+y(t) = v_{0y} t - \frac{1}{2} g t^2 = v_0 \sin(\theta) t - \frac{1}{2} g t^2
+$$
 
-The graph generated by the above Python code will show the **range as a function of the launch angle** for different initial velocities.
+----
 
-### **Plot Interpretation:**
-- The range is **maximized** at a launch angle of $45^\circ$ (for ideal conditions).
-- For angles less than $45^\circ$, the range decreases, and for angles greater than $45^\circ$, the range also decreases.
+## 1.3 Changes in Launch Angle and Initial Velocity
+ **Changes in Launch Angle**:
+The launch angle $ \theta $ determines how steep or flat the projectile is launched. Different launch angles affect the projectile's trajectory in the following ways:
 
-## **4.3 Analyzing Different Initial Conditions**
+- **Low angles** (e.g. 15°): The projectile follows a flatter path and reaches the ground quickly, covering less horizontal distance.
+- **Medium angles** (e.g. 45°): The projectile achieves a good balance of horizontal distance and vertical height, reaching the ***maximum range***.
+- **High angles** (e.g. 75°): The projectile follows a steeper path, reaching a higher vertical height but covering less horizontal distance.
 
-We can vary the **initial velocity** ($v_0$) and **launch angle** ($\theta$) to analyze their impact on the range. Let's look at some different scenarios:
+ **Changes in Initial Velocity**:
+The initial velocity \( v_0 \) is the speed at which the projectile is launched. Increasing the initial velocity increases both the range and the height of the trajectory:
 
-### **1. Varying Initial Velocity:**
-- If we increase the initial velocity ($v_0$), the range increases because the projectile travels faster.
-- We can compare the range for different initial velocities and observe how the range changes.
+- **Low velocities**: The projectile travels a shorter distance and reaches a lower height.
+- **High velocities**: The projectile covers a longer distance and reaches a greater height.
 
-### **2. Varying Launch Angle:**
-- The angle of launch ($\theta$) significantly affects the range. For each initial velocity, we can calculate the range for different launch angles and compare the results.
+Changes in the initial velocity also lead to different solutions. Even with the same launch angle, increasing the initial velocity results in larger trajectories and longer ranges.
 
-## **4.4 Comparison of Analytical and Numerical Solutions**
+![alt text](image-1.png)
 
-- **Analytical solution**: The formula for range is:
+This graph shows the trajectories plotted for different initial velocities (10 m/s, 20 m/s, 30 m/s) and angles (30°, 45°, 60°). The following points stand out in the graph:
 
-    $$ R = \frac{v_0^2 \sin(2\theta)}{g} $$
+- As the initial velocity $ v_0 $ increases, the trajectories cover longer distances and reach higher altitudes.
+- The maximum range occurs around 45° for a given initial velocity. For lower and higher angles, the range decreases, but the height varies.
 
-- **Numerical simulation**: The Python code provides a numerical simulation of the projectile's motion, which can handle more complex situations (like air resistance) that the analytical solution doesn't cover.
+-----
 
-By comparing the **analytical** and **numerical** results, we can verify how well the theoretical model predicts the projectile's behavior under ideal conditions.
--------
+## **2.1 Analysis of the Range** 
 
-## **5. Results and Deliverables**
 
-In this section, we summarize the results obtained from the simulations and provide a discussion on the limitations of the model, as well as suggestions for further improvements.
 
-### **5.1 Markdown Report**
+### Dependence of Horizontal Range on the Projection Angle
 
-A comprehensive Markdown report has been prepared detailing the following:
+The horizontal range $ R $ of a projectile depends on the launch angle and is given by the equation:  
 
-- **Theoretical Foundations**: The equations governing projectile motion, including how the range depends on the launch angle.
-- **Range Analysis**: The influence of initial velocity and gravitational acceleration on the horizontal range.
-- **Practical Applications**: Real-world applications of the projectile motion model, including adjustments for different conditions such as air resistance and uneven terrain.
-- **Simulation Implementation**: A Python code for simulating projectile motion and visualizing the range as a function of the launch angle for various initial conditions.
+$$
+R = \frac{v_0^2 \sin(2\theta)}{g}
+$$
 
-### **5.2 Python Code**
+Where:  
+- $ v_0 $ is the initial velocity.  
+- $ \theta $ is the launch angle.  
+- $ g $ is the acceleration due to gravity (\( 9.8 \, \text{m/s}^2 \)).  
 
-The Python code that has been used for simulations is included within a **Jupyter Notebook**. The notebook provides the following features:
+📌 **Effect of Launch Angle:**  
 
-- **Simulations of projectile motion** for different launch angles and initial velocities.
-- **Graphs** showing the relationship between range and launch angle for various initial velocities.
-- The code also includes the ability to modify parameters like initial velocity and angle to explore different scenarios.
+- When $ \theta = 0^\circ $ or $ 90^\circ $, the range is zero because:
 
-You can access the code [here](#).
+  $$
+  \sin(0) = 0, \quad \sin(180^\circ) = 0
+  $$
 
-```python
-# Python code used to simulate projectile motion and generate range vs angle graphs
-import numpy as np
-import matplotlib.pyplot as plt
+- The **maximum range** occurs at $ 45^\circ $ because:
 
-# Constants
-g = 9.81  # Gravitational acceleration (m/s^2)
+  $$
+  \sin(90^\circ) = 1
+  $$
 
-# Function to calculate range and plot trajectory
-def simulate_projectile(v0, theta):
-    theta_rad = np.radians(theta)  # Convert angle to radians
-    t_flight = (2 * v0 * np.sin(theta_rad)) / g  # Time of flight
-    t = np.linspace(0, t_flight, num=500)  # Time array
-    
-    # Calculate x and y positions
-    x = v0 * np.cos(theta_rad) * t  # Horizontal distance
-    y = v0 * np.sin(theta_rad) * t - 0.5 * g * t**2  # Vertical distance
+- For angles lower or higher than $ 45^\circ $, the range decreases.  
+----
+### **2.2 Effect of Other Parameters**  
 
-    # Plot trajectory
-    plt.plot(x, y, label=f'Angle = {theta}°')
-    plt.xlabel('Distance (m)')
-    plt.ylabel('Height (m)')
-    plt.title('Projectile Motion')
-    plt.legend()
+📌 **Effect of Initial Velocity:**  
 
-# Example usage: Simulate projectile for different angles
-initial_velocity = 20  # Initial velocity in m/s
-angles = [15, 30, 45, 60, 75]  # Different launch angles
+- The range increases as the initial velocity $ v_0 $ increases.  
+- If the launch angle is kept constant, a **higher initial velocity results in a longer range**.  
+- Mathematically:
 
-for angle in angles:
-    simulate_projectile(initial_velocity, angle)
+  $$
+  R \propto v_0^2
+  $$
 
-plt.show()
-```
+📌 **Effect of Gravitational Acceleration:**  
 
-### **5.3 Range-Angle Graphs and Impact of Parameters**
+- Since \( g \) is in the denominator, **an increase in gravity decreases the range**:  
 
-The graphs generated from the simulations show the relationship between the range and the launch angle. Here are some key observations:
+  $$
+  R \propto \frac{1}{g}
+  $$
 
-- The **range is maximized** at a launch angle of 45°.
-- As the launch angle increases or decreases from 45°, the range decreases.
-- The **initial velocity** (\( v_0 \)) has a direct impact on the range. A higher initial velocity leads to a greater range.
+- If gravity is lower, the projectile will travel further.  
 
-### **5.4 Limitations of the Idealized Model**
+### **Summary**  
 
-While the model provides a good approximation of projectile motion, there are several limitations to consider:
+$$
+\text{Maximum Range at } \theta = 45^\circ
+$$
 
-- **Air Resistance**: The model assumes that there is no air resistance, which is unrealistic for real-world projectiles.
-- **Uneven Terrain**: The model does not account for launching or landing on uneven terrain.
-- **Launch Height**: The model assumes that the launch and landing heights are the same, which may not always be the case.
-- **Wind and Other External Factors**: The model does not incorporate factors like wind or temperature, which can affect projectile motion.
+$$
+R \text{ increases with } v_0
+$$
 
-### **5.5 Suggestions for a More Realistic Model**
+$$
+R \text{ decreases with } g
+$$
+----
 
-To improve the accuracy of the model, the following factors should be incorporated:
+## **3. Practical Applications**  
 
-- **Air Resistance**: The model can be improved by including drag force equations to account for air resistance.
-- **Uneven Terrain**: Modifying the model to handle different launch and landing heights would improve its real-world applicability.
-- **External Factors**: Introducing parameters for wind speed, direction, and environmental conditions would make the model more realistic.
+In real-world scenarios, projectile motion is influenced by additional factors such as **uneven terrain** and **air resistance**, which modify the ideal trajectory.  
 
-Incorporating these elements would allow for a more comprehensive and accurate simulation of projectile motion in real-world scenarios.
+### **3.1 Uneven Terrain**  
 
-### **5.6 Conclusion**
+If the landing height differs from the launch height, the range equation must be modified. The general equation for projectile motion with different initial ($ y_0 $) and final heights ($ y_f $) is:  
 
-This project provided valuable insights into projectile motion and its dependence on various parameters such as the launch angle and initial velocity. The model presented offers a good understanding of the physics involved, but it is an idealized version. Further refinement by adding more real-world factors would improve its predictive power and accuracy.
+$$
+y_f = y_0 + v_0 \sin(\theta) t - \frac{1}{2} g t^2
+$$
 
-**Deliverables**:
-- A detailed Markdown report containing all theoretical and practical aspects of projectile motion.
-- A Jupyter Notebook with Python code for simulating projectile motion and generating range vs angle graphs.
-- A discussion on the limitations of the idealized model and suggestions for improvement.
+Solving for $ t $ and substituting into the range equation allows for trajectory adjustments on slopes.
 
-------
+---
+### **3.2 Air Resistance**  
 
-## **6. Extra Tips**
+In real-world motion, air resistance applies a force opposite to the velocity, modifying both range and trajectory. The equation of motion considering drag force $ F_d = -kv $ leads to a more complex system:  
 
-This section provides some additional tips and recommendations for successfully completing the task and enhancing the understanding of the project.
+$$
+m \frac{d v}{d t} = -mg - kv
+$$
 
-### **6.1 Start from Fundamental Laws of Motion**
+where $ k $ is the drag coefficient. As a result:
+- The range is reduced ($ R < R_{ideal} $).
+- The trajectory is no longer perfectly parabolic.  
 
-To understand the projectile motion in detail, begin with the basic principles of physics, such as Newton's laws of motion. These laws govern the movement of objects and serve as the foundation for deriving the equations of projectile motion. Understanding these principles is key to solving the problem and deriving accurate results.
+---
+### **3.3 Gravity Variations**  
 
-- **Newton's First Law**: An object remains in uniform motion unless acted upon by an external force.
-- **Newton's Second Law**: The acceleration of an object is proportional to the net force acting on it.
-- **Newton's Third Law**: For every action, there is an equal and opposite reaction.
+On different planets, gravity $ g $ changes, affecting the range:  
 
-Using these principles, derive the equations for both the horizontal and vertical motion of the projectile.
+$$
+R = \frac{v_0^2 \sin(2\theta)}{g}
+$$
 
-### **6.2 Utilize Numerical Methods to Support Analytical Solutions**
+For example, on the Moon ($ g \approx 1.63 \, \text{m/s}^2 $), the range increases significantly compared to Earth.  
 
-While analytical solutions provide important insights, many real-world scenarios are too complex to be solved analytically. In such cases, numerical methods (such as Euler's method or Runge-Kutta methods) can be used to approximate the solutions of the motion equations. These methods allow for simulating more complex trajectories, such as those involving air resistance or non-uniform terrain.
+### **Conclusion**  
 
-- **Numerical Simulations**: Numerical methods can provide results for scenarios where an analytical solution is not possible or is too complex.
-- **Accuracy**: Numerical solutions can be highly accurate if appropriate methods and step sizes are chosen.
+In practical applications, projectile motion deviates from the idealized model due to environmental factors. By incorporating these effects, more accurate predictions can be made for fields such as **ballistics, sports, and space exploration**.
 
-### **6.3 Connect the Model to Real-World Systems**
+![alt text](image-2.png)
 
-The projectile motion model has wide-ranging applications in the real world. By connecting the mathematical model to actual systems, you can better appreciate its relevance and importance. Some fields where projectile motion is crucial include:
+---
 
-- **Sports**: In sports such as soccer, basketball, or golf, understanding projectile motion can help athletes optimize their performance.
-- **Engineering**: Engineers use projectile motion principles to design various systems, including missile trajectories, vehicle launches, and water fountains.
-- **Astrophysics**: In astrophysics, understanding projectile motion is essential for calculating the orbits of celestial bodies and space exploration trajectories.
 
-By relating the model to these real-world applications, you can better understand how the abstract physics principles are put to use in practice.
+### 4.1 Projectile Motion: Effects of Gravity, Angle, and Initial Velocity
+
+https://colab.research.google.com/drive/1mG9TDtRfRlfctXJZPtWLedPvlEVRCYe-#scrollTo=ypS30_zpL9aM
+
+This graph visualizes the effects of different **initial velocities**, **angles**, and **gravity values** on **projectile motion**. Each line in the graph represents a different combination of **initial velocity**, **angle**, and **gravity**.
+
+- **X-axis (Horizontal Distance):** Represents how far the object travels horizontally.
+- **Y-axis (Vertical Distance):** Represents how high the object rises or how far it falls.
+
+The graph shows how each of the following parameters affect projectile motion:
+
+1. **Initial Velocity (v₀):** Higher initial velocities cause the object to travel further and reach greater heights.
+2. **Angle (θ):** As the angle increases, the object reaches a higher point, but the horizontal distance decreases. An optimal angle (around 45°) gives the longest range.
+3. **Gravity (g):** As gravity increases, the object falls faster, resulting in a shorter range.
+
+This graph helps illustrate the varying effects of these parameters on projectile motion and provides insight into how each factor influences the object's trajectory.
