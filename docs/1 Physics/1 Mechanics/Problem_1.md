@@ -23,7 +23,7 @@ Where:
 - $\theta = 45^\circ$ is the angle of projection (the angle the object is thrown at relative to the ground).
 - ($g$) is the acceleration due to gravity (approximately $ 9.8 \, \text{m/s}^2 $).
 
-In this formula, you can see that the range depends on both the initial speed and the angle. The best range is achieved when the angle is around 45 degrees because $ \sin(90^\circ) $ = 1 , giving the maximum possible range.
+In this formula, you can see that the range depends on both the initial speed and the angle. The best range is achieved when the angle is around 45 degrees because $\sin(90^\circ)$ = 1 , giving the maximum possible range.
 
 ![alt text](image.png)
 
@@ -39,7 +39,7 @@ $$
 F_x = ma_x
 $$
 
-Since there is no force acting on the object in the horizontal direction, the acceleration is zero, \( a_x = 0 \). This means the horizontal velocity is constant. The equation for horizontal motion is:
+Since there is no force acting on the object in the horizontal direction, the acceleration is zero, $a_x = 0$. This means the horizontal velocity is constant. The equation for horizontal motion is:
 
 $$
 x(t) = v_{0x} t = v_0 \cos(\theta) t
@@ -53,7 +53,7 @@ $$
 F_y = ma_y = -mg
 $$
 
-Solving this equation gives the vertical velocity as a function of time. The initial vertical velocity is $ v_{0y} = v_0 \sin(\theta) $, so:
+Solving this equation gives the vertical velocity as a function of time. The initial vertical velocity is $v_{0y} = v_0 \sin(\theta)$, so:
 
 $$
 v_y(t) = v_{0y} - g t = v_0 \sin(\theta) - g t
@@ -76,7 +76,7 @@ The launch angle $ \theta $ determines how steep or flat the projectile is launc
 - **High angles** (e.g. 75°): The projectile follows a steeper path, reaching a higher vertical height but covering less horizontal distance.
 
  **Changes in Initial Velocity**:
-The initial velocity \( v_0 \) is the speed at which the projectile is launched. Increasing the initial velocity increases both the range and the height of the trajectory:
+The initial velocity $v_0$ is the speed at which the projectile is launched. Increasing the initial velocity increases both the range and the height of the trajectory:
 
 - **Low velocities**: The projectile travels a shorter distance and reaches a lower height.
 - **High velocities**: The projectile covers a longer distance and reaches a greater height.
@@ -87,7 +87,7 @@ Changes in the initial velocity also lead to different solutions. Even with the 
 
 This graph shows the trajectories plotted for different initial velocities (10 m/s, 20 m/s, 30 m/s) and angles (30°, 45°, 60°). The following points stand out in the graph:
 
-- As the initial velocity $ v_0 $ increases, the trajectories cover longer distances and reach higher altitudes.
+- As the initial velocity $v_0$ increases, the trajectories cover longer distances and reach higher altitudes.
 - The maximum range occurs around 45° for a given initial velocity. For lower and higher angles, the range decreases, but the height varies.
 
 -----
@@ -98,68 +98,61 @@ This graph shows the trajectories plotted for different initial velocities (10 m
 
 ### Dependence of Horizontal Range on the Projection Angle
 
-The horizontal range $ R $ of a projectile depends on the launch angle and is given by the equation:  
+The horizontal range $R$ of a projectile depends on the launch angle and is given by the equation:  
 
 $$
 R = \frac{v_0^2 \sin(2\theta)}{g}
 $$
 
 Where:  
-- $ v_0 $ is the initial velocity.  
-- $ \theta $ is the launch angle.  
-- $ g $ is the acceleration due to gravity (\( 9.8 \, \text{m/s}^2 \)).  
+- $v_0$ is the initial velocity.  
+- $\theta$ is the launch angle.  
+- $g$ is the acceleration due to gravity ($9.8 \, \text{m/s}^2$).  
 
 📌 **Effect of Launch Angle:**  
 
-- When $ \theta = 0^\circ $ or $ 90^\circ $, the range is zero because:
+- When $\theta = 0^\circ$ or $90^\circ$, the range is zero because:
 
   $$
   \sin(0) = 0, \quad \sin(180^\circ) = 0
   $$
 
-- The **maximum range** occurs at $ 45^\circ $ because:
+- The **maximum range** occurs at $45^\circ$ because:
 
   $$
   \sin(90^\circ) = 1
   $$
 
-- For angles lower or higher than $ 45^\circ $, the range decreases.  
+- For angles lower or higher than $45^\circ$, the range decreases.  
 ----
 ### **2.2 Effect of Other Parameters**  
 
 📌 **Effect of Initial Velocity:**  
 
-- The range increases as the initial velocity $ v_0 $ increases.  
+- The range increases as the initial velocity $v_0$ increases.  
 - If the launch angle is kept constant, a **higher initial velocity results in a longer range**.  
 - Mathematically:
 
-  $$
-  R \propto v_0^2
-  $$
+  
+$$R \propto v_0^2$$
+  
 
 📌 **Effect of Gravitational Acceleration:**  
 
-- Since \( g \) is in the denominator, **an increase in gravity decreases the range**:  
+- Since $g$ is in the denominator, **an increase in gravity decreases the range**:  
 
-  $$
-  R \propto \frac{1}{g}
-  $$
+$$R \propto \frac{1}{g}$$
 
 - If gravity is lower, the projectile will travel further.  
 
 ### **Summary**  
 
-$$
-\text{Maximum Range at } \theta = 45^\circ
-$$
+$$\text{Maximum Range at } \theta = 45^\circ$$
 
-$$
-R \text{ increases with } v_0
-$$
+$$R \text{ increases with } v_0$$
 
-$$
-R \text{ decreases with } g
-$$
+$$R \text{ decreases with } g$$
+
 ----
 
 ## **3. Practical Applications**  
@@ -168,37 +161,37 @@ In real-world scenarios, projectile motion is influenced by additional factors s
 
 ### **3.1 Uneven Terrain**  
 
-If the landing height differs from the launch height, the range equation must be modified. The general equation for projectile motion with different initial ($ y_0 $) and final heights ($ y_f $) is:  
+If the landing height differs from the launch height, the range equation must be modified. The general equation for projectile motion with different initial ($y_0$) and final heights ($y_f$) is:  
 
 $$
 y_f = y_0 + v_0 \sin(\theta) t - \frac{1}{2} g t^2
 $$
 
-Solving for $ t $ and substituting into the range equation allows for trajectory adjustments on slopes.
+Solving for $t$ and substituting into the range equation allows for trajectory adjustments on slopes.
 
 ---
 ### **3.2 Air Resistance**  
 
-In real-world motion, air resistance applies a force opposite to the velocity, modifying both range and trajectory. The equation of motion considering drag force $ F_d = -kv $ leads to a more complex system:  
+In real-world motion, air resistance applies a force opposite to the velocity, modifying both range and trajectory. The equation of motion considering drag force $F_d = -kv$ leads to a more complex system:  
 
 $$
 m \frac{d v}{d t} = -mg - kv
 $$
 
-where $ k $ is the drag coefficient. As a result:
-- The range is reduced ($ R < R_{ideal} $).
+where $k$ is the drag coefficient. As a result:
+- The range is reduced ($R < R_{ideal}$).
 - The trajectory is no longer perfectly parabolic.  
 
 ---
 ### **3.3 Gravity Variations**  
 
-On different planets, gravity $ g $ changes, affecting the range:  
+On different planets, gravity $g$ changes, affecting the range:  
 
 $$
 R = \frac{v_0^2 \sin(2\theta)}{g}
 $$
 
-For example, on the Moon ($ g \approx 1.63 \, \text{m/s}^2 $), the range increases significantly compared to Earth.  
+For example, on the Moon ($g \approx 1.63 \, \text{m/s}^2$), the range increases significantly compared to Earth.  
 
 ### **Conclusion**  
 
