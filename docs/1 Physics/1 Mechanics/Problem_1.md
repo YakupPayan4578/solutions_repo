@@ -23,7 +23,7 @@ Where:
 - ($ \theta $) is the angle of projection (the angle the object is thrown at relative to the ground).
 - ($ g $) is the acceleration due to gravity (approximately $ 9.8 \, \text{m/s}^2 $).
 
-In this formula, you can see that the range depends on both the initial speed and the angle. The best range is achieved when the angle is around 45 degrees because \($ \sin(90^\circ) $\) = 1 , giving the maximum possible range.
+In this formula, you can see that the range depends on both the initial speed and the angle. The best range is achieved when the angle is around 45 degrees because $ \sin(90^\circ) $ = 1 , giving the maximum possible range.
 
 ![alt text](image.png)
 
