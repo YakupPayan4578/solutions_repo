@@ -69,7 +69,7 @@ $$
 
 ## 1.3 Changes in Launch Angle and Initial Velocity
  **Changes in Launch Angle**:
-The launch angle $ \theta $ determines how steep or flat the projectile is launched. Different launch angles affect the projectile's trajectory in the following ways:
+The launch angle $\theta$ determines how steep or flat the projectile is launched. Different launch angles affect the projectile's trajectory in the following ways:
 
 - **Low angles** (e.g. 15°): The projectile follows a flatter path and reaches the ground quickly, covering less horizontal distance.
 - **Medium angles** (e.g. 45°): The projectile achieves a good balance of horizontal distance and vertical height, reaching the ***maximum range***.
@@ -113,15 +113,14 @@ Where:
 
 - When $\theta = 0^\circ$ or $90^\circ$, the range is zero because:
 
-  $$
-  \sin(0) = 0, \quad \sin(180^\circ) = 0
-  $$
+
+$$\sin(0) = 0, \quad \sin(180^\circ) = 0$$
 
 - The **maximum range** occurs at $45^\circ$ because:
 
-  $$
-  \sin(90^\circ) = 1
-  $$
+
+$$\sin(90^\circ) = 1$$
+
 
 - For angles lower or higher than $45^\circ$, the range decreases.  
 ----
