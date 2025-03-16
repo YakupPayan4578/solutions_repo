@@ -123,6 +123,8 @@ $$\sin(90^\circ) = 1$$
 
 
 - For angles lower or higher than $45^\circ$, the range decreases.  
+
+
 ----
 ### **2.2 Effect of Other Parameters**  
 
