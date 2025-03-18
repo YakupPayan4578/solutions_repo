@@ -7,12 +7,12 @@
    $$ \frac{d^2\theta}{dt^2} + b\frac{d\theta}{dt} + \frac{g}{L}\sin\theta = A\cos(\omega t) $$
 
    where:
-   - \( \theta \) is the angle of the pendulum.
-   - \( b \) is the damping coefficient.
-   - \( g \) is the gravitational acceleration.
-   - \( L \) is the length of the pendulum.
-   - \( A \) is the amplitude of the external driving force.
-   - \( \omega \) is the frequency of the external force.
+   - $\theta$ is the angle of the pendulum.
+   - $b$ is the damping coefficient.
+   - $g$ is the gravitational acceleration.
+   - $L$ is the length of the pendulum.
+   - $A$ is the amplitude of the external driving force.
+   - $\omega$ is the frequency of the external force.
 
 ---
 
