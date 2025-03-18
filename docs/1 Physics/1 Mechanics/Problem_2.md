@@ -1,6 +1,6 @@
-### Theoretical Foundation
+### 1.  Theoretical Foundation
 
-1. **Differential Equation for Forced Damped Pendulum**
+**Differential Equation for Forced Damped Pendulum**
 
    The governing equation for the motion of a forced damped pendulum is:
 
@@ -17,9 +17,9 @@
 
 ---
 
-### Approximate Solutions for Small-Angle Oscillations
+### 2. Approximate Solutions for Small-Angle Oscillations
 
-2. **Small-Angle Approximation**
+**Small-Angle Approximation**
 
    For small oscillations $\theta$ is small, we can approximate $\sin\theta \approx \theta$. This simplifies the differential equation to:
 
@@ -51,9 +51,9 @@
 
 ---
 
-### Resonance Conditions and Energy Implications
+### 3. Resonance Conditions and Energy Implications
 
-3. **Resonance Conditions**
+**Resonance Conditions**
 
    Resonance occurs when the driving frequency $\omega$ matches the natural frequency of the pendulum, i.e., $\omega \approx \omega_0$. Under these conditions, the amplitude of oscillations can grow significantly, and the system absorbs maximum energy from the external force.
 
@@ -65,9 +65,9 @@
 
 ---
 
-### Analysis of Dynamics
+### 4. Analysis of Dynamics
 
-4. **Influence of Damping, Amplitude, and Frequency**
+**Influence of Damping, Amplitude, and Frequency**
 
    The damping coefficient $b$, driving amplitude $A$, and frequency $\omega$ all play crucial roles in the motion of the pendulum:
 
@@ -75,15 +75,15 @@
    - **Driving Amplitude**: A larger external force amplitude increases the oscillation amplitude, especially near resonance.
    - **Driving Frequency**: The frequency affects how the system responds to external forcing. Near resonance, the system oscillates with large amplitude. If the driving frequency is far from resonance, the oscillations will be smaller.
 
-5. **Transition to Chaos**
+   **Transition to Chaos**
 
    As the driving force increases or the system is pushed further from resonance, the system can transition from regular periodic motion to chaotic behavior. This occurs due to the nonlinear nature of the system, especially at higher driving amplitudes and frequencies.
 
 ---
 
-### Practical Applications
+### 6. Practical Applications
 
-6. **Real-World Scenarios**
+**Real-World Scenarios**
 
    The forced damped pendulum model can be applied in various real-world scenarios, such as:
 
