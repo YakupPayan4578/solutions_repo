@@ -23,13 +23,13 @@
 
    For small oscillations $\theta$ is small, we can approximate $\sin\theta \approx \theta$. This simplifies the differential equation to:
 
-   $$\frac{d^2\theta}{dt^2} + b\frac{d\theta}{dt} + \frac{g}{L}\theta = A\cos(\omega t)$$
+   $$ \frac{d^2\theta}{dt^2} + b\frac{d\theta}{dt} + \frac{g}{L}\theta = A\cos(\omega t) $$
 
    This is a second-order linear non-homogeneous differential equation with constant coefficients.
 
    The solution to this equation can be written as:
 
-   $$\theta(t) = \theta_h(t) + \theta_p(t)$$
+   $$ \theta(t) = \theta_h(t) + \theta_p(t) $$
 
    where:
    - $\theta_h(t)$ is the homogeneous solution, which describes the natural oscillations of the system.
@@ -37,17 +37,17 @@
 
    The homogeneous solution is of the form:
 
-   $$\theta_h(t) = C_1 e^{-\gamma t} \cos(\omega_0 t + C_2)$$
+   $$ \theta_h(t) = C_1 e^{-\gamma t} \cos(\omega_0 t + C_2) $$
 
    where $\gamma = \frac{b}{2m}$ is the damping coefficient, and $\omega_0 = \sqrt{\frac{g}{L}}$ is the natural frequency of the undamped pendulum.
 
    The particular solution, assuming a steady-state oscillation with the same frequency $\omega$ as the external force, can be written as:
 
-   $$\theta_p(t) = \frac{A}{\sqrt{(\omega_0^2 - \omega^2)^2 + (2\gamma \omega)^2}} \cos(\omega t - \delta)$$
+   $$ \theta_p(t) = \frac{A}{\sqrt{(\omega_0^2 - \omega^2)^2 + (2\gamma \omega)^2}} \cos(\omega t - \delta) $$
 
    where $\delta$ is the phase shift, given by:
 
-   $$\tan(\delta) = \frac{2\gamma \omega}{\omega_0^2 - \omega^2}$$
+   $$ \tan(\delta) = \frac{2\gamma \omega}{\omega_0^2 - \omega^2} $$
 
 ---
 
@@ -59,7 +59,7 @@
 
    At resonance, the amplitude is given by:
 
-   $$A_{\text{max}} = \frac{A}{2\gamma \omega}$$
+   $$ A_{\text{max}} = \frac{A}{2\gamma \omega} $$
 
    The energy in the system increases as the damping is reduced, and the system oscillates with higher amplitude.
 
