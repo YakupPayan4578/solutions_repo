@@ -54,11 +54,11 @@
 
 3. **Resonance Conditions**
 
-   Resonance occurs when the driving frequency \( \omega \) matches the natural frequency of the pendulum, i.e., \( \omega \approx \omega_0 \). Under these conditions, the amplitude of oscillations can grow significantly, and the system absorbs maximum energy from the external force.
+   Resonance occurs when the driving frequency $\omega$ matches the natural frequency of the pendulum, i.e., $\omega \approx \omega_0$. Under these conditions, the amplitude of oscillations can grow significantly, and the system absorbs maximum energy from the external force.
 
    At resonance, the amplitude is given by:
 
-   $$ A_{\text{max}} = \frac{A}{2\gamma \omega} $$
+   $$A_{\text{max}} = \frac{A}{2\gamma \omega}$$
 
    The energy in the system increases as the damping is reduced, and the system oscillates with higher amplitude.
 
@@ -68,7 +68,7 @@
 
 4. **Influence of Damping, Amplitude, and Frequency**
 
-   The damping coefficient \( b \), driving amplitude \( A \), and frequency \( \omega \) all play crucial roles in the motion of the pendulum:
+   The damping coefficient $b$, driving amplitude $A$, and frequency $\omega$ all play crucial roles in the motion of the pendulum:
 
    - **Damping**: As the damping increases, the amplitude of oscillations decreases, and the system eventually reaches a steady state where the amplitude is constant.
    - **Driving Amplitude**: A larger external force amplitude increases the oscillation amplitude, especially near resonance.
