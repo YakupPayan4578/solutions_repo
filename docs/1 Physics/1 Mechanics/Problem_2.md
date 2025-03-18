@@ -4,7 +4,11 @@
 
    The governing equation for the motion of a forced damped pendulum is:
 
-   $$ \frac{d^2\theta}{dt^2} + b\frac{d\theta}{dt} + \frac{g}{L}\sin\theta = A\cos(\omega t) $$
+$$
+
+   \frac{d^2\theta}{dt^2} + b\frac{d\theta}{dt} + \frac{g}{L}\sin\theta = A\cos(\omega t)
+
+$$
 
    where:
    - $\theta$ is the angle of the pendulum.
