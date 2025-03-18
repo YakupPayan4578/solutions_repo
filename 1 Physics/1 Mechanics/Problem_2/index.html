@@ -189,21 +189,21 @@
 <ol>
 <li><strong>Small-Angle Approximation</strong></li>
 </ol>
-<p>For small oscillations (<span class="arithmatex">\( \theta \)</span> is small), we can approximate <span class="arithmatex">\( \sin\theta \approx \theta \)</span>. This simplifies the differential equation to:</p>
-<p>$$ \frac{d^2\theta}{dt^2} + b\frac{d\theta}{dt} + \frac{g}{L}\theta = A\cos(\omega t) $$</p>
+<p>For small oscillations <span class="arithmatex">\(\theta\)</span> is small, we can approximate <span class="arithmatex">\(\sin\theta \approx \theta\)</span>. This simplifies the differential equation to:</p>
+<p><span class="arithmatex">\(<span class="arithmatex">\(\frac{d^2\theta}{dt^2} + b\frac{d\theta}{dt} + \frac{g}{L}\theta = A\cos(\omega t)\)</span>\)</span></p>
 <p>This is a second-order linear non-homogeneous differential equation with constant coefficients.</p>
 <p>The solution to this equation can be written as:</p>
-<p>$$ \theta(t) = \theta_h(t) + \theta_p(t) $$</p>
+<p><span class="arithmatex">\(<span class="arithmatex">\(\theta(t) = \theta_h(t) + \theta_p(t)\)</span>\)</span></p>
 <p>where:
-   - <span class="arithmatex">\( \theta_h(t) \)</span> is the homogeneous solution, which describes the natural oscillations of the system.
-   - <span class="arithmatex">\( \theta_p(t) \)</span> is the particular solution, which describes the response due to the external forcing term.</p>
+   - <span class="arithmatex">\(\theta_h(t)\)</span> is the homogeneous solution, which describes the natural oscillations of the system.
+   - <span class="arithmatex">\(\theta_p(t)\)</span> is the particular solution, which describes the response due to the external forcing term.</p>
 <p>The homogeneous solution is of the form:</p>
-<p>$$ \theta_h(t) = C_1 e^{-\gamma t} \cos(\omega_0 t + C_2) $$</p>
-<p>where <span class="arithmatex">\( \gamma = \frac{b}{2m} \)</span> is the damping coefficient, and <span class="arithmatex">\( \omega_0 = \sqrt{\frac{g}{L}} \)</span> is the natural frequency of the undamped pendulum.</p>
-<p>The particular solution, assuming a steady-state oscillation with the same frequency <span class="arithmatex">\( \omega \)</span> as the external force, can be written as:</p>
-<p>$$ \theta_p(t) = \frac{A}{\sqrt{(\omega_0^2 - \omega^2)^2 + (2\gamma \omega)^2}} \cos(\omega t - \delta) $$</p>
-<p>where <span class="arithmatex">\( \delta \)</span> is the phase shift, given by:</p>
-<p>$$ \tan(\delta) = \frac{2\gamma \omega}{\omega_0^2 - \omega^2} $$</p>
+<p><span class="arithmatex">\(<span class="arithmatex">\(\theta_h(t) = C_1 e^{-\gamma t} \cos(\omega_0 t + C_2)\)</span>\)</span></p>
+<p>where <span class="arithmatex">\(\gamma = \frac{b}{2m}\)</span> is the damping coefficient, and <span class="arithmatex">\(\omega_0 = \sqrt{\frac{g}{L}}\)</span> is the natural frequency of the undamped pendulum.</p>
+<p>The particular solution, assuming a steady-state oscillation with the same frequency <span class="arithmatex">\(\omega\)</span> as the external force, can be written as:</p>
+<p><span class="arithmatex">\(<span class="arithmatex">\(\theta_p(t) = \frac{A}{\sqrt{(\omega_0^2 - \omega^2)^2 + (2\gamma \omega)^2}} \cos(\omega t - \delta)\)</span>\)</span></p>
+<p>where <span class="arithmatex">\(\delta\)</span> is the phase shift, given by:</p>
+<p><span class="arithmatex">\(<span class="arithmatex">\(\tan(\delta) = \frac{2\gamma \omega}{\omega_0^2 - \omega^2}\)</span>\)</span></p>
 <hr/>
 <h3 id="resonance-conditions-and-energy-implications">Resonance Conditions and Energy Implications</h3>
 <ol>
