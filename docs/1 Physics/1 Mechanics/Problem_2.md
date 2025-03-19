@@ -1,4 +1,4 @@
-### 1.  Theoretical Foundation
+###  1.  Theoretical Foundation
 
 **Differential Equation for Forced Damped Pendulum**
 
@@ -17,7 +17,7 @@
 
 ---
 
-### 2. Approximate Solutions for Small-Angle Oscillations
+###  2. Approximate Solutions for Small-Angle Oscillations
 
 **Small-Angle Approximation**
 
@@ -51,7 +51,7 @@
 
 ---
 
-### 3. Resonance Conditions and Energy Implications
+###  3. Resonance Conditions and Energy Implications
 
 **Resonance Conditions**
 
@@ -65,7 +65,7 @@
 
 ---
 
-### 4. Analysis of Dynamics
+###  4. Analysis of Dynamics
 
 **Influence of Damping, Amplitude, and Frequency**
 
@@ -81,7 +81,7 @@
 
 ---
 
-### 6. Practical Applications
+###   5. Practical Applications
 
 **Real-World Scenarios**
 
