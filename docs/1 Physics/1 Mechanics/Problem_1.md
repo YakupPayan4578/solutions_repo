@@ -85,7 +85,7 @@ Changes in the initial velocity also lead to different solutions. Even with the 
 
 ![alt text](image-3.png)
 
-[colabLinkOfGraph](https://colab.research.google.com/drive/1mG9TDtRfRlfctXJZPtWLedPvlEVRCYe-#scrollTo=iSXNO6VTbBPy)
+[myColab](https://colab.research.google.com/drive/1mG9TDtRfRlfctXJZPtWLedPvlEVRCYe-#scrollTo=iSXNO6VTbBPy)
 
 This graph shows the trajectories plotted for different initial velocities (10 m/s, 20 m/s, 30 m/s) and angles (30°, 45°, 60°). The following points stand out in the graph:
 
