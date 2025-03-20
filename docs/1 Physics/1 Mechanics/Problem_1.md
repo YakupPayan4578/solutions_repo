@@ -83,7 +83,7 @@ The initial velocity $v_0$ is the speed at which the projectile is launched. Inc
 
 Changes in the initial velocity also lead to different solutions. Even with the same launch angle, increasing the initial velocity results in larger trajectories and longer ranges.
 
-![alt text](image-4.png)
+
 
 [myColab](https://colab.research.google.com/drive/1mG9TDtRfRlfctXJZPtWLedPvlEVRCYe-#scrollTo=iSXNO6VTbBPy)
 
@@ -207,7 +207,7 @@ In practical applications, projectile motion deviates from the idealized model d
 
 ### 4.1 Projectile Motion: Effects of Gravity, Angle, and Initial Velocity
 
- [myColab](https://colab.research.google.com/drive/1mG9TDtRfRlfctXJZPtWLedPvlEVRCYe-#scrollTo=ypS30_zpL9aM) 
+![alt text](image-4.png)
 
 This graph visualizes the effects of different **initial velocities**, **angles**, and **gravity values** on **projectile motion**. Each line in the graph represents a different combination of **initial velocity**, **angle**, and **gravity**.
 
