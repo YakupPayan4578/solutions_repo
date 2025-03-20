@@ -83,7 +83,9 @@ The initial velocity $v_0$ is the speed at which the projectile is launched. Inc
 
 Changes in the initial velocity also lead to different solutions. Even with the same launch angle, increasing the initial velocity results in larger trajectories and longer ranges.
 
-![alt text](image-1.png)
+![alt text](image-3.png)
+
+[colabLinkOfGraph](https://colab.research.google.com/drive/1mG9TDtRfRlfctXJZPtWLedPvlEVRCYe-#scrollTo=iSXNO6VTbBPy)
 
 This graph shows the trajectories plotted for different initial velocities (10 m/s, 20 m/s, 30 m/s) and angles (30°, 45°, 60°). The following points stand out in the graph:
 
@@ -198,14 +200,14 @@ For example, on the Moon ($g \approx 1.63 \, \text{m/s}^2$), the range increases
 
 In practical applications, projectile motion deviates from the idealized model due to environmental factors. By incorporating these effects, more accurate predictions can be made for fields such as **ballistics, sports, and space exploration**.
 
-![alt text](image-2.png)
+
 
 ---
 
 
 ### 4.1 Projectile Motion: Effects of Gravity, Angle, and Initial Velocity
 
-https://colab.research.google.com/drive/1mG9TDtRfRlfctXJZPtWLedPvlEVRCYe-#scrollTo=ypS30_zpL9aM
+ [myColab](https://colab.research.google.com/drive/1mG9TDtRfRlfctXJZPtWLedPvlEVRCYe-#scrollTo=ypS30_zpL9aM) 
 
 This graph visualizes the effects of different **initial velocities**, **angles**, and **gravity values** on **projectile motion**. Each line in the graph represents a different combination of **initial velocity**, **angle**, and **gravity**.
 
