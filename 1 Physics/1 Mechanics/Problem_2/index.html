@@ -50,6 +50,14 @@
 </li>
 <li class="toctree-l2 current"><a class="reference internal current" href="#">Problem 2</a>
 <ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="#equation-of-motion">Equation of Motion</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#small-angle-approximation">Small-Angle Approximation</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#general-solution">General Solution</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#resonance-condition">Resonance Condition</a>
+</li>
 </ul>
 </li>
 </ul>
@@ -171,116 +179,76 @@
 </div>
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
-<h3 id="1-theoretical-foundation">1.  Theoretical Foundation</h3>
-<p><strong>Differential Equation for Forced Damped Pendulum</strong></p>
-<p>The governing equation for the motion of a forced damped pendulum is:</p>
-<p>$$ \frac{d^2\theta}{dt^2} + b\frac{d\theta}{dt} + \frac{g}{L}\sin\theta = A\cos(\omega t) $$</p>
-<p>where:</p>
-<ul>
-<li><span class="arithmatex">\(\theta\)</span> is the angle of the pendulum.</li>
-<li><span class="arithmatex">\(b\)</span> is the damping coefficient.</li>
-<li><span class="arithmatex">\(g\)</span> is the gravitational acceleration.</li>
-<li><span class="arithmatex">\(L\)</span> is the length of the pendulum.</li>
-<li><span class="arithmatex">\(A\)</span> is the amplitude of the external driving force.</li>
-<li><span class="arithmatex">\(\omega\)</span> is the frequency of the external force.</li>
-</ul>
-<hr/>
-<h3 id="2-approximate-solutions-for-small-angle-oscillations">2. Approximate Solutions for Small-Angle Oscillations</h3>
-<p><strong>Small-Angle Approximation</strong></p>
-<p>For small oscillations <span class="arithmatex">\(\theta\)</span> is small, we can approximate <span class="arithmatex">\(\sin\theta \approx \theta\)</span>. This simplifies the differential equation to:</p>
-<p>$$ \frac{d^2\theta}{dt^2} + b\frac{d\theta}{dt} + \frac{g}{L}\theta = A\cos(\omega t) $$</p>
-<p>This is a second-order linear non-homogeneous differential equation with constant coefficients.</p>
-<p>The solution to this equation can be written as:</p>
-<p>$$ \theta(t) = \theta_h(t) + \theta_p(t) $$</p>
+<h2 id="theoretical-foundation-forced-damped-pendulum"><strong>Theoretical Foundation: Forced Damped Pendulum</strong></h2>
+<h3 id="equation-of-motion"><strong>Equation of Motion</strong></h3>
+<p>The equation governing the motion of a forced damped pendulum is given by:</p>
+<div class="arithmatex">\[
+\frac{d^2\theta}{dt^2} + b\frac{d\theta}{dt} + \frac{g}{L}\sin\theta = A\cos(\omega t)
+\]</div>
 <p>where:
-   - <span class="arithmatex">\(\theta_h(t)\)</span> is the homogeneous solution, which describes the natural oscillations of the system.
-   - <span class="arithmatex">\(\theta_p(t)\)</span> is the particular solution, which describes the response due to the external forcing term.</p>
-<p>The homogeneous solution is of the form:</p>
-<p>$$ \theta_h(t) = C_1 e^{-\gamma t} \cos(\omega_0 t + C_2) $$</p>
-<p>where <span class="arithmatex">\(\gamma = \frac{b}{2m}\)</span> is the damping coefficient, and <span class="arithmatex">\(\omega_0 = \sqrt{\frac{g}{L}}\)</span> is the natural frequency of the undamped pendulum.</p>
-<p>The particular solution, assuming a steady-state oscillation with the same frequency <span class="arithmatex">\(\omega\)</span> as the external force, can be written as:</p>
-<p>$$ \theta_p(t) = \frac{A}{\sqrt{(\omega_0^2 - \omega^2)^2 + (2\gamma \omega)^2}} \cos(\omega t - \delta) $$</p>
-<p>where <span class="arithmatex">\(\delta\)</span> is the phase shift, given by:</p>
-<p>$$ \tan(\delta) = \frac{2\gamma \omega}{\omega_0^2 - \omega^2} $$</p>
+- <span class="arithmatex">\(\theta\)</span> is the angular displacement,
+- <span class="arithmatex">\(b\)</span> is the damping coefficient,
+- <span class="arithmatex">\(g\)</span> is the acceleration due to gravity,
+- <span class="arithmatex">\(L\)</span> is the length of the pendulum,
+- <span class="arithmatex">\(A\)</span> is the amplitude of the external force,
+- <span class="arithmatex">\(\omega\)</span> is the driving frequency.</p>
+<h3 id="small-angle-approximation"><strong>Small-Angle Approximation</strong></h3>
+<p>For small oscillations, we approximate:</p>
+<div class="arithmatex">\[
+\sin\theta \approx \theta
+\]</div>
+<p>which simplifies the equation to:</p>
+<div class="arithmatex">\[
+\frac{d^2\theta}{dt^2} + b\frac{d\theta}{dt} + \frac{g}{L} \theta = A \cos(\omega t)
+\]</div>
+<p>This is a linear second-order nonhomogeneous differential equation, which can be solved using standard methods.</p>
+<h3 id="general-solution"><strong>General Solution</strong></h3>
+<p>The general solution consists of two parts:</p>
+<ol>
+<li><strong>Homogeneous Solution (Natural Response)</strong></li>
+</ol>
+<p>$$
+   \theta_h (t) = C_1 e^{r_1 t} + C_2 e^{r_2 t}
+   $$</p>
+<p>where <span class="arithmatex">\(r_1\)</span> and <span class="arithmatex">\(r_2\)</span> are roots of the characteristic equation:</p>
+<p>$$
+   r^2 + br + \frac{g}{L} = 0
+   $$</p>
+<p>The nature of the roots determines the damping behavior:
+   - <strong>Overdamped</strong>: Two real distinct roots.
+   - <strong>Critically damped</strong>: Two equal real roots.
+   - <strong>Underdamped</strong>: Complex conjugate roots leading to oscillatory motion.</p>
+<ol>
+<li><strong>Particular Solution (Forced Response)</strong></li>
+</ol>
+<p>For the external force <span class="arithmatex">\(A \cos(\omega t)\)</span>, we assume a solution of the form:</p>
+<p>$$
+   \theta_p (t) = B \cos(\omega t) + C \sin(\omega t)
+   $$</p>
+<p>Substituting into the differential equation and solving for <span class="arithmatex">\(B\)</span> and <span class="arithmatex">\(C\)</span>, we obtain:</p>
+<p>$$
+   B = \frac{A (\frac{g}{L} - \omega^2)}{(\frac{g}{L} - \omega^2)^2 + (b\omega)^2}, \quad C = \frac{A b \omega}{(\frac{g}{L} - \omega^2)^2 + (b\omega)^2}
+   $$</p>
+<p>The steady-state solution can then be written as:</p>
+<p>$$
+   \theta_p (t) = \Theta_0 \cos(\omega t - \delta)
+   $$</p>
+<p>where:</p>
+<p>$$
+   \Theta_0 = \frac{A}{\sqrt{(\frac{g}{L} - \omega^2)^2 + (b\omega)^2}}
+   $$</p>
+<p>and the phase shift <span class="arithmatex">\(\delta\)</span> is given by:</p>
+<p>$$
+   \tan \delta = \frac{b\omega}{\frac{g}{L} - \omega^2}
+   $$</p>
+<h3 id="resonance-condition"><strong>Resonance Condition</strong></h3>
+<p>Resonance occurs when the driving frequency <span class="arithmatex">\(\omega\)</span> is close to the natural frequency:</p>
+<div class="arithmatex">\[
+\omega_0 = \sqrt{\frac{g}{L}}
+\]</div>
+<p>At resonance, the amplitude <span class="arithmatex">\(\Theta_0\)</span> becomes maximum, leading to significant oscillations. This is critical in engineering applications such as <strong>vibration control</strong> and <strong>mechanical resonance avoidance</strong>.</p>
 <hr/>
-<h3 id="3-resonance-conditions-and-energy-implications">3. Resonance Conditions and Energy Implications</h3>
-<p><strong>Resonance Conditions</strong></p>
-<p>Resonance occurs when the driving frequency <span class="arithmatex">\(\omega\)</span> matches the natural frequency of the pendulum, i.e., <span class="arithmatex">\(\omega \approx \omega_0\)</span>. Under these conditions, the amplitude of oscillations can grow significantly, and the system absorbs maximum energy from the external force.</p>
-<p>At resonance, the amplitude is given by:</p>
-<p>$$ A_{\text{max}} = \frac{A}{2\gamma \omega} $$</p>
-<p>The energy in the system increases as the damping is reduced, and the system oscillates with higher amplitude.</p>
-<hr/>
-<h3 id="4-analysis-of-dynamics">4. Analysis of Dynamics</h3>
-<p><strong>Influence of Damping, Amplitude, and Frequency</strong></p>
-<p>The damping coefficient <span class="arithmatex">\(b\)</span>, driving amplitude <span class="arithmatex">\(A\)</span>, and frequency <span class="arithmatex">\(\omega\)</span> all play crucial roles in the motion of the pendulum:</p>
-<ul>
-<li><strong>Damping</strong>: As the damping increases, the amplitude of oscillations decreases, and the system eventually reaches a steady state where the amplitude is constant.</li>
-<li><strong>Driving Amplitude</strong>: A larger external force amplitude increases the oscillation amplitude, especially near resonance.</li>
-<li><strong>Driving Frequency</strong>: The frequency affects how the system responds to external forcing. Near resonance, the system oscillates with large amplitude. If the driving frequency is far from resonance, the oscillations will be smaller.</li>
-</ul>
-<p><strong>Transition to Chaos</strong></p>
-<p>As the driving force increases or the system is pushed further from resonance, the system can transition from regular periodic motion to chaotic behavior. This occurs due to the nonlinear nature of the system, especially at higher driving amplitudes and frequencies.</p>
-<hr/>
-<h3 id="5-practical-applications">5. Practical Applications</h3>
-<p><strong>Real-World Scenarios</strong></p>
-<p>The forced damped pendulum model can be applied in various real-world scenarios, such as:</p>
-<ul>
-<li><strong>Energy Harvesting</strong>: The resonance phenomenon can be used to extract energy from mechanical vibrations.</li>
-<li><strong>Suspension Bridges</strong>: The behavior of forced damped oscillations can be used to study how external forces like wind can cause vibrations in suspension bridges.</li>
-<li><strong>Oscillating Circuits</strong>: The model is analogous to driven RLC circuits, where the current oscillates under the influence of an external alternating voltage.</li>
-</ul>
-<hr/>
-<h3 id="computational-model">Computational Model</h3>
-<p>Now, let's create a Python script to simulate the dynamics of the forced damped pendulum using numerical methods like the Runge-Kutta method.</p>
-<h4 id="python-code-for-forced-damped-pendulum-simulation">Python Code for Forced Damped Pendulum Simulation</h4>
-<pre><code class="language-python">import numpy as np
-import matplotlib.pyplot as plt
-from scipy.integrate import solve_ivp
-
-# Constants
-g = 9.81  # gravitational acceleration (m/s^2)
-L = 1.0   # length of the pendulum (m)
-b = 0.2   # damping coefficient
-A = 0.5   # amplitude of external force
-omega = 2.0  # driving frequency
-
-# Equation of motion: d^2theta/dt^2 + b * dtheta/dt + (g/L) * sin(theta) = A * cos(omega * t)
-# This system can be written as two first-order equations:
-# dtheta/dt = v
-# dv/dt = -b * v - (g/L) * sin(theta) + A * cos(omega * t)
-
-def forced_damped_pendulum(t, y):
-    theta, v = y
-    dydt = [v, -b*v - (g/L)*np.sin(theta) + A*np.cos(omega*t)]
-    return dydt
-
-# Initial conditions: theta(0) = 0.1 (initial displacement), v(0) = 0 (initial velocity)
-initial_conditions = [0.1, 0]
-
-# Time span for simulation
-t_span = (0, 100)
-t_eval = np.linspace(0, 100, 10000)
-
-# Solve the system using solve_ivp
-solution = solve_ivp(forced_damped_pendulum, t_span, initial_conditions, t_eval=t_eval)
-
-# Plot results
-plt.figure(figsize=(10, 6))
-plt.subplot(2, 1, 1)
-plt.plot(solution.t, solution.y[0])
-plt.title("Displacement vs Time")
-plt.xlabel("Time (s)")
-plt.ylabel("Displacement (theta)")
-
-plt.subplot(2, 1, 2)
-plt.plot(solution.y[0], solution.y[1])
-plt.title("Phase Portrait")
-plt.xlabel("Displacement (theta)")
-plt.ylabel("Velocity (v)")
-
-plt.tight_layout()
-plt.show()
-</code></pre>
+<p>This forms the theoretical foundation. Next, we will analyze how different parameters affect the pendulum's behavior.</p>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
