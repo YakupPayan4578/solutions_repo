@@ -8,12 +8,12 @@ $$
 $$
 
 where:
-- \( \theta \) is the angular displacement,
-- \( b \) is the damping coefficient,
-- \( g \) is the acceleration due to gravity,
-- \( L \) is the length of the pendulum,
-- \( A \) is the amplitude of the external force,
-- \( \omega \) is the driving frequency.
+- $\theta$ is the angular displacement,
+- $b$ is the damping coefficient,
+- $g$ is the acceleration due to gravity,
+- $L$ is the length of the pendulum,
+- $A$ is the amplitude of the external force,
+- $\omega$ is the driving frequency.
 
 ---
 
