@@ -44,72 +44,29 @@ This equation describes the motion of a **pendulum that experiences friction (da
 - The **green line** shows the **gravitational force** that naturally pulls the pendulum back due to gravity.
 
 ---
-### **Small-Angle Approximation**
-For small oscillations, we approximate:
+### **Small-Angle Approximation and Solution Basics**
 
-$$
-\sin\theta \approx \theta
-$$
+For small oscillations, we make an approximation:
 
-which simplifies the equation to:
+- **Small-Angle Approximation**: If the oscillations are small, we mathematically approximate \( \sin \theta \approx \theta \). This simplifies the equation.
 
-$$
-\frac{d^2\theta}{dt^2} + b\frac{d\theta}{dt} + \frac{g}{L} \theta = A \cos(\omega t)
-$$
+This simplified equation is a second-order differential equation, and its solution consists of two parts:
 
-This is a linear second-order nonhomogeneous differential equation, which can be solved using standard methods.
+#### 1️⃣ **Natural Oscillation (Homogeneous Solution)**
 
-### **General Solution**
-The general solution consists of two parts:
+This represents the motion of the pendulum without any external force, only due to its natural movement. This solution determines how quickly or slowly the pendulum stops:
 
-1. **Homogeneous Solution (Natural Response)**
+- **Overdamped**: The motion stops slowly.
+- **Critically damped**: The motion stops as quickly as possible.
+- **Underdamped**: The motion continues oscillating slowly, with decreasing amplitude.
 
-   $$
-   \theta_h (t) = C_1 e^{r_1 t} + C_2 e^{r_2 t}
-   $$
+#### 2️⃣ **Forced Oscillation (Particular Solution)**
 
-   where $r_1$ and $r_2$ are roots of the characteristic equation:
+This part shows how an external force (like a motor pushing the pendulum) affects the motion. This external force causes the pendulum to oscillate regularly and continuously.
 
-   $$
-   r^2 + br + \frac{g}{L} = 0
-   $$
+- **As a result**: The pendulum both performs its natural motion (oscillation) and continues with the motion influenced by the external force. When the frequency of the external force matches the natural frequency of the pendulum, large oscillations occur (this is called **resonance**).
 
-   The nature of the roots determines the damping behavior:
-   - **Overdamped**: Two real distinct roots.
-   - **Critically damped**: Two equal real roots.
-   - **Underdamped**: Complex conjugate roots leading to oscillatory motion.
-
-2. **Particular Solution (Forced Response)**
-
-   For the external force $A \cos(\omega t)$, we assume a solution of the form:
-
-   $$
-   \theta_p (t) = B \cos(\omega t) + C \sin(\omega t)
-   $$
-
-   Substituting into the differential equation and solving for $B$ and $C$, we obtain:
-
-   $$
-   B = \frac{A (\frac{g}{L} - \omega^2)}{(\frac{g}{L} - \omega^2)^2 + (b\omega)^2}, \quad C = \frac{A b \omega}{(\frac{g}{L} - \omega^2)^2 + (b\omega)^2}
-   $$
-
-   The steady-state solution can then be written as:
-
-   $$
-   \theta_p (t) = \Theta_0 \cos(\omega t - \delta)
-   $$
-
-   where:
-
-   $$
-   \Theta_0 = \frac{A}{\sqrt{(\frac{g}{L} - \omega^2)^2 + (b\omega)^2}}
-   $$
-
-   and the phase shift $\delta$ is given by:
-
-   $$
-   \tan \delta = \frac{b\omega}{\frac{g}{L} - \omega^2}
-   $$
+----
 
 ### **Resonance Condition**
 Resonance occurs when the driving frequency $\omega$ is close to the natural frequency:
