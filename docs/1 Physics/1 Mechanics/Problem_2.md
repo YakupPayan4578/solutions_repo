@@ -7,17 +7,7 @@ $$
 \frac{d^2\theta}{dt^2} + b\frac{d\theta}{dt} + \frac{g}{L}\sin\theta = A\cos(\omega t)
 $$
 
-where:
-- $\theta$ is the angular displacement,
-- $b$ is the damping coefficient,
-- $g$ is the acceleration due to gravity,
-- $L$ is the length of the pendulum,
-- $A$ is the amplitude of the external force,
-- $\omega$ is the driving frequency.
 
-
----
-## **Theoretical Foundation: Forced Damped Pendulum**
 
 ### **Equation of Motion**
 The equation governing the motion of a forced damped pendulum is given by:
