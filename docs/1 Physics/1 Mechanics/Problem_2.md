@@ -38,6 +38,7 @@ This equation describes the motion of a **pendulum that experiences friction (da
 ![alt text](image-5.png)
 
 [myColab](https://colab.research.google.com/drive/1wYsr6B_SVy3TezyFUM-0fcXWtsr5BtDC#scrollTo=3rnYlJ9qD_9o)
+
 - The **blue dashed line** shows the **external force** applied to the pendulum, represented by $A \cos(\omega t)$.
 
 - The **red dotted line** shows the **damping effect**, which represents the energy lost due to friction.
