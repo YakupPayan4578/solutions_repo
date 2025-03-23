@@ -37,6 +37,7 @@ This equation describes the motion of a **pendulum that experiences friction (da
 
 ![alt text](image-5.png)
 
+[myColab](https://colab.research.google.com/drive/1wYsr6B_SVy3TezyFUM-0fcXWtsr5BtDC#scrollTo=3rnYlJ9qD_9o)
 - The **blue dashed line** shows the **external force** applied to the pendulum, represented by $A \cos(\omega t)$.
 
 - The **red dotted line** shows the **damping effect**, which represents the energy lost due to friction.
@@ -44,11 +45,11 @@ This equation describes the motion of a **pendulum that experiences friction (da
 - The **green line** shows the **gravitational force** that naturally pulls the pendulum back due to gravity.
 
 ---
-### **Small-Angle Approximation and Solution Basics**
+### **Small-Angle Approximation**
 
 For small oscillations, we make an approximation:
 
-- **Small-Angle Approximation**: If the oscillations are small, we mathematically approximate \( \sin \theta \approx \theta \). This simplifies the equation.
+- **Small-Angle Approximation**: If the oscillations are small, we mathematically approximate $\sin \theta \approx \theta$. This simplifies the equation.
 
 This simplified equation is a second-order differential equation, and its solution consists of two parts:
 
@@ -65,6 +66,13 @@ This represents the motion of the pendulum without any external force, only due 
 This part shows how an external force (like a motor pushing the pendulum) affects the motion. This external force causes the pendulum to oscillate regularly and continuously.
 
 - **As a result**: The pendulum both performs its natural motion (oscillation) and continues with the motion influenced by the external force. When the frequency of the external force matches the natural frequency of the pendulum, large oscillations occur (this is called **resonance**).
+
+![alt text](image-6.png)
+
+[myColab](https://colab.research.google.com/drive/1W5BrJ2IRU4hmHfhD1-XBj0Qd3gtc22jM#scrollTo=ntODnb6hICHY)
+
+- The **blue line** represents the **natural oscillation**, which gradually decreases over time due to damping.
+- The **green line** shows the **forced oscillation**, which is driven by an external force and continues regularly.
 
 ----
 
