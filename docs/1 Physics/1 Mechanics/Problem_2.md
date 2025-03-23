@@ -15,12 +15,8 @@ where:
 - $A$ is the amplitude of the external force,
 - $\omega$ is the driving frequency.
 
----
-
 ### **📌 Explanation of the Equation**
 This equation describes the motion of a **pendulum that experiences friction (damping) and is influenced by an external periodic force**.
-
----
 
 ### **📘 Breakdown of Each Term**
 1️⃣ **Acceleration Term:**  
