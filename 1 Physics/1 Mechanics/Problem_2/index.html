@@ -56,9 +56,13 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#breakdown-of-each-term">📘 Breakdown of Each Term</a>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#small-angle-approximation">Small-Angle Approximation</a>
+<li class="toctree-l3"><a class="reference internal" href="#small-angle-approximation-and-solution-basics">Small-Angle Approximation and Solution Basics</a>
+<ul>
+<li class="toctree-l4"><a class="reference internal" href="#1-natural-oscillation-homogeneous-solution">1️⃣ Natural Oscillation (Homogeneous Solution)</a>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#general-solution">General Solution</a>
+<li class="toctree-l4"><a class="reference internal" href="#2-forced-oscillation-particular-solution">2️⃣ Forced Oscillation (Particular Solution)</a>
+</li>
+</ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#resonance-condition">Resonance Condition</a>
 </li>
@@ -224,55 +228,25 @@
 </li>
 </ul>
 <hr/>
-<h3 id="small-angle-approximation"><strong>Small-Angle Approximation</strong></h3>
-<p>For small oscillations, we approximate:</p>
-<div class="arithmatex">\[
-\sin\theta \approx \theta
-\]</div>
-<p>which simplifies the equation to:</p>
-<div class="arithmatex">\[
-\frac{d^2\theta}{dt^2} + b\frac{d\theta}{dt} + \frac{g}{L} \theta = A \cos(\omega t)
-\]</div>
-<p>This is a linear second-order nonhomogeneous differential equation, which can be solved using standard methods.</p>
-<h3 id="general-solution"><strong>General Solution</strong></h3>
-<p>The general solution consists of two parts:</p>
-<ol>
-<li><strong>Homogeneous Solution (Natural Response)</strong></li>
-</ol>
-<p>$$
-   \theta_h (t) = C_1 e^{r_1 t} + C_2 e^{r_2 t}
-   $$</p>
-<p>where <span class="arithmatex">\(r_1\)</span> and <span class="arithmatex">\(r_2\)</span> are roots of the characteristic equation:</p>
-<p>$$
-   r^2 + br + \frac{g}{L} = 0
-   $$</p>
-<p>The nature of the roots determines the damping behavior:
-   - <strong>Overdamped</strong>: Two real distinct roots.
-   - <strong>Critically damped</strong>: Two equal real roots.
-   - <strong>Underdamped</strong>: Complex conjugate roots leading to oscillatory motion.</p>
-<ol>
-<li><strong>Particular Solution (Forced Response)</strong></li>
-</ol>
-<p>For the external force <span class="arithmatex">\(A \cos(\omega t)\)</span>, we assume a solution of the form:</p>
-<p>$$
-   \theta_p (t) = B \cos(\omega t) + C \sin(\omega t)
-   $$</p>
-<p>Substituting into the differential equation and solving for <span class="arithmatex">\(B\)</span> and <span class="arithmatex">\(C\)</span>, we obtain:</p>
-<p>$$
-   B = \frac{A (\frac{g}{L} - \omega^2)}{(\frac{g}{L} - \omega^2)^2 + (b\omega)^2}, \quad C = \frac{A b \omega}{(\frac{g}{L} - \omega^2)^2 + (b\omega)^2}
-   $$</p>
-<p>The steady-state solution can then be written as:</p>
-<p>$$
-   \theta_p (t) = \Theta_0 \cos(\omega t - \delta)
-   $$</p>
-<p>where:</p>
-<p>$$
-   \Theta_0 = \frac{A}{\sqrt{(\frac{g}{L} - \omega^2)^2 + (b\omega)^2}}
-   $$</p>
-<p>and the phase shift <span class="arithmatex">\(\delta\)</span> is given by:</p>
-<p>$$
-   \tan \delta = \frac{b\omega}{\frac{g}{L} - \omega^2}
-   $$</p>
+<h3 id="small-angle-approximation-and-solution-basics"><strong>Small-Angle Approximation and Solution Basics</strong></h3>
+<p>For small oscillations, we make an approximation:</p>
+<ul>
+<li><strong>Small-Angle Approximation</strong>: If the oscillations are small, we mathematically approximate <span class="arithmatex">\( \sin \theta \approx \theta \)</span>. This simplifies the equation.</li>
+</ul>
+<p>This simplified equation is a second-order differential equation, and its solution consists of two parts:</p>
+<h4 id="1-natural-oscillation-homogeneous-solution">1️⃣ <strong>Natural Oscillation (Homogeneous Solution)</strong></h4>
+<p>This represents the motion of the pendulum without any external force, only due to its natural movement. This solution determines how quickly or slowly the pendulum stops:</p>
+<ul>
+<li><strong>Overdamped</strong>: The motion stops slowly.</li>
+<li><strong>Critically damped</strong>: The motion stops as quickly as possible.</li>
+<li><strong>Underdamped</strong>: The motion continues oscillating slowly, with decreasing amplitude.</li>
+</ul>
+<h4 id="2-forced-oscillation-particular-solution">2️⃣ <strong>Forced Oscillation (Particular Solution)</strong></h4>
+<p>This part shows how an external force (like a motor pushing the pendulum) affects the motion. This external force causes the pendulum to oscillate regularly and continuously.</p>
+<ul>
+<li><strong>As a result</strong>: The pendulum both performs its natural motion (oscillation) and continues with the motion influenced by the external force. When the frequency of the external force matches the natural frequency of the pendulum, large oscillations occur (this is called <strong>resonance</strong>).</li>
+</ul>
+<hr/>
 <h3 id="resonance-condition"><strong>Resonance Condition</strong></h3>
 <p>Resonance occurs when the driving frequency <span class="arithmatex">\(\omega\)</span> is close to the natural frequency:</p>
 <div class="arithmatex">\[
