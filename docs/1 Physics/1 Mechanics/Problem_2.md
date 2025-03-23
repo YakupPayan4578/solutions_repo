@@ -24,20 +24,20 @@ This equation describes the motion of a **pendulum that experiences friction (da
 
 ### **📘 Breakdown of Each Term**
 1️⃣ **Acceleration Term:**  
-   - $$ \frac{d^2\theta}{dt^2} $$ → Represents the angular acceleration of the pendulum.  
+   - $\frac{d^2\theta}{dt^2}$ → Represents the angular acceleration of the pendulum.  
 
 2️⃣ **Damping (Friction) Term:**  
-   - $$ b\frac{d\theta}{dt} $$ → Represents energy loss due to friction or air resistance.  
-   - **If \( b \) is large** → The motion decays quickly (stops fast).  
-   - **If \( b \) is small** → The pendulum continues oscillating for a long time.  
+   - $b\frac{d\theta}{dt}$ → Represents energy loss due to friction or air resistance.  
+   - **If $b$ is large** → The motion decays quickly (stops fast).  
+   - **If $b$ is small** → The pendulum continues oscillating for a long time.  
 
 3️⃣ **Gravitational Force Term:**  
-   - $$ \frac{g}{L} \sin\theta $$ → Represents the natural oscillation of the pendulum due to gravity.  
+   - $\frac{g}{L} \sin\theta$ → Represents the natural oscillation of the pendulum due to gravity.  
 
 4️⃣ **External Force (Driving) Term:**  
-   - $$ A\cos(\omega t) $$ → Represents the external periodic force applied to the pendulum (e.g., a motor or external push).  
-   - **If \( A \) is large** → The pendulum swings more due to stronger external force.  
-   - **If \( \omega \) matches the natural frequency** → **Resonance occurs**, leading to very large oscillations.  
+   - $A\cos(\omega t)$ → Represents the external periodic force applied to the pendulum (e.g., a motor or external push).  
+   - **If $A$ is large** → The pendulum swings more due to stronger external force.  
+   - **If $\omega$ matches the natural frequency** → **Resonance occurs**, leading to very large oscillations.  
 
 ---
 ### **Small-Angle Approximation**
