@@ -56,7 +56,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#breakdown-of-each-term">📘 Breakdown of Each Term</a>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#small-angle-approximation-and-solution-basics">Small-Angle Approximation and Solution Basics</a>
+<li class="toctree-l3"><a class="reference internal" href="#small-angle-approximation">Small-Angle Approximation</a>
 <ul>
 <li class="toctree-l4"><a class="reference internal" href="#1-natural-oscillation-homogeneous-solution">1️⃣ Natural Oscillation (Homogeneous Solution)</a>
 </li>
@@ -216,10 +216,9 @@
    - <strong>If <span class="arithmatex">\(A\)</span> is large</strong> → The pendulum swings more due to stronger external force.<br/>
    - <strong>If <span class="arithmatex">\(\omega\)</span> matches the natural frequency</strong> → <strong>Resonance occurs</strong>, leading to very large oscillations.  </p>
 <p><img alt="alt text" src="../image-5.png"/></p>
+<p><a href="https://colab.research.google.com/drive/1wYsr6B_SVy3TezyFUM-0fcXWtsr5BtDC#scrollTo=3rnYlJ9qD_9o">myColab</a>
+- The <strong>blue dashed line</strong> shows the <strong>external force</strong> applied to the pendulum, represented by <span class="arithmatex">\(A \cos(\omega t)\)</span>.</p>
 <ul>
-<li>
-<p>The <strong>blue dashed line</strong> shows the <strong>external force</strong> applied to the pendulum, represented by <span class="arithmatex">\(A \cos(\omega t)\)</span>.</p>
-</li>
 <li>
 <p>The <strong>red dotted line</strong> shows the <strong>damping effect</strong>, which represents the energy lost due to friction.</p>
 </li>
@@ -228,10 +227,10 @@
 </li>
 </ul>
 <hr/>
-<h3 id="small-angle-approximation-and-solution-basics"><strong>Small-Angle Approximation and Solution Basics</strong></h3>
+<h3 id="small-angle-approximation"><strong>Small-Angle Approximation</strong></h3>
 <p>For small oscillations, we make an approximation:</p>
 <ul>
-<li><strong>Small-Angle Approximation</strong>: If the oscillations are small, we mathematically approximate <span class="arithmatex">\( \sin \theta \approx \theta \)</span>. This simplifies the equation.</li>
+<li><strong>Small-Angle Approximation</strong>: If the oscillations are small, we mathematically approximate <span class="arithmatex">\(\sin \theta \approx \theta\)</span>. This simplifies the equation.</li>
 </ul>
 <p>This simplified equation is a second-order differential equation, and its solution consists of two parts:</p>
 <h4 id="1-natural-oscillation-homogeneous-solution">1️⃣ <strong>Natural Oscillation (Homogeneous Solution)</strong></h4>
@@ -245,6 +244,12 @@
 <p>This part shows how an external force (like a motor pushing the pendulum) affects the motion. This external force causes the pendulum to oscillate regularly and continuously.</p>
 <ul>
 <li><strong>As a result</strong>: The pendulum both performs its natural motion (oscillation) and continues with the motion influenced by the external force. When the frequency of the external force matches the natural frequency of the pendulum, large oscillations occur (this is called <strong>resonance</strong>).</li>
+</ul>
+<p><img alt="alt text" src="../image-6.png"/></p>
+<p><a href="https://colab.research.google.com/drive/1W5BrJ2IRU4hmHfhD1-XBj0Qd3gtc22jM#scrollTo=ntODnb6hICHY">myColab</a></p>
+<ul>
+<li>The <strong>blue line</strong> represents the <strong>natural oscillation</strong>, which gradually decreases over time due to damping.</li>
+<li>The <strong>green line</strong> shows the <strong>forced oscillation</strong>, which is driven by an external force and continues regularly.</li>
 </ul>
 <hr/>
 <h3 id="resonance-condition"><strong>Resonance Condition</strong></h3>
