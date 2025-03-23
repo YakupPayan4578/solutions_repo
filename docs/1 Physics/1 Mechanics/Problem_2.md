@@ -15,6 +15,50 @@ where:
 - $A$ is the amplitude of the external force,
 - $\omega$ is the driving frequency.
 
+
+---
+## **Theoretical Foundation: Forced Damped Pendulum**
+
+### **Equation of Motion**
+The equation governing the motion of a forced damped pendulum is given by:
+
+$$
+\frac{d^2\theta}{dt^2} + b\frac{d\theta}{dt} + \frac{g}{L}\sin\theta = A\cos(\omega t)
+$$
+
+where:
+- \( \theta \) is the angular displacement,
+- \( b \) is the damping coefficient,
+- \( g \) is the acceleration due to gravity,
+- \( L \) is the length of the pendulum,
+- \( A \) is the amplitude of the external force,
+- \( \omega \) is the driving frequency.
+
+---
+
+### **📌 Explanation of the Equation**
+This equation describes the motion of a **pendulum that experiences friction (damping) and is influenced by an external periodic force**.
+
+---
+
+### **📘 Breakdown of Each Term**
+1️⃣ **Acceleration Term:**  
+   - $$ \frac{d^2\theta}{dt^2} $$ → Represents the angular acceleration of the pendulum.  
+
+2️⃣ **Damping (Friction) Term:**  
+   - $$ b\frac{d\theta}{dt} $$ → Represents energy loss due to friction or air resistance.  
+   - **If \( b \) is large** → The motion decays quickly (stops fast).  
+   - **If \( b \) is small** → The pendulum continues oscillating for a long time.  
+
+3️⃣ **Gravitational Force Term:**  
+   - $$ \frac{g}{L} \sin\theta $$ → Represents the natural oscillation of the pendulum due to gravity.  
+
+4️⃣ **External Force (Driving) Term:**  
+   - $$ A\cos(\omega t) $$ → Represents the external periodic force applied to the pendulum (e.g., a motor or external push).  
+   - **If \( A \) is large** → The pendulum swings more due to stronger external force.  
+   - **If \( \omega \) matches the natural frequency** → **Resonance occurs**, leading to very large oscillations.  
+
+---
 ### **Small-Angle Approximation**
 For small oscillations, we approximate:
 
@@ -120,42 +164,3 @@ We investigate how damping (\(b\)), driving amplitude (\(A\)), and frequency (\(
 
 Below is a Python script that numerically solves the differential equation using the Runge-Kutta method and visualizes the motion.  
 
-```python
-
-import numpy as np
-import matplotlib.pyplot as plt
-from scipy.integrate import solve_ivp
-
-# Parameters
-g = 9.81  # Gravity (m/s^2)
-L = 1.0   # Length of pendulum (m)
-b = 0.2   # Damping coefficient
-A = 1.2   # Driving amplitude
-ω = 1.0   # Driving frequency
-
-# Differential equation
-def forced_damped_pendulum(t, y):
-    θ, ω = y
-    dθ_dt = ω
-    dω_dt = - (g / L) * np.sin(θ) - b * ω + A * np.cos(ω * t)
-    return [dθ_dt, dω_dt]
-
-# Time span
-t_span = (0, 20)
-t_eval = np.linspace(0, 20, 1000)
-
-# Initial conditions
-y0 = [np.pi / 4, 0]
-
-# Solve ODE
-sol = solve_ivp(forced_damped_pendulum, t_span, y0, t_eval=t_eval, method='RK45')
-
-# Plot results
-plt.plot(sol.t, sol.y[0])
-plt.xlabel("Time (s)")
-plt.ylabel("Angular Displacement (rad)")
-plt.title("Forced Damped Pendulum Motion")
-plt.grid()
-plt.show()
-
-```
