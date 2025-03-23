@@ -35,6 +35,14 @@ This equation describes the motion of a **pendulum that experiences friction (da
    - **If $A$ is large** → The pendulum swings more due to stronger external force.  
    - **If $\omega$ matches the natural frequency** → **Resonance occurs**, leading to very large oscillations.  
 
+![alt text](image-5.png)
+
+- The **blue dashed line** shows the **external force** applied to the pendulum, represented by \( A \cos(\omega t) \).
+
+- The **red dotted line** shows the **damping effect**, which represents the energy lost due to friction.
+
+- The **green line** shows the **gravitational force** that naturally pulls the pendulum back due to gravity.
+
 ---
 ### **Small-Angle Approximation**
 For small oscillations, we approximate:
