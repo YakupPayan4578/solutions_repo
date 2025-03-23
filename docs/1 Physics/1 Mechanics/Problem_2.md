@@ -7,15 +7,6 @@ $$
 \frac{d^2\theta}{dt^2} + b\frac{d\theta}{dt} + \frac{g}{L}\sin\theta = A\cos(\omega t)
 $$
 
-
-
-### **Equation of Motion**
-The equation governing the motion of a forced damped pendulum is given by:
-
-$$
-\frac{d^2\theta}{dt^2} + b\frac{d\theta}{dt} + \frac{g}{L}\sin\theta = A\cos(\omega t)
-$$
-
 where:
 - \( \theta \) is the angular displacement,
 - \( b \) is the damping coefficient,
