@@ -138,3 +138,38 @@ We investigate how damping (\(b\)), driving amplitude (\(A\)), and frequency (\(
 
 Below is a Python script that numerically solves the differential equation using the Runge-Kutta method and visualizes the motion.  
 
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.integrate import solve_ivp
+
+# Parametreler
+g = 9.81  # Yerçekimi ivmesi (m/s^2)
+L = 1.0   # Sarkacın uzunluğu (m)
+b = 0.2   # Sönümleme katsayısı
+A = 1.2   # Zorlanma genliği
+omega = 2.0  # Zorlayıcı frekans
+
+# Zorlanmış sönümlü sarkaç denklemi
+def pendulum_eq(t, y):
+    theta, omega_t = y
+    dtheta_dt = omega_t
+    domega_dt = -(g/L) * np.sin(theta) - b * omega_t + A * np.cos(omega * t)
+    return [dtheta_dt, domega_dt]
+
+# Başlangıç koşulları
+y0 = [0.2, 0.0]  # Başlangıç açısı (rad), açısal hız (rad/s)
+t_span = (0, 50)  # Zaman aralığı (0'dan 50 saniyeye kadar)
+t_eval = np.linspace(0, 50, 1000)  # Zaman adımları
+
+# Diferansiyel denklemin çözümü (Runge-Kutta 4/5)
+sol = solve_ivp(pendulum_eq, t_span, y0, t_eval=t_eval, method='RK45')
+
+# Sonuçların görselleştirilmesi
+plt.figure(figsize=(8, 5))
+plt.plot(sol.t, sol.y[0], label='Açısal Yer Değiştirme (theta)')
+plt.xlabel('Zaman (saniye)')
+plt.ylabel('Theta (radyan)')
+plt.title('Zorlanmış Sönümlü Sarkaç Hareketi')
+plt.grid()
+plt.legend()
+plt.show()
