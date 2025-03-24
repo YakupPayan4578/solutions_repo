@@ -301,6 +301,36 @@
 <hr/>
 <h2 id="4-implementation-python-simulation"><strong>4. Implementation: Python Simulation</strong></h2>
 <p>Below is a Python script that numerically solves the differential equation using the Runge-Kutta method and visualizes the motion.  </p>
+<p>import numpy as np
+import matplotlib.pyplot as plt
+from scipy.integrate import solve_ivp</p>
+<h1 id="parametreler">Parametreler</h1>
+<p>g = 9.81  # Yerçekimi ivmesi (m/s^2)
+L = 1.0   # Sarkacın uzunluğu (m)
+b = 0.2   # Sönümleme katsayısı
+A = 1.2   # Zorlanma genliği
+omega = 2.0  # Zorlayıcı frekans</p>
+<h1 id="zorlanms-sonumlu-sarkac-denklemi">Zorlanmış sönümlü sarkaç denklemi</h1>
+<p>def pendulum_eq(t, y):
+    theta, omega_t = y
+    dtheta_dt = omega_t
+    domega_dt = -(g/L) * np.sin(theta) - b * omega_t + A * np.cos(omega * t)
+    return [dtheta_dt, domega_dt]</p>
+<h1 id="baslangc-kosullar">Başlangıç koşulları</h1>
+<p>y0 = [0.2, 0.0]  # Başlangıç açısı (rad), açısal hız (rad/s)
+t_span = (0, 50)  # Zaman aralığı (0'dan 50 saniyeye kadar)
+t_eval = np.linspace(0, 50, 1000)  # Zaman adımları</p>
+<h1 id="diferansiyel-denklemin-cozumu-runge-kutta-45">Diferansiyel denklemin çözümü (Runge-Kutta 4/5)</h1>
+<p>sol = solve_ivp(pendulum_eq, t_span, y0, t_eval=t_eval, method='RK45')</p>
+<h1 id="sonuclarn-gorsellestirilmesi">Sonuçların görselleştirilmesi</h1>
+<p>plt.figure(figsize=(8, 5))
+plt.plot(sol.t, sol.y[0], label='Açısal Yer Değiştirme (theta)')
+plt.xlabel('Zaman (saniye)')
+plt.ylabel('Theta (radyan)')
+plt.title('Zorlanmış Sönümlü Sarkaç Hareketi')
+plt.grid()
+plt.legend()
+plt.show()</p>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
