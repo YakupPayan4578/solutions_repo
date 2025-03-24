@@ -105,6 +105,7 @@ Resonance occurs when an external force is applied at a frequency equal to or ve
 ![alt text](ezgif-256a5f531c224a.gif)
 
 [myColab](https://colab.research.google.com/drive/1d_CYDfX_gyNBwb0J_IjNtF7FSjHUWIz5#scrollTo=eMlrbOtwzxKs)
+
 ----
 
 ## **2. Analysis of Dynamics**  
