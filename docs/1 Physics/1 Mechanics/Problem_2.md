@@ -102,7 +102,7 @@ Resonance is a crucial concept in engineering. If the resonance frequency of a s
 ### **Summary:**
 Resonance occurs when an external force is applied at a frequency equal to or very close to a system's natural frequency, causing **maximum amplitude oscillations**, which is crucial in engineering to either **prevent unwanted excessive vibrations or facilitate efficient energy transfer**.
 
-<video controls src="WhatsApp Video 2025-03-24 at 12.28.35_753fafd4.mp4" title="Title"></video>
+![alt text](ezgif-256a5f531c224a.gif)
 ----
 
 ## **2. Analysis of Dynamics**  
