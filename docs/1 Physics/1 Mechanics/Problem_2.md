@@ -77,19 +77,32 @@ This part shows how an external force (like a motor pushing the pendulum) affect
 
 ----
 
-### **Resonance Condition**
-Resonance occurs when the driving frequency $\omega$ is close to the natural frequency:
+## **Resonance Condition**
+
+### **What is Resonance?**  
+When an external force is applied to a system at a frequency equal to or very close to its natural frequency **(ω₀)**, **resonance** occurs. In this case, the system reaches **maximum amplitude (Θ₀)** and undergoes large oscillations.
+
+### **Natural Frequency (ω₀):**  
+For a simple pendulum, the natural frequency is given by:
 
 $$
 \omega_0 = \sqrt{\frac{g}{L}}
 $$
 
-At resonance, the amplitude $\Theta_0$ becomes maximum, leading to significant oscillations. This is critical in engineering applications such as **vibration control** and **mechanical resonance avoidance**.
+Where:
+- **g** → Acceleration due to gravity  
+- **L** → Length of the pendulum  
 
----
+### **Importance of Resonance:**  
+Resonance is a crucial concept in engineering. If the resonance frequency of a structure is miscalculated, external forces can cause large oscillations, leading to **structural failure or damage**.
 
-This forms the theoretical foundation. Next, we will analyze how different parameters affect the pendulum's behavior.
+- **Vibration Control**: Bridges, buildings, or machines can suffer destructive consequences if they enter resonance.  
+- **Avoiding Mechanical Resonance**: Systems such as engines, airplanes, and ships are specially designed to **minimize vibrations caused by resonance**.
 
+### **Summary:**
+Resonance occurs when an external force is applied at a frequency equal to or very close to a system's natural frequency, causing **maximum amplitude oscillations**, which is crucial in engineering to either **prevent unwanted excessive vibrations or facilitate efficient energy transfer**.
+
+<video controls src="WhatsApp Video 2025-03-24 at 12.28.35_753fafd4.mp4" title="Title"></video>
 ----
 
 ## **2. Analysis of Dynamics**  
