@@ -82,7 +82,7 @@ This part shows how an external force (like a motor pushing the pendulum) affect
 ### **What is Resonance?**  
 When an external force is applied to a system at a frequency equal to or very close to its natural frequency **(ω₀)**, **resonance** occurs. In this case, the system reaches **maximum amplitude (Θ₀)** and undergoes large oscillations.
 
-### **Natural Frequency (ω₀):**  
+### 1️ **Natural Frequency (ω₀):**  
 For a simple pendulum, the natural frequency is given by:
 
 $$
@@ -100,7 +100,10 @@ Resonance is a crucial concept in engineering. If the resonance frequency of a s
 - **Avoiding Mechanical Resonance**: Systems such as engines, airplanes, and ships are specially designed to **minimize vibrations caused by resonance**.
 
 ### **Summary:**
-Resonance occurs when an external force is applied at a frequency equal to or very close to a system's natural frequency, causing **maximum amplitude oscillations**, which is crucial in engineering to either **prevent unwanted excessive vibrations or facilitate efficient energy transfer**.
+- **Resonance causes a system to undergo large oscillations when an external force interacts with the system at a frequency close to its natural frequency.**
+
+- **This leads to energy accumulation, resulting in an increase in the amplitude of the oscillations.**
+
 
 ![alt text](ezgif-256a5f531c224a.gif)
 
