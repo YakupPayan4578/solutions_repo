@@ -82,7 +82,7 @@ This part shows how an external force (like a motor pushing the pendulum) affect
 ### **What is Resonance?**  
 When an external force is applied to a system at a frequency equal to or very close to its natural frequency **(ω₀)**, **resonance** occurs. In this case, the system reaches **maximum amplitude (Θ₀)** and undergoes large oscillations.
 
-### 1️ **Natural Frequency (ω₀):**  
+### **Natural Frequency (ω₀):**  
 For a simple pendulum, the natural frequency is given by:
 
 $$
@@ -119,6 +119,10 @@ We investigate how damping (\(b\)), driving amplitude (\(A\)), and frequency (\(
 - **High damping**: Motion quickly dies out.  
 - **Resonance**: Maximum amplitude is observed at a specific \(\omega\).  
 - **Chaotic motion**: At certain parameter ranges, the system transitions into chaotic behavior.  
+
+![alt text](ezgif-256a5f531c224a-1.gif)
+
+[myColab](https://colab.research.google.com/drive/1ltErYznV1puNHWzr-5Ika7XpjeiJ5Igz)
 
 ---
 
