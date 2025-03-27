@@ -105,15 +105,16 @@ Resonance is a crucial concept in engineering. If the resonance frequency of a s
 - **This leads to energy accumulation, resulting in an increase in the amplitude of the oscillations.**
 
 
-![alt text](ezgif-256a5f531c224a.gif)
-
-[myColab](https://colab.research.google.com/drive/1d_CYDfX_gyNBwb0J_IjNtF7FSjHUWIz5#scrollTo=eMlrbOtwzxKs)
 
 ![alt text](image-8.png)
 
 ![alt text](image-9.png)
 
 [myColab](https://colab.research.google.com/drive/1uymaqnev-RpHSlteWQqU2qmH1qeSLyUc)
+
+![alt text](ezgif-256a5f531c224a.gif)
+
+[myColab](https://colab.research.google.com/drive/1d_CYDfX_gyNBwb0J_IjNtF7FSjHUWIz5#scrollTo=eMlrbOtwzxKs)
 
 ----
 
