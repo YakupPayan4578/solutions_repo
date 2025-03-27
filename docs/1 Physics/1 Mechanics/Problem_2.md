@@ -109,6 +109,9 @@ Resonance is a crucial concept in engineering. If the resonance frequency of a s
 
 [myColab](https://colab.research.google.com/drive/1d_CYDfX_gyNBwb0J_IjNtF7FSjHUWIz5#scrollTo=eMlrbOtwzxKs)
 
+![alt text](image-8.png)
+
+[myColab](https://colab.research.google.com/drive/1uymaqnev-RpHSlteWQqU2qmH1qeSLyUc)
 ----
 
 ## **2. Analysis of Dynamics**  
