@@ -68,9 +68,11 @@ This part shows how an external force (like a motor pushing the pendulum) affect
 
 - **As a result**: The pendulum both performs its natural motion (oscillation) and continues with the motion influenced by the external force. When the frequency of the external force matches the natural frequency of the pendulum, large oscillations occur (this is called **resonance**).
 
-![alt text](image-6.png)
+![alt text](image-10.png)
 
-[myColab](https://colab.research.google.com/drive/1W5BrJ2IRU4hmHfhD1-XBj0Qd3gtc22jM#scrollTo=ntODnb6hICHY)
+![alt text](image-11.png)
+
+[myColab](https://colab.research.google.com/drive/1MVU-9BfswoXV1M5F23XcHPHNdGnWo9sy)
 
 - The **blue line** represents the **natural oscillation**, which gradually decreases over time due to damping.
 - The **green line** shows the **forced oscillation**, which is driven by an external force and continues regularly.
