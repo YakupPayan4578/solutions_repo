@@ -52,6 +52,13 @@ For small oscillations, we make an approximation:
 
 - **Small-Angle Approximation**: If the oscillations are small, we mathematically approximate $\sin \theta \approx \theta$. This simplifies the equation.
 
+The equation of motion for a simple pendulum is given by:
+$$\frac{d^2\theta}{dt^2} + \frac{g}{L} \sin \theta = 0$$
+
+Applying the small-angle approximation ($\sin \theta \approx \theta$):
+$$\frac{d^2\theta}{dt^2} + \frac{g}{L} \theta = 0$$
+
+This results in a linear differential equation, which describes simple harmonic motion.
 This simplified equation is a second-order differential equation, and its solution consists of two parts:
 
 #### 1️⃣ **Natural Oscillation (Homogeneous Solution)**
