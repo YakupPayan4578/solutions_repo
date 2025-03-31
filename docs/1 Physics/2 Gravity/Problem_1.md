@@ -57,7 +57,7 @@ This means: The farther a planet is from the Sun, the longer it takes to orbit. 
 
 ----
 
-### **2. Why This is Important in Astronomy**
+## **2. Why This is Important in Astronomy**
 
 Imagine you want to know how heavy a planet is or how far it is from the Sun. By using **Kepler's Third Law**, astronomers can calculate this! 
 
@@ -82,3 +82,29 @@ Although GPS satellites are close to Earth in reality, in the graph, they appear
 
 ---
 
+## **3. Real-Life Examples & Analysis**
+
+- **The Moon's Orbit vs. Other Planets**
+  The Moon orbits Earth much faster than planets orbit the Sun because its orbital radius is much smaller.
+
+- **Orbital Period (T) and Radius (r) for Some Planets**
+  The farther a planet is from the Sun, the longer it takes to complete one orbit, as shown by Kepler's Law. For example, Earth takes 365 days, but Neptune takes about 165 years.
+
+- **How Kepler's Law Works in These Cases**
+  Kepler's Law holds true for both the Moon and planets: the farther an object is from the body it orbits, the longer its orbital period.
+
+![alt text](image-2.png)
+
+[myColab](https://colab.research.google.com/drive/18bfWBhKyMLZIhtFQt44iZi12NhcNTzHY)
+
+### What Does This Graph Show?
+
+This graph illustrates Kepler's Law, showing the relationship between the orbital radius and orbital period of planets; as the orbital radius increases, the time it takes for a planet to complete its orbit also increases.
+
+-----
+
+### **4. Implement a Computational Model**
+
+- **Simulate Circular Orbits**: Write a Python script that creates a simple model of planets moving in circular orbits.
+- **Graph**: Create a graph showing the relationship between T² (orbital period squared) and r³ (orbital radius cubed).
+- **Verify Kepler’s Law**: Check if the graph proves Kepler's Law by showing that T² is proportional to r³.
