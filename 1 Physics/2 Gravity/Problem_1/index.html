@@ -6,13 +6,13 @@
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <link href="../../../img/favicon.ico" rel="shortcut icon"/>
-<title>Problem 1 - Physics and Mathematics</title>
+<title>Kepler's Third Law - Physics and Mathematics</title>
 <link href="../../../css/theme.css" rel="stylesheet"/>
 <link href="../../../css/theme_extra.css" rel="stylesheet"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" rel="stylesheet"/>
 <script>
         // Current page data
-        var mkdocs_page_name = "Problem 1";
+        var mkdocs_page_name = "Kepler\u0027s Third Law";
         var mkdocs_page_input_path = "1 Physics/2 Gravity/Problem_1.md";
         var mkdocs_page_url = null;
       </script>
@@ -54,15 +54,17 @@
 </li>
 <li class="toctree-l1 current"><a class="reference internal current">2 Gravity</a>
 <ul class="current">
-<li class="toctree-l2 current"><a class="reference internal current" href="#">Problem 1</a>
+<li class="toctree-l2 current"><a class="reference internal current" href="#">Kepler's Third Law</a>
 <ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="#problem-1">Problem 1</a>
+<li class="toctree-l3"><a class="reference internal" href="#1-derive-the-relationship-between-t2-and-r3">1. Derive the Relationship Between T² and r³</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#2-why-this-is-important-in-astronomy">2. Why This is Important in Astronomy</a>
 <ul>
-<li class="toctree-l4"><a class="reference internal" href="#motivation">Motivation:</a>
+<li class="toctree-l4"><a class="reference internal" href="#real-world-examples">Real-World Examples:</a>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="#task">Task:</a>
+<li class="toctree-l4"><a class="reference internal" href="#what-does-this-graph-show">What Does This Graph Show?</a>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="#deliverables">Deliverables:</a>
+<li class="toctree-l4"><a class="reference internal" href="#why-are-gps-satellites-far-in-the-graph">Why Are GPS Satellites "Far" in the Graph?</a>
 </li>
 </ul>
 </li>
@@ -173,7 +175,7 @@
 <li><a aria-label="Docs" class="icon icon-home" href="../../.."></a></li>
 <li class="breadcrumb-item">1 Physics</li>
 <li class="breadcrumb-item">2 Gravity</li>
-<li class="breadcrumb-item active">Problem 1</li>
+<li class="breadcrumb-item active">Kepler's Third Law</li>
 <li class="wy-breadcrumbs-aside">
 </li>
 </ul>
@@ -181,26 +183,73 @@
 </div>
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
-<h2 id="gravity">Gravity</h2>
-<h3 id="problem-1">Problem 1</h3>
-<p><span style="font-size: 1.2em; font-weight: bold;">Orbital Period and Orbital Radius</span></p>
-<h4 id="motivation">Motivation:</h4>
-<p>The relationship between the square of the orbital period and the cube of the orbital radius, known as Kepler's Third Law, is a cornerstone of celestial mechanics. This simple yet profound relationship allows for the determination of planetary motions and has implications for understanding gravitational interactions on both local and cosmic scales. By analyzing this relationship, one can connect fundamental principles of gravity with real-world phenomena such as satellite orbits and planetary systems.</p>
-<h4 id="task">Task:</h4>
+<h1 id="keplers-third-law"><strong>Kepler's Third Law</strong></h1>
+<p>Imagine that it's like the further a planet is from the Sun, the longer it takes to complete one full orbit. This is what Kepler's Third Law tells us: <strong>T² ∝ r³</strong>, meaning that the square of a planet's orbital period is directly proportional to the cube of its average distance from the Sun.</p>
+<h3 id="1-derive-the-relationship-between-t2-and-r3"><strong>1. Derive the Relationship Between T² and r³</strong></h3>
+<p>We need two important concepts: <strong>Gravitational Law</strong> and <strong>Centripetal Force</strong>.</p>
 <ol>
-<li>Derive the relationship between the square of the orbital period and the cube of the orbital radius for circular orbits.</li>
-<li>Discuss the implications of this relationship for astronomy, including its role in calculating planetary masses and distances.</li>
-<li>Analyze real-world examples, such as the Moon's orbit around Earth or the orbits of planets in the Solar System.</li>
-<li>Implement a computational model to simulate circular orbits and verify the relationship.</li>
+<li><strong>Gravitational Law</strong>:<br/>
+   The force between two objects is calculated like this:</li>
 </ol>
+<p><span class="arithmatex">\(<span class="arithmatex">\(F = \frac{G M m}{r^2}\)</span>\)</span></p>
+<p>Where:
+   - <strong>G</strong>: Gravitational constant<br/>
+   - <strong>M</strong>: Mass of the Sun<br/>
+   - <strong>m</strong>: Mass of the planet<br/>
+   - <strong>r</strong>: Orbital radius</p>
+<ol>
+<li><strong>Centripetal Force</strong>:<br/>
+   The force required to keep an object moving in a circular path is:</li>
+</ol>
+<p><span class="arithmatex">\(<span class="arithmatex">\(F = \frac{m v^2}{r}\)</span>\)</span></p>
+<ol>
+<li>We equate these two forces because the same force keeps the planet in orbit.</li>
+</ol>
+<p><span class="arithmatex">\(<span class="arithmatex">\(\frac{G M m}{r^2} = \frac{m v^2}{r}\)</span>\)</span></p>
+<p>We cancel out <strong>m</strong> from both sides.</p>
+<p><span class="arithmatex">\(<span class="arithmatex">\(\frac{G M}{r^2} = \frac{v^2}{r}\)</span>\)</span></p>
+<ol>
+<li>Now, <strong>velocity (v)</strong> is the speed of the planet in orbit and is given by:</li>
+</ol>
+<p><span class="arithmatex">\(<span class="arithmatex">\(v = \frac{2 \pi r}{T}\)</span>\)</span></p>
+<p>Where <strong>T</strong> is the orbital period.</p>
+<ol>
+<li>Substituting this into the first equation:</li>
+</ol>
+<p><span class="arithmatex">\(<span class="arithmatex">\(\frac{G M}{r^2} = \frac{(2 \pi r / T)^2}{r}\)</span>\)</span></p>
+<ol>
+<li>Simplifying this, we get <strong>T²</strong> on its own:</li>
+</ol>
+<p><span class="arithmatex">\(<span class="arithmatex">\(T^2 = \frac{4 \pi^2}{G M} r^3\)</span>\)</span></p>
+<p>And here we have:</p>
+<div class="arithmatex">\[T^2 \propto r^3\]</div>
+<p>This means: The farther a planet is from the Sun, the longer it takes to orbit. So, as the orbital radius increases, the orbital period also increases.</p>
+<p><img alt="alt text" src="../image.png"/></p>
+<p><a href="https://colab.research.google.com/drive/1KvD2OoyqhegYm7kTId9-nILshxJGT7e8">myColab</a></p>
 <hr/>
-<h4 id="deliverables">Deliverables:</h4>
-<ol>
-<li>A Markdown document with Python script or notebook implementing the simulations.</li>
-<li>A detailed explanation of the subjects.</li>
-<li>Graphical representations of circular orbits and the relationship between orbital period and radius.</li>
-<li>A discussion on how this relationship extends to elliptical orbits and other celestial bodies.</li>
-</ol>
+<h3 id="2-why-this-is-important-in-astronomy"><strong>2. Why This is Important in Astronomy</strong></h3>
+<p>Imagine you want to know how heavy a planet is or how far it is from the Sun. By using <strong>Kepler's Third Law</strong>, astronomers can calculate this! </p>
+<ul>
+<li>
+<p>If you know the <strong>orbital period</strong> (how long it takes the planet to orbit) and the <strong>orbital radius</strong> (how far the planet is), you can figure out things like the <strong>planet's mass</strong> and <strong>distance</strong> from the Sun.</p>
+</li>
+<li>
+<p>This law helps <strong>predict orbital periods</strong> because once we know the distance, we can calculate how long it takes for a planet to orbit. </p>
+</li>
+</ul>
+<h4 id="real-world-examples"><strong>Real-World Examples</strong>:</h4>
+<ul>
+<li><strong>GPS satellites</strong>: They use this law to stay in the right orbit around Earth.</li>
+<li><strong>Planetary orbits</strong>: It helps us understand how planets like Earth or Jupiter orbit the Sun.</li>
+<li><strong>Exoplanets</strong>: When we find new planets outside our solar system, we use this law to estimate how long their year might be!</li>
+</ul>
+<p><img alt="alt text" src="../image-1.png"/></p>
+<p><a href="https://colab.research.google.com/drive/10I0zOXoJa_HSjrEC-KCDV_JmEa3Kw-lN">myColab</a></p>
+<h4 id="what-does-this-graph-show"><strong>What Does This Graph Show?</strong></h4>
+<p>The graph demonstrates the relationship between orbital period squared (T²) and orbital radius cubed (r³) for celestial bodies, illustrating Kepler's Third Law in action.</p>
+<h4 id="why-are-gps-satellites-far-in-the-graph"><strong>Why Are GPS Satellites "Far" in the Graph?</strong></h4>
+<p>Although GPS satellites are close to Earth in reality, in the graph, they appear "far" because the scale of the orbital radii for planets is much larger, making the satellites' orbits look small in comparison.</p>
+<hr/>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
