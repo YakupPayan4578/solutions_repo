@@ -9,9 +9,9 @@ We need two important concepts: **Gravitational Law** and **Centripetal Force**.
 
 1. **Gravitational Law**:  
    The force between two objects is calculated like this:
-   
-   $$F = \frac{G M m}{r^2}$$
-
+   $$
+   F = \frac{G M m}{r^2}
+   $$
    Where:
    - **G**: Gravitational constant  
    - **M**: Mass of the Sun  
