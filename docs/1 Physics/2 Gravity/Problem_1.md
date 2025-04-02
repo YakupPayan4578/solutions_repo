@@ -21,29 +21,41 @@ We need two important concepts: **Gravitational Law** and **Centripetal Force**.
 2. **Centripetal Force**:  
    The force required to keep an object moving in a circular path is:
    
-   $$F = \frac{m v^2}{r}$$
+   $$
+   F = \frac{m v^2}{r}
+   $$
 
 3. We equate these two forces because the same force keeps the planet in orbit.
 
-   $$\frac{G M m}{r^2} = \frac{m v^2}{r}$$
+   $$
+   \frac{G M m}{r^2} = \frac{m v^2}{r}
+   $$
 
    We cancel out **m** from both sides.
 
-   $$\frac{G M}{r^2} = \frac{v^2}{r}$$
+   $$
+   \frac{G M}{r^2} = \frac{v^2}{r}
+   $$
 
 4. Now, **velocity (v)** is the speed of the planet in orbit and is given by:
 
-   $$v = \frac{2 \pi r}{T}$$
+   $$
+   v = \frac{2 \pi r}{T}
+   $$
 
    Where **T** is the orbital period.
 
 5. Substituting this into the first equation:
 
-   $$\frac{G M}{r^2} = \frac{(2 \pi r / T)^2}{r}$$
+   $$
+   \frac{G M}{r^2} = \frac{(2 \pi r / T)^2}{r}
+   $$
 
 6. Simplifying this, we get **T²** on its own:
 
-   $$T^2 = \frac{4 \pi^2}{G M} r^3$$
+   $$
+   T^2 = \frac{4 \pi^2}{G M} r^3
+   $$
 
 And here we have:
 
