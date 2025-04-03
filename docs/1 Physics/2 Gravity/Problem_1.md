@@ -107,10 +107,6 @@ Although GPS satellites are close to Earth in reality, in the graph, they appear
 
 
 
-### What Does This Graph Show?
-
-This graph illustrates Kepler's Law, showing the relationship between the orbital radius and orbital period of planets; as the orbital radius increases, the time it takes for a planet to complete its orbit also increases.
-
 -----
 
 ### **4. Implement a Computational Model**
