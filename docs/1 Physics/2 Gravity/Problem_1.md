@@ -105,9 +105,7 @@ Although GPS satellites are close to Earth in reality, in the graph, they appear
 - **How Kepler's Law Works in These Cases**
   Kepler's Law holds true for both the Moon and planets: the farther an object is from the body it orbits, the longer its orbital period.
 
-![alt text](image-2.png)
 
-[myColab](https://colab.research.google.com/drive/18bfWBhKyMLZIhtFQt44iZi12NhcNTzHY)
 
 ### What Does This Graph Show?
 
