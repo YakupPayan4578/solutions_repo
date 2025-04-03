@@ -61,7 +61,7 @@ And here we have:
 
 $$T^2 \propto r^3$$
 
-This means: The farther a planet is from the Sun, the longer it takes to orbit. So, as the orbital radius increases, the orbital period also increases.
+This means: The farther a planet is from the Sun, the longer it takes to complete one orbit.
 
 ![alt text](image.png)
 
