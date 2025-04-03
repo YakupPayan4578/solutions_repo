@@ -115,6 +115,7 @@ Although GPS satellites are close to Earth in reality, in the graph, they appear
 - **Graph**: Create a graph showing the relationship between T² (orbital period squared) and r³ (orbital radius cubed).
 - **Verify Kepler’s Law**: Check if the graph proves Kepler's Law by showing that T² is proportional to r³.
 
-![alt text](image-3.png)
+
+![alt text](image-5.png)
 
 [myColab](https://colab.research.google.com/drive/16QqYmJJ-NsLDd_JoV8ITm81mWaClDwrf#scrollTo=f8d1WjnWgEsV)
