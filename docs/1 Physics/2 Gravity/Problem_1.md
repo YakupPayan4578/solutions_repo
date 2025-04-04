@@ -116,6 +116,6 @@ Although GPS satellites are close to Earth in reality, in the graph, they appear
 - **Verify Kepler’s Law**: Check if the graph proves Kepler's Law by showing that T² is proportional to r³.
 
 
-![alt text](ezgif-4ec9a24297dbc1.gif)
+![alt text](ezgif-2d0f43b377789c.gif)
 
-[myColab](https://colab.research.google.com/drive/16QqYmJJ-NsLDd_JoV8ITm81mWaClDwrf#scrollTo=f8d1WjnWgEsV)
+[myColab](https://colab.research.google.com/drive/1KvD2OoyqhegYm7kTId9-nILshxJGT7e8)
