@@ -1,6 +1,6 @@
 # 🚀 Cosmic Velocities: 1st, 2nd, and 3rd Cosmic Speeds
 
-## 🔸 1st Cosmic Velocity (Orbital Velocity)
+## 🔹 1st Cosmic Velocity
 
 **Definition:**  
 The minimum velocity required for an object to orbit the Earth in a circular path without falling back to the surface.
@@ -22,7 +22,7 @@ $$
 
 ---
 
-## 🔸 2nd Cosmic Velocity (Escape Velocity)
+## 🔸 2nd Cosmic Velocity
 
 **Definition:**  
 The minimum velocity required for an object to escape Earth's gravitational field and move into space.
@@ -42,7 +42,7 @@ $$
 
 ---
 
-## 🔸 3rd Cosmic Velocity (Interstellar Escape Velocity)
+## 🔻 3rd Cosmic Velocity
 
 **Definition:**  
 The minimum velocity required for an object to escape not only Earth’s gravity but also the Sun’s gravitational pull, allowing it to leave the Solar System.
@@ -64,12 +64,22 @@ $$
 
 ---
 
-## ⚖️ Comparison
+## ⚖️ Comparison Table
 
 | Cosmic Velocity | Formula                                | Purpose                             | Approx. Speed |
 |-----------------|----------------------------------------|-------------------------------------|----------------|
 | 1st Velocity    | $\sqrt{ \frac{G M}{r} }$           | Enter orbit around Earth            | ~7.9 km/s      |
 | 2nd Velocity    | $\sqrt{ \frac{2 G M}{r} }$         | Escape Earth’s gravity              | ~11.2 km/s     |
-| 3rd Velocity    | $\sqrt{ \frac{2 G M_s}{R} }$       | Escape the Solar System             | ~16.7 km/s     |
+| 3rd Velocity    | $\sqrt{ \frac{2 G M_s}{R} }       | Escape the Solar System             | ~16.7 km/s     |
 
 ---
+
+## 🧠 Quick Recap
+
+- **1st Cosmic Velocity:** To enter a stable orbit around Earth.
+- **2nd Cosmic Velocity:** To escape Earth's gravity completely.
+- **3rd Cosmic Velocity:** To escape the entire Solar System.
+
+![alt text](image-3.png)
+
+[myColab](https://colab.research.google.com/drive/1uiOnaCDWHXjZfUy9RQ69LR58JifvRkQd#scrollTo=KXlw8YCmAYHn)
