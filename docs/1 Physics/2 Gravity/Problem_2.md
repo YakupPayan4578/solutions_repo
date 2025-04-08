@@ -1,22 +1,75 @@
-### Problem 2
+# 🚀 Cosmic Velocities: 1st, 2nd, and 3rd Cosmic Speeds
 
-<span style="font-size: 1.2em; font-weight: bold;">Escape Velocities and Cosmic Velocities</span>
+## 🔸 1st Cosmic Velocity (Orbital Velocity)
 
-#### Motivation:
+**Definition:**  
+The minimum velocity required for an object to orbit the Earth in a circular path without falling back to the surface.
 
-The concept of escape velocity is crucial for understanding the conditions required to leave a celestial body's gravitational influence. Extending this concept, the first, second, and third cosmic velocities define the thresholds for orbiting, escaping, and leaving a star system. These principles underpin modern space exploration, from launching satellites to interplanetary missions.
+**Formula:**
 
-#### Task:
+$$
+v_1 = \sqrt{\frac{G \cdot M}{r}}
+$$
 
-1. Define the first, second, and third cosmic velocities, explaining their physical meaning.
-2. Analyze the mathematical derivations and parameters affecting these velocities.
-3. Calculate and visualize these velocities for different celestial bodies like Earth, Mars adn Jupyter.
-4. Discuss their importance in space exploration, including launching satellites, missions to other planets, and potential interstellar travel.
+**Parameters:**
+
+- $v_1$: First cosmic velocity (m/s)  
+- $G$: Gravitational constant ≈ $6.674 \times 10^{-11} \, \text{Nm}^2/\text{kg}^2$
+- $M$: Mass of Earth ≈ $5.972 \times 10^{24} \, \text{kg}$  
+- $r$: Radius of the Earth ≈ $6.371 \times 10^6 \, \text{m}$
+
+> This is the speed at which the gravitational force and the required centripetal force for orbit are balanced. The object stays in orbit without falling.
 
 ---
 
-#### Deliverables:
+## 🔸 2nd Cosmic Velocity (Escape Velocity)
 
-1. A Markdown document with Python script or notebook implementing the simulations.
-2. A detailed explanation of the subjects.
-3. Graphical representations of escape velocities and cosmic velocities for various celestial bodies.
+**Definition:**  
+The minimum velocity required for an object to escape Earth's gravitational field and move into space.
+
+**Formula:**
+
+$$
+v_2 = \sqrt{\frac{2 G \cdot M}{r}}
+$$
+
+**Parameters:**
+
+- $v_2$: Second cosmic velocity (m/s)  
+- $G, M, r$: Same as above
+
+> This is the escape velocity. If an object reaches this speed, it will leave Earth’s gravity permanently without needing further propulsion.
+
+---
+
+## 🔸 3rd Cosmic Velocity (Interstellar Escape Velocity)
+
+**Definition:**  
+The minimum velocity required for an object to escape not only Earth’s gravity but also the Sun’s gravitational pull, allowing it to leave the Solar System.
+
+**Formula:**
+
+$$
+v_3 = \sqrt{\frac{2 G \cdot M_s}{R}}
+$$
+
+**Parameters:**
+
+- $v_3$: Third cosmic velocity (m/s)  
+- $G$: Gravitational constant  
+- $M_s$: Mass of the Sun ≈ $1.989 \times 10^{30} \, \text{kg}$  
+- $R$: Average distance from Earth to the Sun ≈ $1.496 \times 10^{11} \, \text{m}$
+
+> This is the speed needed to escape the Solar System and continue toward interstellar space, like the Voyager 1 mission.
+
+---
+
+## ⚖️ Comparison
+
+| Cosmic Velocity | Formula                                | Purpose                             | Approx. Speed |
+|-----------------|----------------------------------------|-------------------------------------|----------------|
+| 1st Velocity    | $\sqrt{ \frac{G M}{r} }$           | Enter orbit around Earth            | ~7.9 km/s      |
+| 2nd Velocity    | $\sqrt{ \frac{2 G M}{r} }$         | Escape Earth’s gravity              | ~11.2 km/s     |
+| 3rd Velocity    | $\sqrt{ \frac{2 G M_s}{R} }$       | Escape the Solar System             | ~16.7 km/s     |
+
+---
