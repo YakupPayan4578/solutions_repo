@@ -74,12 +74,6 @@ $$
 
 ---
 
-## 🧠 Quick Recap
-
-- **1st Cosmic Velocity:** To enter a stable orbit around Earth.
-- **2nd Cosmic Velocity:** To escape Earth's gravity completely.
-- **3rd Cosmic Velocity:** To escape the entire Solar System.
-
 ![alt text](image-3.png)
 
 [myColab](https://colab.research.google.com/drive/1uiOnaCDWHXjZfUy9RQ69LR58JifvRkQd#scrollTo=KXlw8YCmAYHn)
