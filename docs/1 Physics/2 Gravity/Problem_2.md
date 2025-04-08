@@ -94,3 +94,16 @@ $$
 |                        | **Gravitational Constant (G)** | The value of G is constant, but it affects the gravitational force.      |
 
 
+## 🚀 Why is it important for space exploration?
+
+ **1st Cosmic Velocity**  
+> The 1st cosmic velocity (7.9 km/s) puts satellites into orbit; it provides communication and observation.  
+>  
+ **2nd Cosmic Velocity**  
+> The 2nd cosmic velocity (11.2 km/s) allows us to escape Earth and go to places like the Moon or Mars.  
+>  
+ **3rd Cosmic Velocity**  
+> The 3rd cosmic velocity (16.7 km/s) makes it possible to leave the Solar System and reach the stars.  
+
+## 📌 Summary  
+Cosmic velocities are key to space exploration: the 1st (7.9 km/s) orbits Earth for satellites, the 2nd (11.2 km/s) escapes Earth for planetary missions, and the 3rd (16.7 km/s) breaks free of the Solar System for interstellar travel.
