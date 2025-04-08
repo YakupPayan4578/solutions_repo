@@ -1,6 +1,6 @@
 # 🚀 Cosmic Velocities: 1st, 2nd, and 3rd Cosmic Speeds
 
-## 🔹 1st Cosmic Velocity
+## 🔸 1st Cosmic Velocity
 
 **Definition:**  
 The minimum velocity required for an object to orbit the Earth in a circular path without falling back to the surface.
@@ -42,7 +42,7 @@ $$
 
 ---
 
-## 🔻 3rd Cosmic Velocity
+## 🔸 3rd Cosmic Velocity
 
 **Definition:**  
 The minimum velocity required for an object to escape not only Earth’s gravity but also the Sun’s gravitational pull, allowing it to leave the Solar System.
@@ -77,3 +77,20 @@ $$
 ![alt text](image-3.png)
 
 [myColab](https://colab.research.google.com/drive/1uiOnaCDWHXjZfUy9RQ69LR58JifvRkQd#scrollTo=KXlw8YCmAYHn)
+
+
+## 🔻Factors Affecting Cosmic Speeds
+
+| **Cosmic Velocity**    | **Influencing Factor**     | **Effect**                                                                |
+|------------------------|----------------------------|--------------------------------------------------------------------------|
+| **1st Cosmic Velocity (v₁)** | **Distance from Surface (r)** | As the distance increases, the velocity decreases because gravitational force weakens. |
+|                        | **Earth's Mass (M)**        | As Earth's mass increases, the velocity increases because gravitational force becomes stronger. |
+|                        | **Gravitational Constant (G)** | The value of G is constant, but it affects the gravitational force.      |
+| **2nd Cosmic Velocity (v₂)** | **Distance from Surface (r)** | As the distance increases, the velocity decreases because gravitational force weakens. |
+|                        | **Earth's Mass (M)**        | As Earth's mass increases, the velocity increases because gravitational force becomes stronger. |
+|                        | **Gravitational Constant (G)** | The value of G is constant, but it affects the escape velocity.          |
+| **3rd Cosmic Velocity (v₃)** | **Distance (R - Earth-Sun)** | As the distance from the Sun increases, the velocity decreases because gravitational force weakens. |
+|                        | **Sun's Mass (Mₛ)**         | As the Sun's mass increases, the velocity increases because the Sun's gravitational force becomes stronger. |
+|                        | **Gravitational Constant (G)** | The value of G is constant, but it affects the gravitational force.      |
+
+
