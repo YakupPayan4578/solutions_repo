@@ -18,7 +18,7 @@ $$
 - $M$: Mass of Earth ≈ $5.972 \times 10^{24} \, \text{kg}$  
 - $r$: Radius of the Earth ≈ $6.371 \times 10^6 \, \text{m}$
 
-> This is the speed at which the gravitational force and the required centripetal force for orbit are balanced. The object stays in orbit without falling.
+>> This is the speed at which the gravitational force and the required centripetal force for orbit are balanced. The object stays in orbit without falling.
 
 ---
 
@@ -70,7 +70,7 @@ $$
 |-----------------|----------------------------------------|-------------------------------------|----------------|
 | 1st Velocity    | $\sqrt{ \frac{G M}{r} }$           | Enter orbit around Earth            | ~7.9 km/s      |
 | 2nd Velocity    | $\sqrt{ \frac{2 G M}{r} }$         | Escape Earth’s gravity              | ~11.2 km/s     |
-| 3rd Velocity    | $\sqrt{ \frac{2 G M_s}{R} }       | Escape the Solar System             | ~16.7 km/s     |
+| 3rd Velocity    | $\sqrt{ \frac{2 G M_s}{R}}$      | Escape the Solar System             | ~16.7 km/s     |
 
 ---
 
