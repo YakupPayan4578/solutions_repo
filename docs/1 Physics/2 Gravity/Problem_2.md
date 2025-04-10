@@ -22,7 +22,7 @@ $$
 
 >> This is the speed at which the gravitational force and the required centripetal force for orbit are balanced. The object stays in orbit without falling.
 
-**Derivation:**  
+**Derivation of 1st Cosmic :**  
 To derive $v_1$, we equate the gravitational force to the centripetal force required for circular orbit:  
 - Gravitational force: 
 $$
@@ -69,7 +69,7 @@ $$
 To derive \( v_2 \), we use conservation of energy, where kinetic energy equals the gravitational potential energy:  
 - Kinetic energy: $$KE = \frac{1}{2} m \cdot v_2^2$$  
 - Potential energy: $$PE = -\frac{G \cdot M \cdot m}{r}$$  
-- Total energy at escape is zero: $KE + PE = 0$:  
+- Total energy at escape is zero: \( KE + PE = 0 \):  
   $$
   \frac{1}{2} m \cdot v_2^2 - \frac{G \cdot M \cdot m}{r} = 0
   $$  
