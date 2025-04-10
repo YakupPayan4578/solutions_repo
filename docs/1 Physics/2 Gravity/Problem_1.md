@@ -1,3 +1,5 @@
+# Problem 1
+
 # **Kepler's Third Law**
 
 Imagine that it's like the further a planet is from the Sun, the longer it takes to complete one full orbit. This is what Kepler's Third Law tells us: **T² ∝ r³**, meaning that the square of a planet's orbital period is directly proportional to the cube of its average distance from the Sun.
