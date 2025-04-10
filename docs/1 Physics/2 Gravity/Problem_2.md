@@ -67,8 +67,14 @@ $$
 
 **Derivation:**  
 To derive $v_2$, we use conservation of energy, where kinetic energy equals the gravitational potential energy:  
-- Kinetic energy: $$KE = \frac{1}{2} m \cdot v_2^2$$  
-- Potential energy: $$PE = -\frac{G \cdot M \cdot m}{r}$$  
+- Kinetic energy: 
+$$
+KE = \frac{1}{2} m \cdot v_2^2
+$$  
+- Potential energy: 
+$$
+PE = -\frac{G \cdot M \cdot m}{r}
+$$  
 - Total energy at escape is zero: \( KE + PE = 0 \):  
   $$
   \frac{1}{2} m \cdot v_2^2 - \frac{G \cdot M \cdot m}{r} = 0
