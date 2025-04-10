@@ -22,6 +22,29 @@ $$
 
 >> This is the speed at which the gravitational force and the required centripetal force for orbit are balanced. The object stays in orbit without falling.
 
+**Derivation:**  
+To derive $v_1$, we equate the gravitational force to the centripetal force required for circular orbit:  
+- Gravitational force: 
+$$
+F_g = \frac{G \cdot M \cdot m}{r^2}
+$$  
+- Centripetal force: 
+$$
+F_c = \frac{m \cdot v_1^2}{r}
+$$  
+- Set $F_g = F_c$:  
+  $$
+  \frac{G \cdot M \cdot m}{r^2} = \frac{m \cdot v_1^2}{r}
+  $$  
+- Cancel \( m \) and multiply both sides by \( r \):  
+  $$
+  \frac{G \cdot M}{r} = v_1^2
+  $$  
+- Take the square root:  
+  $$
+  v_1 = \sqrt{\frac{G \cdot M}{r}}
+  $$
+
 ---
 
 ## 🔸 2nd Cosmic Velocity
@@ -41,6 +64,27 @@ $$
 - $G, M, r$: Same as above
 
 > This is the escape velocity. If an object reaches this speed, it will leave Earth’s gravity permanently without needing further propulsion.
+
+**Derivation:**  
+To derive \( v_2 \), we use conservation of energy, where kinetic energy equals the gravitational potential energy:  
+- Kinetic energy: $$KE = \frac{1}{2} m \cdot v_2^2$$  
+- Potential energy: $$PE = -\frac{G \cdot M \cdot m}{r}$$  
+- Total energy at escape is zero: $KE + PE = 0$:  
+  $$
+  \frac{1}{2} m \cdot v_2^2 - \frac{G \cdot M \cdot m}{r} = 0
+  $$  
+- Simplify and cancel \( m \):  
+  $$
+  \frac{1}{2} v_2^2 = \frac{G \cdot M}{r}
+  $$  
+- Multiply by 2:  
+  $$
+  v_2^2 = \frac{2 G \cdot M}{r}
+  $$  
+- Take the square root:  
+  $$
+  v_2 = \sqrt{\frac{2 G \cdot M}{r}}
+  $$
 
 ---
 
