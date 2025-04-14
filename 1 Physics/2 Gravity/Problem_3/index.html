@@ -62,13 +62,15 @@
 </li>
 <li class="toctree-l2 current"><a class="reference internal current" href="#">Problem 3</a>
 <ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="#motivation">Motivation:</a>
+<li class="toctree-l3"><a class="reference internal" href="#newtons-law-of-universal-gravitation">🔵 Newton’s Law of Universal Gravitation</a>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#task">Task:</a>
+<li class="toctree-l3"><a class="reference internal" href="#gravitational-acceleration-near-earth">🔵 Gravitational Acceleration Near Earth</a>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#hints-and-resources">Hints and Resources:</a>
+<li class="toctree-l3"><a class="reference internal" href="#orbital-trajectories">🔵 Orbital Trajectories</a>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#deliverables">Deliverables:</a>
+<li class="toctree-l3"><a class="reference internal" href="#total-mechanical-energy-of-the-payload">🔵 Total Mechanical Energy of the Payload</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#escape-velocity">🔵 Escape Velocity</a>
 </li>
 </ul>
 </li>
@@ -181,31 +183,73 @@
 </div>
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
-<h3 id="problem-3">Problem 3</h3>
-<p><span style="font-size: 1.2em; font-weight: bold;">Trajectories of a Freely Released Payload Near Earth</span></p>
-<h4 id="motivation">Motivation:</h4>
-<p>When an object is released from a moving rocket near Earth, its trajectory depends on initial conditions and gravitational forces. This scenario presents a rich problem, blending principles of orbital mechanics and numerical methods. Understanding the potential trajectories is vital for space missions, such as deploying payloads or returning objects to Earth.</p>
-<h4 id="task">Task:</h4>
-<ol>
-<li>Analyze the possible trajectories (e.g., parabolic, hyperbolic, elliptical) of a payload released near Earth.</li>
-<li>Perform a numerical analysis to compute the path of the payload based on given initial conditions (position, velocity, and altitude).</li>
-<li>Discuss how these trajectories relate to orbital insertion, reentry, or escape scenarios.</li>
-<li>Develop a computational tool to simulate and visualize the motion of the payload under Earth's gravity, accounting for initial velocities and directions.</li>
-</ol>
-<hr/>
-<h4 id="hints-and-resources">Hints and Resources:</h4>
+<h2 id="trajectories-of-a-freely-released-payload-near-earth">🚀 Trajectories of a Freely Released Payload Near Earth</h2>
+<h3 id="newtons-law-of-universal-gravitation">🔵 Newton’s Law of Universal Gravitation</h3>
+<p>Newton's law defines the gravitational force between two masses:</p>
+<div class="arithmatex">\[F = \frac{G \cdot m_1 \cdot m_2}{r^2}\]</div>
 <ul>
-<li>Use fundamental gravitational principles, such as Newton's Law of Gravitation and Kepler's Laws, to derive equations and analyze scenarios.</li>
-<li>Leverage numerical methods or software tools (e.g., Python) to simulate orbits and trajectories.</li>
-<li>Explore real-world applications, such as space mission planning, satellite deployment, and planetary exploration.</li>
+<li><strong>F</strong>: Gravitational force  </li>
+<li><strong>G</strong>: Gravitational constant (<span class="arithmatex">\(6.674 \times 10^{-11} \, \text{Nm}^2/\text{kg}^2\)</span>)  </li>
+<li><strong>m₁, m₂</strong>: Masses of the two objects  </li>
+<li><strong>r</strong>: Distance between the centers of the two masses</li>
 </ul>
-<p>These tasks provide a foundation for understanding gravity's influence on motion and its role in celestial mechanics and space exploration.</p>
-<h4 id="deliverables">Deliverables:</h4>
-<ol>
-<li>A Markdown document with Python script or notebook implementing the simulations.</li>
-<li>A detailed explanation of the subjects.</li>
-<li>Graphical representations of orbital trajectories, escape velocities, and payload trajectories near Earth.</li>
-</ol>
+<blockquote>
+<p>Newton's Law of Universal Gravitation describes how to calculate the gravitational force between two objects based on their masses and the distance between them.</p>
+</blockquote>
+<hr/>
+<h3 id="gravitational-acceleration-near-earth">🔵 Gravitational Acceleration Near Earth</h3>
+<p>Near Earth's surface, gravitational acceleration is approximately constant,
+ and this formula illustrates how it's calculated using Earth's mass, radius, and the universal gravitational constant:</p>
+<div class="arithmatex">\[g = \frac{G \cdot M}{R^2}\]</div>
+<ul>
+<li><strong>g</strong>: Gravitational acceleration (<span class="arithmatex">\(\approx 9.81 \, \text{m/s}^2\)</span>)  </li>
+<li><strong>M</strong>: Mass of Earth  </li>
+<li><strong>R</strong>: Radius of Earth</li>
+</ul>
+<p><img alt="alt text" src="../image-5.png"/></p>
+<p><a href="https://colab.research.google.com/drive/1Wc53ExkR7nvwacQz44JBb7iQmHrV9kFO">myColab</a></p>
+<hr/>
+<h3 id="orbital-trajectories">🔵 Orbital Trajectories</h3>
+<p>The path of a payload depends on its total mechanical energy. There are three primary types of trajectories:</p>
+<p><strong>1. Elliptical Orbit:</strong></p>
+<ul>
+<li>Total energy is negative (<span class="arithmatex">\(E &lt; 0\)</span>)  </li>
+<li>The object remains in a closed orbit around Earth  </li>
+<li>This is typical for satellites</li>
+</ul>
+<p><strong>2. Parabolic Trajectory:</strong></p>
+<ul>
+<li>Total energy is zero (<span class="arithmatex">\(E = 0\)</span>)  </li>
+<li>The object moves at exactly the escape velocity  </li>
+<li>This is the boundary between bounded and unbounded motion</li>
+</ul>
+<p><strong>3. Hyperbolic Trajectory:</strong></p>
+<ul>
+<li>Total energy is positive (<span class="arithmatex">\(E &gt; 0\)</span>)  </li>
+<li>The object escapes Earth’s gravity completely  </li>
+<li>This occurs in interplanetary or interstellar missions</li>
+</ul>
+<p><img alt="alt text" src="../image-4.png"/></p>
+<p><a href="https://colab.research.google.com/drive/1-jYumlzHehTdF48dWj91Lr7OYSV2dQ6G">myColab</a></p>
+<hr/>
+<h3 id="total-mechanical-energy-of-the-payload">🔵 Total Mechanical Energy of the Payload</h3>
+<p>The type of trajectory is determined by the total mechanical energy:</p>
+<div class="arithmatex">\[E = \frac{1}{2}mv^2 - \frac{G \cdot M \cdot m}{r}\]</div>
+<ul>
+<li><strong>E</strong>: Total mechanical energy  </li>
+<li><strong>v</strong>: Initial velocity of the object  </li>
+<li><strong>r</strong>: Distance from Earth's center</li>
+</ul>
+<p><img alt="alt text" src="../image-6.png"/></p>
+<p><a href="https://colab.research.google.com/drive/1m8khfbkP8bL-lrLzclHjgky3g_xMYSSw">myColab</a></p>
+<hr/>
+<h3 id="escape-velocity">🔵 Escape Velocity</h3>
+<p>The minimum velocity required for an object to escape Earth's gravitational field:</p>
+<div class="arithmatex">\[v_e = \sqrt{\frac{2GM}{R}}\]</div>
+<ul>
+<li>At Earth's surface: <span class="arithmatex">\(v_e \approx 11.2 \, \text{km/s}\)</span></li>
+</ul>
+<p>If the object's velocity exceeds this value, the trajectory becomes hyperbolic.</p>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
