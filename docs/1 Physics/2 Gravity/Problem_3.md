@@ -54,6 +54,12 @@ The path of a payload depends on its total mechanical energy. There are three pr
 - The object escapes Earth’s gravity completely  
 - This occurs in interplanetary or interstellar missions
 
+>v = 7500 m/s ⟶ Elliptical
+
+>v = 11200 m/s ⟶ Parabolic
+
+>v = 14000 m/s ⟶ Hyperbolic
+
 ![alt text](image-4.png)
 
 [myColab](https://colab.research.google.com/drive/1-jYumlzHehTdF48dWj91Lr7OYSV2dQ6G)
