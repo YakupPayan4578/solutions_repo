@@ -1,31 +1,87 @@
-### Problem 3
+## 🚀 Trajectories of a Freely Released Payload Near Earth
 
+###  🔵 Newton’s Law of Universal Gravitation
 
-<span style="font-size: 1.2em; font-weight: bold;">Trajectories of a Freely Released Payload Near Earth</span>
+Newton's law defines the gravitational force between two masses:
 
-#### Motivation:
+$$F = \frac{G \cdot m_1 \cdot m_2}{r^2}$$
 
-When an object is released from a moving rocket near Earth, its trajectory depends on initial conditions and gravitational forces. This scenario presents a rich problem, blending principles of orbital mechanics and numerical methods. Understanding the potential trajectories is vital for space missions, such as deploying payloads or returning objects to Earth.
+- **F**: Gravitational force  
+- **G**: Gravitational constant ($6.674 \times 10^{-11} \, \text{Nm}^2/\text{kg}^2$)  
+- **m₁, m₂**: Masses of the two objects  
+- **r**: Distance between the centers of the two masses
 
-#### Task:
-
-1. Analyze the possible trajectories (e.g., parabolic, hyperbolic, elliptical) of a payload released near Earth.
-2. Perform a numerical analysis to compute the path of the payload based on given initial conditions (position, velocity, and altitude).
-3. Discuss how these trajectories relate to orbital insertion, reentry, or escape scenarios.
-4. Develop a computational tool to simulate and visualize the motion of the payload under Earth's gravity, accounting for initial velocities and directions.
+>Newton's Law of Universal Gravitation describes how to calculate the gravitational force between two objects based on their masses and the distance between them.
 
 ---
 
-#### Hints and Resources:
+### 🔵 Gravitational Acceleration Near Earth
 
-- Use fundamental gravitational principles, such as Newton's Law of Gravitation and Kepler's Laws, to derive equations and analyze scenarios.
-- Leverage numerical methods or software tools (e.g., Python) to simulate orbits and trajectories.
-- Explore real-world applications, such as space mission planning, satellite deployment, and planetary exploration.
+Near Earth's surface, gravitational acceleration is approximately constant,
+ and this formula illustrates how it's calculated using Earth's mass, radius, and the universal gravitational constant:
 
-These tasks provide a foundation for understanding gravity's influence on motion and its role in celestial mechanics and space exploration.
+$$g = \frac{G \cdot M}{R^2}$$
 
-#### Deliverables:
+- **g**: Gravitational acceleration ($\approx 9.81 \, \text{m/s}^2$)  
+- **M**: Mass of Earth  
+- **R**: Radius of Earth
 
-1. A Markdown document with Python script or notebook implementing the simulations.
-2. A detailed explanation of the subjects.
-3. Graphical representations of orbital trajectories, escape velocities, and payload trajectories near Earth.
+![alt text](image-5.png)
+
+[myColab](https://colab.research.google.com/drive/1Wc53ExkR7nvwacQz44JBb7iQmHrV9kFO)
+
+---
+
+### 🔵 Orbital Trajectories
+
+The path of a payload depends on its total mechanical energy. There are three primary types of trajectories:
+
+**1. Elliptical Orbit:**
+
+- Total energy is negative ($E < 0$)  
+- The object remains in a closed orbit around Earth  
+- This is typical for satellites
+
+**2. Parabolic Trajectory:**
+
+- Total energy is zero ($E = 0$)  
+- The object moves at exactly the escape velocity  
+- This is the boundary between bounded and unbounded motion
+
+**3. Hyperbolic Trajectory:**
+
+- Total energy is positive ($E > 0$)  
+- The object escapes Earth’s gravity completely  
+- This occurs in interplanetary or interstellar missions
+
+![alt text](image-4.png)
+
+[myColab](https://colab.research.google.com/drive/1-jYumlzHehTdF48dWj91Lr7OYSV2dQ6G)
+
+---
+
+### 🔵 Total Mechanical Energy of the Payload
+
+The type of trajectory is determined by the total mechanical energy:
+
+$$E = \frac{1}{2}mv^2 - \frac{G \cdot M \cdot m}{r}$$
+
+- **E**: Total mechanical energy  
+- **v**: Initial velocity of the object  
+- **r**: Distance from Earth's center
+
+![alt text](image-6.png)
+
+[myColab](https://colab.research.google.com/drive/1m8khfbkP8bL-lrLzclHjgky3g_xMYSSw)
+
+---
+
+### 🔵 Escape Velocity
+
+The minimum velocity required for an object to escape Earth's gravitational field:
+
+$$v_e = \sqrt{\frac{2GM}{R}}$$
+
+- At Earth's surface: $v_e \approx 11.2 \, \text{km/s}$
+
+If the object's velocity exceeds this value, the trajectory becomes hyperbolic.
