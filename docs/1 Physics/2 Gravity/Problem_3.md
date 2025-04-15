@@ -1,5 +1,17 @@
 ## 🚀 Trajectories of a Freely Released Payload Near Earth
 
+## 🎯 Problem & Motivation
+
+When a payload is released from a moving spacecraft near Earth, it follows a path governed by the laws of gravitation and orbital mechanics. 
+
+Understanding these trajectories is crucial for:
+- Deploying satellites into orbit,
+- Calculating reentry paths,
+- Or planning interplanetary missions.
+
+This study investigates how varying initial velocities affect whether a payload follows an elliptical, parabolic, or hyperbolic trajectory.
+
+
 ###  🔵 Newton’s Law of Universal Gravitation
 
 Newton's law defines the gravitational force between two masses:
