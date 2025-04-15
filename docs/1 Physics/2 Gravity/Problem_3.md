@@ -80,6 +80,18 @@ $$E = \frac{1}{2}mv^2 - \frac{G \cdot M \cdot m}{r}$$
 
 [myColab](https://colab.research.google.com/drive/1m8khfbkP8bL-lrLzclHjgky3g_xMYSSw)
 
+The animation below shows the trajectories of a payload for three different initial velocities: 
+
+7.5 km/s(Elliptical),
+
+10.8 km/s(Parabolic), and 
+ 
+14 km/s(Hyperbolic).
+
+![alt text](ezgif-4cbd720e90e9f0.gif)
+
+[myColab](https://colab.research.google.com/drive/1Adt95dGbOY_ykc2aNoZqM8Obx-jJuvJE)
+
 ---
 
 ### 🔵 Escape Velocity
@@ -91,3 +103,8 @@ $$v_e = \sqrt{\frac{2GM}{R}}$$
 - At Earth's surface: $v_e \approx 11.2 \, \text{km/s}$
 
 If the object's velocity exceeds this value, the trajectory becomes hyperbolic.
+
+
+## 🚀 Summary
+
+Depending on its initial velocity, a payload released near Earth will follow an elliptical, parabolic, or hyperbolic path due to the balance between gravitational force and kinetic energy.
