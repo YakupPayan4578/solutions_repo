@@ -83,7 +83,7 @@ $$E = \frac{1}{2}mv^2 - \frac{G \cdot M \cdot m}{r}$$
 - **v**: Initial velocity of the object  
 - **r**: Distance from Earth's center
 
-![alt text](image-6.png)
+![alt text](image-8.png)
 
 [myColab](https://colab.research.google.com/drive/1m8khfbkP8bL-lrLzclHjgky3g_xMYSSw)
 
