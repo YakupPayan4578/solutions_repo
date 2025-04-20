@@ -1,64 +1,85 @@
-## Waves
+# 🌊 Waves
 
-### Problem 1
+## 📌 Problem 1: Interference Patterns on a Water Surface
 
-<span style="font-size: 1.2em; font-weight: bold;">Interference Patterns on a water surface</span>
+### 🎯 Motivation
 
-#### Motivation:
+Interference occurs when waves from different sources overlap. On a water surface, we can clearly observe this when ripples from multiple points meet. The overlapping of waves can:
 
-Interference occurs when waves from different sources overlap, creating new patterns. On a water surface, this can be easily observed when ripples from different points meet, forming distinctive interference patterns. These patterns can show us how waves combine in different ways, either reinforcing each other or canceling out.
+- **Reinforce each other** (constructive interference)  
+- **Cancel each other out** (destructive interference)
 
-Studying these patterns helps us understand wave behavior in a simple, visual way. It also allows us to explore important concepts, like the relationship between wave phase and the effects of multiple sources. This task offers a hands-on approach to learning about wave interactions and their real-world applications, making it an interesting and engaging way to dive into wave physics.
+Understanding these patterns helps us see how waves interact visually.
 
-#### Task
+---
 
-A circular wave on the water surface, emanating from a point source located at $(x_0, y_0)$, can be described by the Single Disturbance equation:
+### 🧪 Task
 
-$$
-\eta(x, y, t) = \frac{A}{\sqrt{r}} \cdot \cos\left(kr - \omega t + \phi\right)
-$$
+We describe a circular wave from a point source at coordinates $(x_0, y_0)$ using the following formula:
 
-where:
+$$\eta(x,y,t)=\frac{A}{\sqrt{r}}\cdot\cos(kr-\omega t+\phi)$$
 
-- $\eta(x, y, t)$ is the displacement of the water surface at point $(x, y)$ and time $t$,
-- $A$ is the amplitude of the wave,
-- $k = \frac{2\pi}{\lambda}$ is the wave number, related to the wavelength $\lambda$,
-- $\omega = 2\pi f$ is the angular frequency, related to the frequency $f$,
-- $r = \sqrt{(x - x_0)^2 + (y - y_0)^2}$ is the distance from the source to the point $(x, y)$,
-- $\phi$ is the initial phase.
+Where:
 
-#### Problem Statement:
+- $\eta(x,y,t)$ = vertical displacement at point $(x,y)$ at time $t$  
+- $A$ = amplitude  
+- $r=\sqrt{(x-x_0)^2+(y-y_0)^2}$ = distance from the source  
+- $k=\frac{2\pi}{\lambda}$ = wave number  
+- $\omega=2\pi f$ = angular frequency  
+- $\phi$ = initial phase
 
-Your task is to analyze the interference patterns formed on the water surface due to the superposition of waves emitted from point sources placed at the vertices of a chosen regular polygon.
+---
 
-#### Steps to Follow:
+### ❓ Problem Statement
 
-1. **Select a Regular Polygon:** Choose a regular polygon (e.g., equilateral triangle, square, regular pentagon).
+Analyze the **interference patterns** formed by **multiple point wave sources** placed at the **vertices of a regular polygon** on a water surface.
 
-2. **Position the Sources:** Place point wave sources at the vertices of the selected polygon.
+---
 
-3. **Wave Equations:** Write the equations describing the waves emitted from each source, considering their respective positions.
+### 🔢 Steps to Follow
 
-4. **Superposition of Waves:** Apply the principle of superposition by summing the wave displacements at each point on the water surface:
+1. **Select a Regular Polygon**  
+   For example: equilateral triangle, square, pentagon, etc.
 
-   $$
-   \eta_{\text{sum}}(x, y, t) = \sum_{i=1}^{N} \eta_i(x, y, t)
-   $$
+2. **Position the Sources**  
+   Place a wave source at each vertex.
 
-   where $N$ is the number of sources (vertices of the polygon).
+3. **Write Wave Equations**  
+   For each source $i$ at position $(x_i, y_i)$:
 
-5. **Analyze Interference Patterns:** Examine the resulting displacement $\eta_{\text{sum}}(x, y, t)$ as a function of position $(x, y)$ and time $t$. Identify regions of constructive interference (wave amplification) and destructive interference (wave cancellation).
+   $$\eta_i(x,y,t)=\frac{A}{\sqrt{r_i}}\cdot\cos(kr_i-\omega t+\phi)$$
 
-6. **Visualization:** Present your findings graphically, illustrating the interference patterns for the chosen regular polygon.
+   where:
 
-#### Considerations:
+   $$r_i=\sqrt{(x-x_i)^2+(y-y_i)^2}$$
 
-- Assume all sources emit waves with the same amplitude $A$, wavelength $\lambda$, and frequency $f$.
-- The waves are coherent, maintaining a constant phase difference.
-- You may use simulation and visualization tools such as Python (with libraries like Matplotlib), or other graphical software to aid in your analysis.
+4. **Apply Superposition**  
+   Total displacement is the **sum** of individual waves:
 
-#### Deliverables:
+   $$\eta_{\text{sum}}(x,y,t)=\sum_{i=1}^{N} \eta_i(x,y,t)$$
 
-1. A Markdown document with Python script or notebook implementing the simulations.
-2. A detailed explanation of the interference patterns observed for the chosen regular polygon with the goal of understanding wave superposition.
-3. Graphical representations of the water surface showing constructive and destructive interference regions.
+5. **Analyze the Interference Pattern**  
+   - **Constructive Interference**: Peaks align → amplification  
+   - **Destructive Interference**: Peaks and troughs cancel → zero motion  
+
+6. **Visualize the Pattern**  
+   Use Python or another software to generate graphs.
+
+---
+
+### 🔍 Considerations
+
+- All sources have:
+  - Same amplitude $A$  
+  - Same frequency $f$  
+  - Same wavelength $\lambda$  
+  - Constant phase difference (coherent waves)
+
+---
+
+### 📦 Deliverables
+
+- ✅ A Markdown document (this one!)  
+- ✅ A Python script or notebook simulating the wave interactions  
+- ✅ Graphs showing interference patterns (constructive & destructive regions)  
+- ✅ A short explanation of how the patterns form
