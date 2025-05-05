@@ -18,6 +18,8 @@ $$
 
 This forms the simplest wavefront without interference.
 
+![alt text](ezgif-5360948d30991e.gif)
+
 ---
 
 ## 2. What is Interference?
@@ -48,6 +50,8 @@ $$
 
 This creates a classic ripple pattern with bright and dark fringes (or high and low amplitude regions).
 
+![alt text](ezgif-5ae0cc7de2bf36.gif)
+
 ---
 
 ## 4. Interference from Multiple Sources (Triangle, Square, Pentagon)
@@ -61,6 +65,8 @@ y(x, t) = \sum_{i=1}^{N} A \cdot \sin(k r_i - \omega t)
 $$
 
 These configurations generate symmetrical and intricate interference patterns that depend heavily on the number and position of the sources.
+
+![alt text](ezgif-54181be6e59c12.gif)
 
 ---
 
@@ -111,6 +117,8 @@ These patterns vary based on the distance between sources, wavelength, and obser
 | Phase Relationship      | In Phase                           | Out of Phase                      |
 | Visual Effect (Heatmap) | Bright Spots                       | Dark Spots                         |
 
+![alt text](ezgif-5c3cbcfb7dc652.gif)
+
 ---
 
 ## 6. Conclusion & Observations
@@ -120,21 +128,3 @@ Through this study of water wave interference, we can conclude:
 - Interference arises from the superposition of multiple wavefronts.
 - Constructive and destructive effects are determined by wave phase and path differences.
 - More sources create more complex, symmetrical, and visually captivating interference patterns.
-
-
-
-1
-
-![alt text](ezgif-5360948d30991e.gif)
-
-2
-
-![alt text](ezgif-5ae0cc7de2bf36.gif)
-
-3
-
-![alt text](ezgif-54181be6e59c12.gif)
-
-4
-
-![alt text](ezgif-5c3cbcfb7dc652.gif)
