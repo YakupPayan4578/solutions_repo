@@ -120,3 +120,21 @@ Through this study of water wave interference, we can conclude:
 - Interference arises from the superposition of multiple wavefronts.
 - Constructive and destructive effects are determined by wave phase and path differences.
 - More sources create more complex, symmetrical, and visually captivating interference patterns.
+
+
+
+1
+
+![alt text](ezgif-5360948d30991e.gif)
+
+2
+
+![alt text](ezgif-5ae0cc7de2bf36.gif)
+
+3
+
+![alt text](ezgif-54181be6e59c12.gif)
+
+4
+
+![alt text](ezgif-5c3cbcfb7dc652.gif)
