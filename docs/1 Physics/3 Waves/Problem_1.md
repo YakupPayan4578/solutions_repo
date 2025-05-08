@@ -54,9 +54,9 @@ $$
 
 This creates a classic ripple pattern with bright and dark fringes (or high and low amplitude regions).
 
-![alt text](ezgif-5ae0cc7de2bf36.gif)
+![alt text](ezgif-6ed769d7d85a55.gif)
 
-[myColab](https://colab.research.google.com/drive/1W9fYy5XyZolfC1KMuiw90_HwIuNlDRac)
+[myColab](https://colab.research.google.com/drive/1W9fYy5XyZolfC1KMuiw90_HwIuNlDRac#scrollTo=GyWgzMgCU1yH)
 
 ---
 
