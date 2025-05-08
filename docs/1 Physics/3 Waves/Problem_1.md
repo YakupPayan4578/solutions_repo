@@ -1,3 +1,5 @@
+# Waves - Problem 1
+
 # 🌊 Interference Patterns on a Water Surface
 
 Wave behavior is one of the fundamental aspects of physics, and interference patterns beautifully demonstrate how waves interact with each other. Let's explore how interference occurs using one, two, and multiple wave sources.
@@ -19,6 +21,8 @@ $$
 This forms the simplest wavefront without interference.
 
 ![alt text](ezgif-5360948d30991e.gif)
+
+[myColab](https://colab.research.google.com/drive/1WQxmiMLIsL2ufN6T2BxyM0rU3LA6xP32#scrollTo=V_G9iZluLVFB)
 
 ---
 
@@ -52,6 +56,8 @@ This creates a classic ripple pattern with bright and dark fringes (or high and 
 
 ![alt text](ezgif-5ae0cc7de2bf36.gif)
 
+[myColab](https://colab.research.google.com/drive/1W9fYy5XyZolfC1KMuiw90_HwIuNlDRac)
+
 ---
 
 ## 4. Interference from Multiple Sources (Triangle, Square, Pentagon)
@@ -67,6 +73,8 @@ $$
 These configurations generate symmetrical and intricate interference patterns that depend heavily on the number and position of the sources.
 
 ![alt text](ezgif-54181be6e59c12.gif)
+
+[myColab](https://colab.research.google.com/drive/1Xa4HqSR1vmmIT5wM9vWm2PsDV65MQEcB)
 
 ---
 
@@ -118,6 +126,8 @@ These patterns vary based on the distance between sources, wavelength, and obser
 | Visual Effect (Heatmap) | Bright Spots                       | Dark Spots                         |
 
 ![alt text](ezgif-5c3cbcfb7dc652.gif)
+
+[myColab](https://colab.research.google.com/drive/1vyBFlEa-NqcweMD3fCrNBjZhsgLHtjfX)
 
 ---
 
