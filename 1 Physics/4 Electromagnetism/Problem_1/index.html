@@ -6,13 +6,13 @@
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <link href="../../../img/favicon.ico" rel="shortcut icon"/>
-<title>Problem 1 - Physics and Mathematics</title>
+<title>Electromagnetism - Problem 1 - Physics and Mathematics</title>
 <link href="../../../css/theme.css" rel="stylesheet"/>
 <link href="../../../css/theme_extra.css" rel="stylesheet"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" rel="stylesheet"/>
 <script>
         // Current page data
-        var mkdocs_page_name = "Problem 1";
+        var mkdocs_page_name = "Electromagnetism - Problem 1";
         var mkdocs_page_input_path = "1 Physics/4 Electromagnetism/Problem_1.md";
         var mkdocs_page_url = null;
       </script>
@@ -66,28 +66,14 @@
 </li>
 <li class="toctree-l1"><a class="reference internal">3 Waves</a>
 <ul>
-<li class="toctree-l2"><a class="reference internal" href="../../3%20Waves/Problem_1/">🌊 Interference Patterns on a Water Surface</a>
+<li class="toctree-l2"><a class="reference internal" href="../../3%20Waves/Problem_1/">Waves - Problem 1</a>
 </li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal current">4 Electromagnetism</a>
 <ul class="current">
-<li class="toctree-l2 current"><a class="reference internal current" href="#">Problem 1</a>
+<li class="toctree-l2 current"><a class="reference internal current" href="#">Electromagnetism - Problem 1</a>
 <ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="#problem-1">Problem 1</a>
-<ul>
-<li class="toctree-l4"><a class="reference internal" href="#motivation">Motivation:</a>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="#task">Task:</a>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="#deliverables">Deliverables:</a>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="#hints-and-resources">Hints and Resources:</a>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="#deliverables_1">Deliverables:</a>
-</li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -179,7 +165,7 @@
 <li><a aria-label="Docs" class="icon icon-home" href="../../.."></a></li>
 <li class="breadcrumb-item">1 Physics</li>
 <li class="breadcrumb-item">4 Electromagnetism</li>
-<li class="breadcrumb-item active">Problem 1</li>
+<li class="breadcrumb-item active">Electromagnetism - Problem 1</li>
 <li class="wy-breadcrumbs-aside">
 </li>
 </ul>
@@ -187,68 +173,195 @@
 </div>
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
-<h2 id="electromangetism">Electromangetism</h2>
-<h3 id="problem-1">Problem 1</h3>
-<p><span style="font-size: 1.2em; font-weight: bold;"><strong>Simulating the effects of the Lorentz Force</strong></span></p>
-<h4 id="motivation">Motivation:</h4>
-<p>The Lorentz force, expressed as <span class="arithmatex">\(\mathbf{F} = q\mathbf{E} + q\mathbf{v} \times \mathbf{B}\)</span>, governs the motion of charged particles in electric and magnetic fields. It is foundational in fields like plasma physics, particle accelerators, and astrophysics. By focusing on simulations, we can explore the practical applications and visualize the complex trajectories that arise due to this force.</p>
-<h4 id="task">Task:</h4>
-<p>1 <strong>Exploration of Applications:</strong></p>
+<h1 id="electromagnetism-problem-1">Electromagnetism - Problem 1</h1>
+<h1 id="1-introduction-a-brief-overview-of-electromagnetism">1. Introduction – A Brief Overview of Electromagnetism</h1>
+<p>Electromagnetism is the branch of physics that studies the interaction between electric fields (<span class="arithmatex">\(\vec{E}\)</span>) and magnetic fields (<span class="arithmatex">\(\vec{B}\)</span>). Though they may seem separate, they combine to form one of the four fundamental forces of nature: the electromagnetic force.</p>
+<hr/>
+<h2 id="what-is-an-electric-field">🔌 What is an Electric Field?</h2>
+<p>An electric field is a force field created around charged particles. It represents the force per unit positive charge:</p>
+<div class="arithmatex">\[
+\vec{E} = \frac{\vec{F}}{q}
+\]</div>
+<p>Where <span class="arithmatex">\(q\)</span> is the charge, and <span class="arithmatex">\(\vec{F}\)</span> is the electric force. Electric fields can accelerate or decelerate particles.</p>
+<hr/>
+<h2 id="what-is-a-magnetic-field">🧲 What is a Magnetic Field?</h2>
+<p>Magnetic fields are created by moving charges or magnets. Unlike electric fields, they do <strong>not</strong> affect stationary charges — only moving ones.</p>
+<p><img alt="alt text" src="../ezgif-80c0065412faf8.gif"/></p>
+<p><a href="https://colab.research.google.com/drive/1AI3QlOcuTWvGkD-KzhSS8rru_Uo1QQ6a">myColab</a></p>
+<hr/>
+<h2 id="electromagnetic-force-lorentz-force">⚡ Electromagnetic Force (Lorentz Force)</h2>
+<p>When both electric and magnetic fields are present, the total force on a charged particle is described by the Lorentz force:</p>
+<div class="arithmatex">\[
+\vec{F} = q\vec{E} + q\vec{v} \times \vec{B}
+\]</div>
 <ul>
-<li>Identify systems where the Lorentz force plays a key role (e.g., particle accelerators, mass spectrometers, plasma confinement).</li>
-<li>Discuss the relevance of electric (<span class="arithmatex">\(\mathbf{E}\)</span>) and magnetic (<span class="arithmatex">\(\mathbf{B}\)</span>) fields in controlling the motion of charged particles.</li>
+<li><span class="arithmatex">\(q\)</span>: Charge of the particle  </li>
+<li><span class="arithmatex">\(\vec{v}\)</span>: Velocity vector  </li>
+<li><span class="arithmatex">\(\vec{E}\)</span>: Electric field  </li>
+<li><span class="arithmatex">\(\vec{B}\)</span>: Magnetic field  </li>
 </ul>
-<p>2 <strong>Simulating Particle Motion:</strong></p>
+<p>This force determines the particle’s trajectory.</p>
+<p><img alt="alt text" src="../ezgif-483c0498c49da1.gif"/></p>
+<p><a href="https://colab.research.google.com/drive/1llyBCYKfPJoWkxhIeYUAcDVPc90iMIgx">myColab</a></p>
+<hr/>
+<h2 id="real-life-applications-of-electromagnetism">🌍 Real-Life Applications of Electromagnetism</h2>
 <ul>
-<li>Implement a simulation to compute and visualize the trajectory of a charged particle under:<ul>
-<li>A uniform magnetic field.</li>
-<li>Combined uniform electric and magnetic fields.</li>
-<li>Crossed electric and magnetic fields.</li>
+<li><strong>MRI machines</strong> (manipulating atomic nuclei using magnetic fields)  </li>
+<li><strong>Electron microscopes</strong> (steering particles with fields)  </li>
+<li><strong>Particle accelerators</strong> (controlling charged particles' paths)  </li>
+<li><strong>Electromagnets</strong>, electric motors, generators</li>
 </ul>
-</li>
-<li>Simulate the particle’s circular, helical, or drift motion based on initial conditions and field configurations.</li>
-</ul>
-<p>3 <strong>Parameter Exploration:</strong></p>
+<p>elds.</p>
+<hr/>
+<h1 id="2-applications-of-the-lorentz-force">2. Applications of the Lorentz Force</h1>
+<p>The Lorentz force equation:</p>
+<div class="arithmatex">\[
+\vec{F} = q\vec{E} + q\vec{v} \times \vec{B}
+\]</div>
+<p>shows how charged particles move under electric (<span class="arithmatex">\(\vec{E}\)</span>) and magnetic (<span class="arithmatex">\(\vec{B}\)</span>) fields. This principle is used in many technologies and scientific tools.</p>
+<hr/>
+<h2 id="where-is-the-lorentz-force-used">🔬 Where is the Lorentz Force Used?</h2>
+<h3 id="1-particle-accelerators">1. Particle Accelerators</h3>
+<p>Use electric and magnetic fields to control the speed and direction of particles at near-light speeds.<br/>
+➡️ Example: Large Hadron Collider (LHC)</p>
+<h3 id="2-mass-spectrometers">2. Mass Spectrometers</h3>
+<p>Identify materials by bending charged particles with magnetic fields. The radius of curvature depends on mass-to-charge ratio.</p>
+<h3 id="3-plasma-confinement">3. Plasma Confinement</h3>
+<p>In fusion reactors like <strong>tokamaks</strong>, strong magnetic fields confine hot plasma.<br/>
+➡️ Magnetic fields control charged ions to avoid contact with walls.</p>
+<hr/>
+<h2 id="why-are-vece-and-vecb-fields-important">💡 Why are <span class="arithmatex">\(\vec{E}\)</span> and <span class="arithmatex">\(\vec{B}\)</span> Fields Important?</h2>
 <ul>
-<li>Allow variations in:<ul>
-<li>Field strengths (<span class="arithmatex">\(E\)</span>, <span class="arithmatex">\(B\)</span>).</li>
-<li>Initial particle velocity (<span class="arithmatex">\(\mathbf{v}\)</span>).</li>
-<li>Charge and mass of the particle (<span class="arithmatex">\(q\)</span>, <span class="arithmatex">\(m\)</span>).</li>
+<li><strong>Electric Fields (<span class="arithmatex">\(\vec{E}\)</span>):</strong> Push or pull charged particles, causing acceleration.  </li>
+<li><strong>Magnetic Fields (<span class="arithmatex">\(\vec{B}\)</span>):</strong> Change the direction of moving charges, causing circular or spiral motion.</li>
 </ul>
-</li>
-<li>Observe how these parameters influence the trajectory.</li>
-</ul>
-<p>4 <strong>Visualization:</strong></p>
+<p>Used together, these fields <strong>precisely control</strong> particle motion — speed, direction, and energy.</p>
+<hr/>
+<h1 id="3-simulating-particle-motion">3. Simulating Particle Motion</h1>
+<p>To understand how the Lorentz force affects charged particles, we simulate their motion under different field configurations.</p>
+<hr/>
+<h2 id="case-1-uniform-magnetic-field-vecb">⚙️ Case 1: Uniform Magnetic Field (<span class="arithmatex">\(\vec{B}\)</span>)</h2>
+<p>When only a magnetic field is present:</p>
+<div class="arithmatex">\[
+\vec{F} = q \vec{v} \times \vec{B}
+\]</div>
 <ul>
-<li>Create clear, labeled plots showing the particle’s path in 2D and 3D for different scenarios.</li>
-<li>Highlight physical phenomena such as the Larmor radius and drift velocity.</li>
+<li>The particle moves in a <strong>circular</strong> path.</li>
+<li>The radius of the motion is called the <strong>Larmor radius</strong>:</li>
+</ul>
+<div class="arithmatex">\[
+r = \frac{mv}{|q|B}
+\]</div>
+<ul>
+<li>The frequency of rotation is the <strong>cyclotron frequency</strong>:</li>
+</ul>
+<div class="arithmatex">\[
+\omega = \frac{|q|B}{m}
+\]</div>
+<p><img alt="alt text" src="../ezgif-52ee510a710077.gif"/></p>
+<p><a href="https://colab.research.google.com/drive/1s8eRWC73ed1olbk9kTlBoPHjhHJ_MfR5">myColab</a></p>
+<hr/>
+<h2 id="case-2-uniform-electric-and-magnetic-fields">⚙️ Case 2: Uniform Electric and Magnetic Fields</h2>
+<p>When both fields are present and aligned:</p>
+<div class="arithmatex">\[
+\vec{F} = q\vec{E} + q\vec{v} \times \vec{B}
+\]</div>
+<ul>
+<li>Particles experience acceleration due to <span class="arithmatex">\(\vec{E}\)</span> and curved motion due to <span class="arithmatex">\(\vec{B}\)</span>.</li>
+<li>The trajectory becomes a <strong>helical path</strong>.</li>
+</ul>
+<p><img alt="alt text" src="../ezgif-2b5fc5e0b8929d.gif"/></p>
+<p><a href="https://colab.research.google.com/drive/1zanH3Y8O4-4ieDM5cpskM9Z_J8xRmGg1">myColab</a></p>
+<hr/>
+<h2 id="case-3-crossed-fields-vece-perp-vecb">⚙️ Case 3: Crossed Fields (<span class="arithmatex">\(\vec{E} \perp \vec{B}\)</span>)</h2>
+<p>When electric and magnetic fields are perpendicular:</p>
+<ul>
+<li>The particle undergoes <strong>drift motion</strong>.</li>
+<li>The <strong>drift velocity</strong> is given by:</li>
+</ul>
+<div class="arithmatex">\[
+\vec{v}_{\text{drift}} = \frac{\vec{E} \times \vec{B}}{B^2}
+\]</div>
+<p>This causes the particle to move in a spiral while drifting in a straight line.</p>
+<hr/>
+<p>➡️ By changing the configuration of <span class="arithmatex">\(\vec{E}\)</span> and <span class="arithmatex">\(\vec{B}\)</span> fields, we observe different types of motion:</p>
+<ul>
+<li><strong>Circular</strong> (only <span class="arithmatex">\(\vec{B}\)</span>)  </li>
+<li><strong>Helical</strong> (<span class="arithmatex">\(\vec{E}\)</span> and <span class="arithmatex">\(\vec{B}\)</span> aligned)  </li>
+<li><strong>Drift</strong> (<span class="arithmatex">\(\vec{E} \perp \vec{B}\)</span>)</li>
+</ul>
+<p>These simulations help visualize how the Lorentz force guides particles in real systems.</p>
+<hr/>
+<h1 id="4-parameter-exploration">4. Parameter Exploration</h1>
+<p>To understand how different conditions affect particle motion, we explore various parameters in our simulations.</p>
+<hr/>
+<h2 id="adjustable-parameters">🔄 Adjustable Parameters</h2>
+<p>We vary the following quantities:</p>
+<ul>
+<li><strong>Electric field strength</strong> (<span class="arithmatex">\(|\vec{E}|\)</span>)</li>
+<li><strong>Magnetic field strength</strong> (<span class="arithmatex">\(|\vec{B}|\)</span>)</li>
+<li><strong>Initial particle velocity</strong> (<span class="arithmatex">\(\vec{v}_0\)</span>)</li>
+<li><strong>Particle charge</strong> (<span class="arithmatex">\(q\)</span>)</li>
+<li><strong>Particle mass</strong> (<span class="arithmatex">\(m\)</span>)</li>
 </ul>
 <hr/>
-<h4 id="deliverables">Deliverables:</h4>
-<ol>
-<li>A Markdown document with Python script or notebook implementing the simulations.</li>
-<li>Visualizations of particle trajectories for the specified field configurations.</li>
-<li>A discussion on how the results relate to practical systems, such as cyclotrons or magnetic traps.</li>
-</ol>
-<hr/>
-<h4 id="hints-and-resources">Hints and Resources:</h4>
+<h2 id="effects-on-trajectory">🌀 Effects on Trajectory</h2>
+<h3 id="magnetic-field-strength-vecb">🧲 Magnetic Field Strength (<span class="arithmatex">\(|\vec{B}|\)</span>)</h3>
 <ul>
-<li>Use numerical methods like the Euler or Runge-Kutta method to solve the equations of motion</li>
-<li>Employ Python libraries such as NumPy for calculations and Matplotlib for visualizations.</li>
-<li>Start with simple cases (e.g., uniform magnetic field) and gradually add complexity (e.g., crossed fields).</li>
+<li>A stronger <span class="arithmatex">\(\vec{B}\)</span> reduces the Larmor radius:</li>
 </ul>
-<p>This task focuses on applying the Lorentz force concept through simulations, enabling an intuitive understanding of its effects in real-world scenarios.</p>
-<h4 id="deliverables_1">Deliverables:</h4>
-<ol>
-<li>A Markdown document with Python script or notebook implementing the simulations.</li>
-<li>Visualizations of particle trajectories for the specified field configurations.</li>
-<li>A discussion on how the results relate to practical systems, such as cyclotrons or magnetic traps.</li>
-<li>Suggestions for extending the simulation to more complex scenarios, such as non-uniform fields.</li>
-</ol>
+<div class="arithmatex">\[
+r = \frac{mv}{|q|B}
+\]</div>
+<ul>
+<li>The particle spins faster due to increased cyclotron frequency:</li>
+</ul>
+<div class="arithmatex">\[
+\omega = \frac{|q|B}{m}
+\]</div>
+<p><img alt="alt text" src="../ezgif-3a6b1726ac5b99.gif"/></p>
+<p><a href="https://colab.research.google.com/drive/1j18qgd_C-gsWL_Jq9drHLjZd3H_dJkDo">myColab</a></p>
+<hr/>
+<h3 id="electric-field-strength-vece">⚡ Electric Field Strength (<span class="arithmatex">\(|\vec{E}|\)</span>)</h3>
+<ul>
+<li>A stronger <span class="arithmatex">\(\vec{E}\)</span> causes greater linear acceleration:</li>
+</ul>
+<div class="arithmatex">\[
+\vec{F}_E = q\vec{E}
+\]</div>
+<ul>
+<li>In crossed fields, drift velocity increases:</li>
+</ul>
+<div class="arithmatex">\[
+\vec{v}_{\text{drift}} = \frac{\vec{E} \times \vec{B}}{B^2}
+\]</div>
+<p><img alt="alt text" src="../ezgif-659fe063d72bbe.gif"/></p>
+<p><a href="https://colab.research.google.com/drive/1I1BuEydkHXbAKbzygwbMUlj0tlD7akcI">myColab</a></p>
+<hr/>
+<h3 id="initial-velocity-vecv_0">🚀 Initial Velocity (<span class="arithmatex">\(\vec{v}_0\)</span>)</h3>
+<ul>
+<li>Affects trajectory shape (radius, pitch of helix)</li>
+<li>Determines direction and magnitude of <span class="arithmatex">\(\vec{v} \times \vec{B}\)</span></li>
+</ul>
+<p><img alt="alt text" src="../ezgif-6afc0c04ea7ea1.gif"/></p>
+<p><a href="https://colab.research.google.com/drive/1xw8uOH0J_O59b1g_YRYpHTCA2WAeJp-K">myColab</a></p>
+<hr/>
+<h3 id="charge-q-and-mass-m">💥 Charge (<span class="arithmatex">\(q\)</span>) and Mass (<span class="arithmatex">\(m\)</span>)</h3>
+<ul>
+<li>Trajectory depends on charge-to-mass ratio (<span class="arithmatex">\(\frac{q}{m}\)</span>)</li>
+<li>Lighter or highly charged particles respond more quickly</li>
+</ul>
+<p><img alt="alt text" src="../ezgif-67dede3b3fbd43.gif"/></p>
+<p><a href="https://colab.research.google.com/drive/1z0D0XC-_IUYCOVh279vl2g-2HLy_p1Wc">myColab</a></p>
+<hr/>
+<h1 id="summary-understanding-particle-motion-with-electromagnetic-fields">🔚 Summary – Understanding Particle Motion with Electromagnetic Fields</h1>
+<p>Electromagnetic fields guide charged particles through circular, helical, or drifting paths depending on the configuration of <span class="arithmatex">\(\vec{E}\)</span> and <span class="arithmatex">\(\vec{B}\)</span> fields.<br/>
+By adjusting parameters such as field strength, velocity, charge, and mass, we can fully control and visualize the trajectory of particles using the Lorentz force.</p>
+<p>These concepts are crucial for applications in particle accelerators, plasma physics, and electromagnetic devices.</p>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
-<a class="btn btn-neutral float-left" href="../../3%20Waves/Problem_1/" title="🌊 Interference Patterns on a Water Surface"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+<a class="btn btn-neutral float-left" href="../../3%20Waves/Problem_1/" title="Waves - Problem 1"><span class="icon icon-circle-arrow-left"></span> Previous</a>
 <a class="btn btn-neutral float-right" href="../../5%20Circuits/Problem_1/" title="Problem 1">Next <span class="icon icon-circle-arrow-right"></span></a>
 </div>
 <hr/>
