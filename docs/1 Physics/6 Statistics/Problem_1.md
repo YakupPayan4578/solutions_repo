@@ -1,55 +1,85 @@
-## Statistics
+# 📊 Exploring the Central Limit Theorem through Simulations
 
-### Problem 1
+## 🎯 Motivation
 
-<span style="font-size: 1.2em; font-weight: bold;">**Exploring the Central Limit Theorem through simulations**</span>
+The **Central Limit Theorem (CLT)** states:
 
-#### Motivation:
+$$
+\text{As } n \to \infty,\ \bar{X}_n \sim \mathcal{N}(\mu, \sigma^2/n)
+$$
 
-The Central Limit Theorem (CLT) is a cornerstone of probability and statistics, stating that the sampling distribution of the sample mean approaches a normal distribution as the sample size increases, regardless of the population’s original distribution. Simulations provide an intuitive and hands-on way to observe this phenomenon in action.
+Even if the population distribution is not normal, the distribution of sample means tends to be normal as sample size increases.
 
-#### Task:
-
-1 **Simulating Sampling Distributions:**
-
-   - Select several types of population distributions, such as:
-     - Uniform distribution.
-     - Exponential distribution.
-     - Binomial distribution.
-   - For each distribution, generate a large dataset representing the population.
-
-2 **Sampling and Visualization:**
-
-   - Randomly sample data from the population and calculate the sample mean for different sample sizes (e.g., 5, 10, 30, 50).
-   - Repeat the process multiple times to create a sampling distribution of the sample mean.
-   - Plot histograms of the sample means for each sample size and observe the convergence to a normal distribution.
-
-3 **Parameter Exploration:**
-
-   - Investigate how the shape of the original distribution and the sample size influence the rate of convergence to normality.
-   - Highlight the impact of the population’s variance on the spread of the sampling distribution.
-
-4 **Practical Applications:**
-
-   - Reflect on the importance of the CLT in real-world scenarios, such as:
-     - Estimating population parameters.
-     - Quality control in manufacturing.
-     - Predicting outcomes in financial models.
+Simulations allow us to see this transition **visually and intuitively**.
 
 ---
 
-#### Deliverables:
+## 🔧 Task Overview
 
-1. A Markdown document and Python scripts or notebooks implementing the simulations for various population distributions.
-2. Plots illustrating the sampling distributions and their progression toward normality.
-3. A discussion on the implications of the results and their connection to theoretical expectations.
+### 1. Simulating Sampling Distributions
+
+- Define different population distributions:
+  - Uniform
+  - Exponential
+  - Binomial
+
+- Generate a large dataset for each distribution.
+
+### 2. Sampling and Visualization
+
+- For sample sizes: **5, 10, 30, 50**, draw many samples.
+- Calculate the sample mean for each.
+- Plot **histograms** of sample means.
+- Observe **convergence to normality**.
+
+![alt text](ezgif-85a421daa7b796.gif)
+
+![alt text](ezgif-8906a11821a0d2.gif)
+
+### 3. Parameter Exploration
+
+- Vary the population distribution and sample size.
+- Analyze how **variance** affects the spread of sample means.
+- Track the **rate of convergence**.
+
+### 4. Practical Applications
+
+- Estimating unknown population parameters
+- Quality control in manufacturing
+- Financial modeling and predictions
 
 ---
 
-#### Hints and Resources:
+## 📈 Deliverables
 
-- Use Python libraries such as NumPy for random number generation and Matplotlib/Seaborn for visualization.
-- Begin with simple populations (e.g., uniform or normal) before exploring more complex distributions.
-- Ensure students understand how to calculate and interpret the sample mean and variance.
+- Python notebooks for simulations
+- Histogram plots for different sample sizes
+- Discussion section:
+  - Visual evidence of CLT
+  - Theoretical expectations vs empirical results
 
-This task encourages students to explore the Central Limit Theorem through computational experiments, deepening their understanding of its significance in statistics.
+---
+
+## 💡 Tips
+
+- Use `NumPy`, `Matplotlib`, `Seaborn`.
+- Start with **Uniform** or **Normal** distribution.
+- Emphasize understanding of:
+  
+  $$
+  \bar{X} = \frac{1}{n} \sum_{i=1}^{n} X_i, \quad \text{Var}(\bar{X}) = \frac{\sigma^2}{n}
+  $$
+
+---
+
+## 🧠 Key Insight
+
+As sample size increases:
+
+- Shape of original distribution becomes **less important**
+- Sampling distribution becomes **more normal**
+- This justifies using **normal approximations** in real-life problems
+
+---
+
+![alt text](image.png)
