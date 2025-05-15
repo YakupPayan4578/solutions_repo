@@ -2,15 +2,15 @@
 
 ## 🎯 Motivation
 
-The **Central Limit Theorem (CLT)** states:
+The **Central Limit Theorem (CLT)** tells us that:
 
 $$
 \text{As } n \to \infty,\ \bar{X}_n \sim \mathcal{N}(\mu, \sigma^2/n)
 $$
 
-Even if the population distribution is not normal, the distribution of sample means tends to be normal as sample size increases.
+So, even if the population is not normal, the **mean of large samples** will follow a **normal distribution**.
 
-Simulations allow us to see this transition **visually and intuitively**.
+Simulations help us **observe this behavior in action**, making the abstract idea more intuitive.
 
 ---
 
@@ -18,19 +18,19 @@ Simulations allow us to see this transition **visually and intuitively**.
 
 ### 1. Simulating Sampling Distributions
 
-- Define different population distributions:
-  - Uniform
-  - Exponential
-  - Binomial
+- We choose diverse population distributions to test the CLT:
+  - **Uniform** (flat shape)
+  - **Exponential** (skewed)
+  - **Binomial** (discrete)
 
-- Generate a large dataset for each distribution.
+- For each, we create large datasets to mimic full populations.
 
 ### 2. Sampling and Visualization
 
-- For sample sizes: **5, 10, 30, 50**, draw many samples.
-- Calculate the sample mean for each.
-- Plot **histograms** of sample means.
-- Observe **convergence to normality**.
+- For sample sizes: **5, 10, 30, 50**, we take many random samples.
+- We compute the **mean of each sample**.
+- We plot **histograms** to show how sample means behave.
+- These plots reveal how they become more **bell-shaped**.
 
 ![alt text](ezgif-85a421daa7b796.gif)
 
@@ -38,34 +38,34 @@ Simulations allow us to see this transition **visually and intuitively**.
 
 ### 3. Parameter Exploration
 
-- Vary the population distribution and sample size.
-- Analyze how **variance** affects the spread of sample means.
-- Track the **rate of convergence**.
+- We experiment with different distributions and sample sizes.
+- We observe how **higher variance** causes wider sampling spread.
+- We track how fast the **normal shape** appears.
 
 ### 4. Practical Applications
 
-- Estimating unknown population parameters
-- Quality control in manufacturing
-- Financial modeling and predictions
+- Used to **estimate population parameters**.
+- Important in **quality control** (e.g., factory outputs).
+- Useful in **finance** to model uncertain outcomes.
 
 ---
 
 ## 📈 Deliverables
 
-- Python notebooks for simulations
-- Histogram plots for different sample sizes
-- Discussion section:
-  - Visual evidence of CLT
-  - Theoretical expectations vs empirical results
+- Python notebooks showing the full simulation process.
+- Histogram plots that illustrate sample mean behavior.
+- Reflections on:
+  - How the CLT appears visually.
+  - Whether results match the theory.
 
 ---
 
 ## 💡 Tips
 
-- Use `NumPy`, `Matplotlib`, `Seaborn`.
-- Start with **Uniform** or **Normal** distribution.
-- Emphasize understanding of:
-  
+- Libraries like `NumPy`, `Matplotlib`, and `Seaborn` are helpful.
+- Start with simpler cases (e.g., **Uniform**) to build intuition.
+- Focus on:
+
   $$
   \bar{X} = \frac{1}{n} \sum_{i=1}^{n} X_i, \quad \text{Var}(\bar{X}) = \frac{\sigma^2}{n}
   $$
@@ -74,11 +74,11 @@ Simulations allow us to see this transition **visually and intuitively**.
 
 ## 🧠 Key Insight
 
-As sample size increases:
+As sample size grows:
 
-- Shape of original distribution becomes **less important**
-- Sampling distribution becomes **more normal**
-- This justifies using **normal approximations** in real-life problems
+- The original distribution’s shape matters **less and less**
+- Sample means become **normally distributed**
+- This supports **using normal models** in real-world problems
 
 ---
 
