@@ -195,73 +195,73 @@
 <div class="section" itemprop="articleBody">
 <h1 id="exploring-the-central-limit-theorem-through-simulations">📊 Exploring the Central Limit Theorem through Simulations</h1>
 <h2 id="motivation">🎯 Motivation</h2>
-<p>The <strong>Central Limit Theorem (CLT)</strong> states:</p>
+<p>The <strong>Central Limit Theorem (CLT)</strong> tells us that:</p>
 <div class="arithmatex">\[
 \text{As } n \to \infty,\ \bar{X}_n \sim \mathcal{N}(\mu, \sigma^2/n)
 \]</div>
-<p>Even if the population distribution is not normal, the distribution of sample means tends to be normal as sample size increases.</p>
-<p>Simulations allow us to see this transition <strong>visually and intuitively</strong>.</p>
+<p>So, even if the population is not normal, the <strong>mean of large samples</strong> will follow a <strong>normal distribution</strong>.</p>
+<p>Simulations help us <strong>observe this behavior in action</strong>, making the abstract idea more intuitive.</p>
 <hr/>
 <h2 id="task-overview">🔧 Task Overview</h2>
 <h3 id="1-simulating-sampling-distributions">1. Simulating Sampling Distributions</h3>
 <ul>
-<li>Define different population distributions:</li>
-<li>Uniform</li>
-<li>Exponential</li>
+<li>We choose diverse population distributions to test the CLT:</li>
+<li><strong>Uniform</strong> (flat shape)</li>
+<li><strong>Exponential</strong> (skewed)</li>
 <li>
-<p>Binomial</p>
+<p><strong>Binomial</strong> (discrete)</p>
 </li>
 <li>
-<p>Generate a large dataset for each distribution.</p>
+<p>For each, we create large datasets to mimic full populations.</p>
 </li>
 </ul>
 <h3 id="2-sampling-and-visualization">2. Sampling and Visualization</h3>
 <ul>
-<li>For sample sizes: <strong>5, 10, 30, 50</strong>, draw many samples.</li>
-<li>Calculate the sample mean for each.</li>
-<li>Plot <strong>histograms</strong> of sample means.</li>
-<li>Observe <strong>convergence to normality</strong>.</li>
+<li>For sample sizes: <strong>5, 10, 30, 50</strong>, we take many random samples.</li>
+<li>We compute the <strong>mean of each sample</strong>.</li>
+<li>We plot <strong>histograms</strong> to show how sample means behave.</li>
+<li>These plots reveal how they become more <strong>bell-shaped</strong>.</li>
 </ul>
 <p><img alt="alt text" src="../ezgif-85a421daa7b796.gif"/></p>
 <p><img alt="alt text" src="../ezgif-8906a11821a0d2.gif"/></p>
 <h3 id="3-parameter-exploration">3. Parameter Exploration</h3>
 <ul>
-<li>Vary the population distribution and sample size.</li>
-<li>Analyze how <strong>variance</strong> affects the spread of sample means.</li>
-<li>Track the <strong>rate of convergence</strong>.</li>
+<li>We experiment with different distributions and sample sizes.</li>
+<li>We observe how <strong>higher variance</strong> causes wider sampling spread.</li>
+<li>We track how fast the <strong>normal shape</strong> appears.</li>
 </ul>
 <h3 id="4-practical-applications">4. Practical Applications</h3>
 <ul>
-<li>Estimating unknown population parameters</li>
-<li>Quality control in manufacturing</li>
-<li>Financial modeling and predictions</li>
+<li>Used to <strong>estimate population parameters</strong>.</li>
+<li>Important in <strong>quality control</strong> (e.g., factory outputs).</li>
+<li>Useful in <strong>finance</strong> to model uncertain outcomes.</li>
 </ul>
 <hr/>
 <h2 id="deliverables">📈 Deliverables</h2>
 <ul>
-<li>Python notebooks for simulations</li>
-<li>Histogram plots for different sample sizes</li>
-<li>Discussion section:</li>
-<li>Visual evidence of CLT</li>
-<li>Theoretical expectations vs empirical results</li>
+<li>Python notebooks showing the full simulation process.</li>
+<li>Histogram plots that illustrate sample mean behavior.</li>
+<li>Reflections on:</li>
+<li>How the CLT appears visually.</li>
+<li>Whether results match the theory.</li>
 </ul>
 <hr/>
 <h2 id="tips">💡 Tips</h2>
 <ul>
-<li>Use <code>NumPy</code>, <code>Matplotlib</code>, <code>Seaborn</code>.</li>
-<li>Start with <strong>Uniform</strong> or <strong>Normal</strong> distribution.</li>
-<li>Emphasize understanding of:</li>
+<li>Libraries like <code>NumPy</code>, <code>Matplotlib</code>, and <code>Seaborn</code> are helpful.</li>
+<li>Start with simpler cases (e.g., <strong>Uniform</strong>) to build intuition.</li>
+<li>Focus on:</li>
 </ul>
 <p>$$
   \bar{X} = \frac{1}{n} \sum_{i=1}^{n} X_i, \quad \text{Var}(\bar{X}) = \frac{\sigma^2}{n}
   $$</p>
 <hr/>
 <h2 id="key-insight">🧠 Key Insight</h2>
-<p>As sample size increases:</p>
+<p>As sample size grows:</p>
 <ul>
-<li>Shape of original distribution becomes <strong>less important</strong></li>
-<li>Sampling distribution becomes <strong>more normal</strong></li>
-<li>This justifies using <strong>normal approximations</strong> in real-life problems</li>
+<li>The original distribution’s shape matters <strong>less and less</strong></li>
+<li>Sample means become <strong>normally distributed</strong></li>
+<li>This supports <strong>using normal models</strong> in real-world problems</li>
 </ul>
 <hr/>
 <p><img alt="alt text" src="../image.png"/></p>
