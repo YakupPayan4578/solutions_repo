@@ -9,7 +9,7 @@
 A unit circle (radius = 1) inscribed in a square of side length 2 has:
 
 - **Circle area**:  
-  $$A_{\text{circle}} = \pi r^2 = \pi$$
+  $$ A_{\text{circle}} = \pi r^2 = \pi $$
 
 - **Square area**:  
   $$A_{\text{square}} = (2r)^2 = 4$$
