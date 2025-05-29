@@ -22,6 +22,26 @@ By randomly generating points in the square and checking if they fall inside the
 - Therefore:  
   $$ \pi \approx 4 \cdot \frac{\text{Points in circle}}{\text{Total points}} $$
 
+![alt text](image-1.png)
+
+[myColab](https://colab.research.google.com/drive/10lNz0Vt_Y4CEiFhsZ2aUjIvg7SjCwn3G#scrollTo=zmdGxzqC7KR7)
+
+![alt text](image-2.png)
+
+[myColab](https://colab.research.google.com/drive/1MKv4qoEBtmK1WvxiGaLFznF46RH6mAUD)
+
+![alt text](image-3.png)
+
+[myColab](https://colab.research.google.com/drive/1LDcOEVvrQD_sYS0kfB08TmX5rqj0xYXu)
+
+![alt text](image-4.png)
+
+[myColab](https://colab.research.google.com/drive/1Qvr63REL6XmpEO9N_8gJBaoNeN7LiL2P)
+
+![alt text](image-5.png)
+
+[myColab](https://colab.research.google.com/drive/1jHeHvalEVslLx4XG1drW5M6Atx054vlu)
+
 ---
 
 ## 🧵 Part 2: Buffon’s Needle Simulation
@@ -52,25 +72,7 @@ Buffon's Needle experiment estimates $\pi$ by dropping a needle of length $l$ on
 
 Both methods can estimate $\pi$, but the Circle-Based approach converges faster and is easier to implement and visualize. Buffon’s method is historically important and offers an elegant link between geometry and probability.
 
-![alt text](image-1.png)
 
-[myColab](https://colab.research.google.com/drive/10lNz0Vt_Y4CEiFhsZ2aUjIvg7SjCwn3G#scrollTo=zmdGxzqC7KR7)
-
-![alt text](image-2.png)
-
-[myColab](https://colab.research.google.com/drive/1MKv4qoEBtmK1WvxiGaLFznF46RH6mAUD)
-
-![alt text](image-3.png)
-
-[myColab](https://colab.research.google.com/drive/1LDcOEVvrQD_sYS0kfB08TmX5rqj0xYXu)
-
-![alt text](image-4.png)
-
-[myColab](https://colab.research.google.com/drive/1Qvr63REL6XmpEO9N_8gJBaoNeN7LiL2P)
-
-![alt text](image-5.png)
-
-[myColab](https://colab.research.google.com/drive/1jHeHvalEVslLx4XG1drW5M6Atx054vlu)
 
 ![alt text](image-6.png)
 
