@@ -31,7 +31,7 @@ By randomly generating points in the square and checking if they fall inside the
 Buffon's Needle experiment estimates $\pi$ by dropping a needle of length $l$ on a plane with parallel lines spaced $d$ units apart ($l \leq d$).
 
 - The probability that the needle crosses a line is:  
-  $$P = \frac{2l}{d\pi}$$
+  $$ P = \frac{2l}{d\pi} $$
 
 - Rearranging gives:  
   $$ \pi \approx \frac{2l \cdot N}{d \cdot C} $$  
