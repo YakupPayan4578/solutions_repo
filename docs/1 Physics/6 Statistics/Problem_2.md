@@ -1,92 +1,93 @@
-### Problem 2
-
-<span style="font-size: 1.2em; font-weight: bold;">**Estimating Pi using Monte Carlo Methods**</span>
-
-#### Motivation:
-
-Monte Carlo simulations are a powerful class of computational techniques that use randomness to solve problems or estimate values. One of the most elegant applications of Monte Carlo methods is estimating the value of $\pi$ through geometric probability. By randomly generating points and analyzing their positions relative to a geometric shape, we can approximate $\pi$ in an intuitive and visually engaging way.
-
-This problem connects fundamental concepts of probability, geometry, and numerical computation. It also provides a gateway to understanding how randomness can be harnessed to solve complex problems in physics, finance, and computer science. The Monte Carlo approach to $\pi$ estimation highlights the versatility and simplicity of this method while offering practical insights into convergence rates and computational efficiency.
+# 🎯 Estimating $\pi$ Using Monte Carlo Methods
 
 ---
 
-#### Task
+## 🔵 Part 1: Circle-Based Monte Carlo Method
 
-##### Part 1: Estimating $\pi$ Using a Circle
+### 📄 Theoretical Foundation
 
-1 **Theoretical Foundation:**
+A unit circle (radius = 1) inscribed in a square of side length 2 has:
 
-   - Explain how the ratio of points inside a circle to the total number of points in a square can be used to estimate $\pi$.
-   - Derive the formula $\pi \approx 4 \cdot (\text{points inside the circle} / \text{total points})$ for a unit circle.
+- **Circle area**:  
+  $$A_{\text{circle}} = \pi r^2 = \pi$$
 
-2 **Simulation:**
+- **Square area**:  
+  $$A_{\text{square}} = (2r)^2 = 4$$
 
-   - Generate random points in a 2D square bounding a unit circle.
-   - Count the number of points falling inside the circle.
-   - Estimate $\pi$ based on the ratio of points inside the circle to the total points.
+By randomly generating points in the square and checking if they fall inside the circle:
 
-3 **Visualization:**
+- The ratio of points inside the circle approaches  
+  $$\frac{\pi}{4}$$
 
-   - Create a plot showing the randomly generated points, distinguishing those inside and outside the circle.
-
-4 **Analysis:**
-
-   - Investigate how the accuracy of the estimate improves as the number of points increases.
-   - Discuss the convergence rate and computational considerations for this method.
+- Therefore:  
+  $$\pi \approx 4 \cdot \frac{\text{Points in circle}}{\text{Total points}}$$
 
 ---
 
-##### Part 2: Estimating $\pi$ Using Buffon’s Needle
+## 🧵 Part 2: Buffon’s Needle Simulation
 
-1 **Theoretical Foundation:**
+### 📄 Theoretical Foundation
 
-   - Describe Buffon’s Needle problem, where $\pi$ can be estimated based on the probability of a needle crossing parallel lines on a plane.
-   - Derive the formula $\pi \approx (2 \cdot \text{needle length} \cdot \text{number of throws}) / (\text{distance between lines} \cdot \text{number of crossings})$.
+Buffon's Needle experiment estimates $\pi$ by dropping a needle of length $l$ on a plane with parallel lines spaced $d$ units apart ($l \leq d$).
 
-2 **Simulation:**
+- The probability that the needle crosses a line is:  
+  $$P = \frac{2l}{d\pi}$$
 
-   - Simulate the random dropping of a needle on a plane with parallel lines.
-   - Count the number of times the needle crosses a line.
-   - Estimate $\pi$ based on the derived formula.
-
-3 **Visualization:**
-
-   - Create a graphical representation of the simulation, showing the needle positions relative to the lines.
-
-4 **Analysis:**
-
-   - Explore how the number of needle drops affects the estimate’s accuracy.
-   - Compare the convergence rate of this method to the circle-based approach.
+- Rearranging gives:  
+  $$\pi \approx \frac{2l \cdot N}{d \cdot C}$$  
+  where $N$ is total drops and $C$ is the number of crossings.
 
 ---
 
-#### Deliverables
+## ⚖️ Method Comparison
 
-1 A Markdown document with:
-
-   - Clear explanations of the methods and formulas.
-   - A discussion of theoretical foundations and results.
-
-2 Python scripts or notebooks implementing the simulations, including:
-
-   - Code for the circle-based Monte Carlo method.
-   - Code for the Buffon’s Needle method.
-
-3 Graphical outputs:
-
-   - Plots showing random points for the circle-based method.
-   - Visualizations of needle positions for Buffon’s Needle.
-
-4 Analysis:
-
-   - Tables or graphs showing the convergence of estimated $\pi$ as a function of the number of iterations for both methods.
-   - A comparison of the methods in terms of accuracy and computational efficiency.
+| Method               | Intuition                            | Accuracy         | Visualization |
+|----------------------|---------------------------------------|------------------|---------------|
+| Circle-Based         | Geometry-based ratio                  | Improves with $N$ | Easy          |
+| Buffon’s Needle      | Probability from physical experiment  | Slower convergence | Moderate     |
 
 ---
 
-#### Hints and Resources
+## ✅ Conclusion
 
-- Use Python libraries such as NumPy for random number generation and Matplotlib for visualizations.
-- For the circle-based method, ensure the random points are uniformly distributed within the square.
-- For Buffon’s Needle, pay attention to geometric constraints, such as the relationship between the needle length and the distance between lines.
-- Start with a small number of iterations to validate the implementation, then increase the sample size to observe convergence.
+Both methods can estimate $\pi$, but the Circle-Based approach converges faster and is easier to implement and visualize. Buffon’s method is historically important and offers an elegant link between geometry and probability.
+
+![alt text](image-1.png)
+
+[myColab](https://colab.research.google.com/drive/10lNz0Vt_Y4CEiFhsZ2aUjIvg7SjCwn3G#scrollTo=zmdGxzqC7KR7)
+
+![alt text](image-2.png)
+
+[myColab](https://colab.research.google.com/drive/1MKv4qoEBtmK1WvxiGaLFznF46RH6mAUD)
+
+![alt text](image-3.png)
+
+[myColab](https://colab.research.google.com/drive/1LDcOEVvrQD_sYS0kfB08TmX5rqj0xYXu)
+
+![alt text](image-4.png)
+
+[myColab](https://colab.research.google.com/drive/1Qvr63REL6XmpEO9N_8gJBaoNeN7LiL2P)
+
+![alt text](image-5.png)
+
+[myColab](https://colab.research.google.com/drive/1jHeHvalEVslLx4XG1drW5M6Atx054vlu)
+
+![alt text](image-6.png)
+
+[myColab](https://colab.research.google.com/drive/1j3BvdcnQ2PVVswl0gvcQq_xkj16Pny1r)
+
+![alt text](image-7.png)
+
+[myColab](https://colab.research.google.com/drive/1OwChvzNFu7fNwHYO2UnuM5kyqO3UkMOs)
+
+![alt text](image-8.png)
+
+[myColab](https://colab.research.google.com/drive/1_f35ZTc5r2NxjJsBJL4-U8wiUHuS3IYf)
+
+![alt text](image-9.png)
+
+[myColab](https://colab.research.google.com/drive/1BYL9X-vwuiJv3Y1EyinR7KTfFeVhtYmy)
+
+![alt text](image-10.png)
+
+[myColab](https://colab.research.google.com/drive/1wbPynEbwNKtxM2dEqasXiZYp0AwdCwH2)
