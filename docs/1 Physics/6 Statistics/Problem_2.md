@@ -12,15 +12,15 @@ A unit circle (radius = 1) inscribed in a square of side length 2 has:
   $$ A_{\text{circle}} = \pi r^2 = \pi $$
 
 - **Square area**:  
-  $$A_{\text{square}} = (2r)^2 = 4$$
+  $$ A_{\text{square}} = (2r)^2 = 4 $$
 
 By randomly generating points in the square and checking if they fall inside the circle:
 
 - The ratio of points inside the circle approaches  
-  $$\frac{\pi}{4}$$
+  $$ \frac{\pi}{4} $$
 
 - Therefore:  
-  $$\pi \approx 4 \cdot \frac{\text{Points in circle}}{\text{Total points}}$$
+  $$ \pi \approx 4 \cdot \frac{\text{Points in circle}}{\text{Total points}} $$
 
 ---
 
@@ -34,7 +34,7 @@ Buffon's Needle experiment estimates $\pi$ by dropping a needle of length $l$ on
   $$P = \frac{2l}{d\pi}$$
 
 - Rearranging gives:  
-  $$\pi \approx \frac{2l \cdot N}{d \cdot C}$$  
+  $$ \pi \approx \frac{2l \cdot N}{d \cdot C} $$  
   where $N$ is total drops and $C$ is the number of crossings.
 
 ---
