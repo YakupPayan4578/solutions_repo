@@ -6,13 +6,13 @@
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <link href="../../../img/favicon.ico" rel="shortcut icon"/>
-<title>Problem 2 - Physics and Mathematics</title>
+<title>🎯 Estimating \(\pi\) Using Monte Carlo Methods - Physics and Mathematics</title>
 <link href="../../../css/theme.css" rel="stylesheet"/>
 <link href="../../../css/theme_extra.css" rel="stylesheet"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" rel="stylesheet"/>
 <script>
         // Current page data
-        var mkdocs_page_name = "Problem 2";
+        var mkdocs_page_name = "\ud83c\udfaf Estimating \\(\\pi\\) Using Monte Carlo Methods";
         var mkdocs_page_input_path = "1 Physics/6 Statistics/Problem_2.md";
         var mkdocs_page_url = null;
       </script>
@@ -86,21 +86,23 @@
 <ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../Problem_1/">📊 Exploring the Central Limit Theorem through Simulations</a>
 </li>
-<li class="toctree-l2 current"><a class="reference internal current" href="#">Problem 2</a>
+<li class="toctree-l2 current"><a class="reference internal current" href="#">🎯 Estimating \(\pi\) Using Monte Carlo Methods</a>
 <ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="#motivation">Motivation:</a>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#task">Task</a>
+<li class="toctree-l3"><a class="reference internal" href="#part-1-circle-based-monte-carlo-method">🔵 Part 1: Circle-Based Monte Carlo Method</a>
 <ul>
-<li class="toctree-l4"><a class="reference internal" href="#part-1-estimating-pi-using-a-circle">Part 1: Estimating \(\pi\) Using a Circle</a>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="#part-2-estimating-pi-using-buffons-needle">Part 2: Estimating \(\pi\) Using Buffon’s Needle</a>
+<li class="toctree-l4"><a class="reference internal" href="#theoretical-foundation">📄 Theoretical Foundation</a>
 </li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#deliverables">Deliverables</a>
+<li class="toctree-l3"><a class="reference internal" href="#part-2-buffons-needle-simulation">🧵 Part 2: Buffon’s Needle Simulation</a>
+<ul>
+<li class="toctree-l4"><a class="reference internal" href="#theoretical-foundation_1">📄 Theoretical Foundation</a>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#hints-and-resources">Hints and Resources</a>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#method-comparison">⚖️ Method Comparison</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#conclusion">✅ Conclusion</a>
 </li>
 </ul>
 </li>
@@ -179,7 +181,7 @@
 <li><a aria-label="Docs" class="icon icon-home" href="../../.."></a></li>
 <li class="breadcrumb-item">1 Physics</li>
 <li class="breadcrumb-item">6 Statistics</li>
-<li class="breadcrumb-item active">Problem 2</li>
+<li class="breadcrumb-item active">🎯 Estimating \(\pi\) Using Monte Carlo Methods</li>
 <li class="wy-breadcrumbs-aside">
 </li>
 </ul>
@@ -187,86 +189,96 @@
 </div>
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
-<h3 id="problem-2">Problem 2</h3>
-<p><span style="font-size: 1.2em; font-weight: bold;"><strong>Estimating Pi using Monte Carlo Methods</strong></span></p>
-<h4 id="motivation">Motivation:</h4>
-<p>Monte Carlo simulations are a powerful class of computational techniques that use randomness to solve problems or estimate values. One of the most elegant applications of Monte Carlo methods is estimating the value of <span class="arithmatex">\(\pi\)</span> through geometric probability. By randomly generating points and analyzing their positions relative to a geometric shape, we can approximate <span class="arithmatex">\(\pi\)</span> in an intuitive and visually engaging way.</p>
-<p>This problem connects fundamental concepts of probability, geometry, and numerical computation. It also provides a gateway to understanding how randomness can be harnessed to solve complex problems in physics, finance, and computer science. The Monte Carlo approach to <span class="arithmatex">\(\pi\)</span> estimation highlights the versatility and simplicity of this method while offering practical insights into convergence rates and computational efficiency.</p>
+<h1 id="estimating-pi-using-monte-carlo-methods">🎯 Estimating <span class="arithmatex">\(\pi\)</span> Using Monte Carlo Methods</h1>
 <hr/>
-<h4 id="task">Task</h4>
-<h5 id="part-1-estimating-pi-using-a-circle">Part 1: Estimating <span class="arithmatex">\(\pi\)</span> Using a Circle</h5>
-<p>1 <strong>Theoretical Foundation:</strong></p>
+<h2 id="part-1-circle-based-monte-carlo-method">🔵 Part 1: Circle-Based Monte Carlo Method</h2>
+<h3 id="theoretical-foundation">📄 Theoretical Foundation</h3>
+<p>A unit circle (radius = 1) inscribed in a square of side length 2 has:</p>
 <ul>
-<li>Explain how the ratio of points inside a circle to the total number of points in a square can be used to estimate <span class="arithmatex">\(\pi\)</span>.</li>
-<li>Derive the formula <span class="arithmatex">\(\pi \approx 4 \cdot (\text{points inside the circle} / \text{total points})\)</span> for a unit circle.</li>
+<li>
+<p><strong>Circle area</strong>:<br/>
+<span class="arithmatex">\(<span class="arithmatex">\(A_{\text{circle}} = \pi r^2 = \pi\)</span>\)</span></p>
+</li>
+<li>
+<p><strong>Square area</strong>:<br/>
+<span class="arithmatex">\(<span class="arithmatex">\(A_{\text{square}} = (2r)^2 = 4\)</span>\)</span></p>
+</li>
 </ul>
-<p>2 <strong>Simulation:</strong></p>
+<p>By randomly generating points in the square and checking if they fall inside the circle:</p>
 <ul>
-<li>Generate random points in a 2D square bounding a unit circle.</li>
-<li>Count the number of points falling inside the circle.</li>
-<li>Estimate <span class="arithmatex">\(\pi\)</span> based on the ratio of points inside the circle to the total points.</li>
-</ul>
-<p>3 <strong>Visualization:</strong></p>
-<ul>
-<li>Create a plot showing the randomly generated points, distinguishing those inside and outside the circle.</li>
-</ul>
-<p>4 <strong>Analysis:</strong></p>
-<ul>
-<li>Investigate how the accuracy of the estimate improves as the number of points increases.</li>
-<li>Discuss the convergence rate and computational considerations for this method.</li>
+<li>
+<p>The ratio of points inside the circle approaches<br/>
+<span class="arithmatex">\(<span class="arithmatex">\(\frac{\pi}{4}\)</span>\)</span></p>
+</li>
+<li>
+<p>Therefore:<br/>
+<span class="arithmatex">\(<span class="arithmatex">\(\pi \approx 4 \cdot \frac{\text{Points in circle}}{\text{Total points}}\)</span>\)</span></p>
+</li>
 </ul>
 <hr/>
-<h5 id="part-2-estimating-pi-using-buffons-needle">Part 2: Estimating <span class="arithmatex">\(\pi\)</span> Using Buffon’s Needle</h5>
-<p>1 <strong>Theoretical Foundation:</strong></p>
+<h2 id="part-2-buffons-needle-simulation">🧵 Part 2: Buffon’s Needle Simulation</h2>
+<h3 id="theoretical-foundation_1">📄 Theoretical Foundation</h3>
+<p>Buffon's Needle experiment estimates <span class="arithmatex">\(\pi\)</span> by dropping a needle of length <span class="arithmatex">\(l\)</span> on a plane with parallel lines spaced <span class="arithmatex">\(d\)</span> units apart (<span class="arithmatex">\(l \leq d\)</span>).</p>
 <ul>
-<li>Describe Buffon’s Needle problem, where <span class="arithmatex">\(\pi\)</span> can be estimated based on the probability of a needle crossing parallel lines on a plane.</li>
-<li>Derive the formula <span class="arithmatex">\(\pi \approx (2 \cdot \text{needle length} \cdot \text{number of throws}) / (\text{distance between lines} \cdot \text{number of crossings})\)</span>.</li>
-</ul>
-<p>2 <strong>Simulation:</strong></p>
-<ul>
-<li>Simulate the random dropping of a needle on a plane with parallel lines.</li>
-<li>Count the number of times the needle crosses a line.</li>
-<li>Estimate <span class="arithmatex">\(\pi\)</span> based on the derived formula.</li>
-</ul>
-<p>3 <strong>Visualization:</strong></p>
-<ul>
-<li>Create a graphical representation of the simulation, showing the needle positions relative to the lines.</li>
-</ul>
-<p>4 <strong>Analysis:</strong></p>
-<ul>
-<li>Explore how the number of needle drops affects the estimate’s accuracy.</li>
-<li>Compare the convergence rate of this method to the circle-based approach.</li>
+<li>
+<p>The probability that the needle crosses a line is:<br/>
+<span class="arithmatex">\(<span class="arithmatex">\(P = \frac{2l}{d\pi}\)</span>\)</span></p>
+</li>
+<li>
+<p>Rearranging gives:<br/>
+<span class="arithmatex">\(<span class="arithmatex">\(\pi \approx \frac{2l \cdot N}{d \cdot C}\)</span>\)</span><br/>
+  where <span class="arithmatex">\(N\)</span> is total drops and <span class="arithmatex">\(C\)</span> is the number of crossings.</p>
+</li>
 </ul>
 <hr/>
-<h4 id="deliverables">Deliverables</h4>
-<p>1 A Markdown document with:</p>
-<ul>
-<li>Clear explanations of the methods and formulas.</li>
-<li>A discussion of theoretical foundations and results.</li>
-</ul>
-<p>2 Python scripts or notebooks implementing the simulations, including:</p>
-<ul>
-<li>Code for the circle-based Monte Carlo method.</li>
-<li>Code for the Buffon’s Needle method.</li>
-</ul>
-<p>3 Graphical outputs:</p>
-<ul>
-<li>Plots showing random points for the circle-based method.</li>
-<li>Visualizations of needle positions for Buffon’s Needle.</li>
-</ul>
-<p>4 Analysis:</p>
-<ul>
-<li>Tables or graphs showing the convergence of estimated <span class="arithmatex">\(\pi\)</span> as a function of the number of iterations for both methods.</li>
-<li>A comparison of the methods in terms of accuracy and computational efficiency.</li>
-</ul>
+<h2 id="method-comparison">⚖️ Method Comparison</h2>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Intuition</th>
+<th>Accuracy</th>
+<th>Visualization</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Circle-Based</td>
+<td>Geometry-based ratio</td>
+<td>Improves with <span class="arithmatex">\(N\)</span></td>
+<td>Easy</td>
+</tr>
+<tr>
+<td>Buffon’s Needle</td>
+<td>Probability from physical experiment</td>
+<td>Slower convergence</td>
+<td>Moderate</td>
+</tr>
+</tbody>
+</table>
 <hr/>
-<h4 id="hints-and-resources">Hints and Resources</h4>
-<ul>
-<li>Use Python libraries such as NumPy for random number generation and Matplotlib for visualizations.</li>
-<li>For the circle-based method, ensure the random points are uniformly distributed within the square.</li>
-<li>For Buffon’s Needle, pay attention to geometric constraints, such as the relationship between the needle length and the distance between lines.</li>
-<li>Start with a small number of iterations to validate the implementation, then increase the sample size to observe convergence.</li>
-</ul>
+<h2 id="conclusion">✅ Conclusion</h2>
+<p>Both methods can estimate <span class="arithmatex">\(\pi\)</span>, but the Circle-Based approach converges faster and is easier to implement and visualize. Buffon’s method is historically important and offers an elegant link between geometry and probability.</p>
+<p><img alt="alt text" src="../image-1.png"/></p>
+<p><a href="https://colab.research.google.com/drive/10lNz0Vt_Y4CEiFhsZ2aUjIvg7SjCwn3G#scrollTo=zmdGxzqC7KR7">myColab</a></p>
+<p><img alt="alt text" src="../image-2.png"/></p>
+<p><a href="https://colab.research.google.com/drive/1MKv4qoEBtmK1WvxiGaLFznF46RH6mAUD">myColab</a></p>
+<p><img alt="alt text" src="../image-3.png"/></p>
+<p><a href="https://colab.research.google.com/drive/1LDcOEVvrQD_sYS0kfB08TmX5rqj0xYXu">myColab</a></p>
+<p><img alt="alt text" src="../image-4.png"/></p>
+<p><a href="https://colab.research.google.com/drive/1Qvr63REL6XmpEO9N_8gJBaoNeN7LiL2P">myColab</a></p>
+<p><img alt="alt text" src="../image-5.png"/></p>
+<p><a href="https://colab.research.google.com/drive/1jHeHvalEVslLx4XG1drW5M6Atx054vlu">myColab</a></p>
+<p><img alt="alt text" src="../image-6.png"/></p>
+<p><a href="https://colab.research.google.com/drive/1j3BvdcnQ2PVVswl0gvcQq_xkj16Pny1r">myColab</a></p>
+<p><img alt="alt text" src="../image-7.png"/></p>
+<p><a href="https://colab.research.google.com/drive/1OwChvzNFu7fNwHYO2UnuM5kyqO3UkMOs">myColab</a></p>
+<p><img alt="alt text" src="../image-8.png"/></p>
+<p><a href="https://colab.research.google.com/drive/1_f35ZTc5r2NxjJsBJL4-U8wiUHuS3IYf">myColab</a></p>
+<p><img alt="alt text" src="../image-9.png"/></p>
+<p><a href="https://colab.research.google.com/drive/1BYL9X-vwuiJv3Y1EyinR7KTfFeVhtYmy">myColab</a></p>
+<p><img alt="alt text" src="../image-10.png"/></p>
+<p><a href="https://colab.research.google.com/drive/1wbPynEbwNKtxM2dEqasXiZYp0AwdCwH2">myColab</a></p>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
